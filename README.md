@@ -4,11 +4,13 @@ An offline, bilingual Windows learning studio connecting mathematics, physics, c
 
 Built with WinUI 3 and a bundled local WebView2 interface. No account, server, AI service or internet connection is required for study. English and Chinese switch together across lessons, examples, hints and practice.
 
+![Lattice running in the native Windows application](docs/screenshots/windows-studio.png)
+
 ## Explore
 
 - **Learning atlas:** choose a subject, follow a school/university/Olympiad branch, then focus on one topic. Prerequisites and next steps appear on either side, with cross-subject bridges and a complete ordered route when needed.
-- **Course library:** 90 course pathways and 540 modules, with bilingual concept checklists and introductory teaching chapters being expanded across the catalogue. [Generated coverage counts](content/coverage.json) describe the current checked-in pack.
-- **Teaching:** original explanations, worked examples, misconceptions, practice, hints and explained answers. Focused foundation lessons complement the module chapters.
+- **Course library:** 90 course pathways, with a bilingual introductory chapter and concept checklist for every one of the 540 modules, plus 55 focused lessons. [Generated coverage counts](content/coverage.json) describe the current checked-in pack.
+- **Teaching:** original explanations, worked examples, misconceptions, 1,450 practice questions, hints and explained answers. Focused foundation lessons complement the module chapters.
 - **Study tools:** local mathematics rendering, interactive diagrams, short starting-point checks, notes, practice history, review reminders and JSON backup/restore.
 - **C++ notebook:** edit, retain and export `.cpp` files. Compile and judge with your own toolchain; this app does not execute submissions.
 
@@ -16,18 +18,22 @@ This is an actively developed learning application. Introductory chapter coverag
 
 ## Run on Windows
 
-Build the application below, then open `native/bin/publish-v0.2/Lattice.exe` or run `Start-Lattice.ps1`. Keep the entire publish folder together. The current distribution is an unpackaged **Windows x64 folder**, not an installer. Close older Lattice windows before using the updated app.
+Download the Windows ZIP from [GitHub Releases](https://github.com/intqwq/lattice/releases), extract it completely, and open `Lattice.exe`. Keep the entire extracted folder together. The distribution is an unpackaged **Windows x64 folder**, not an installer. Close older Lattice windows before using the updated app.
+
+To build from source, use the commands below, then open `native/bin/publish-v0.2/Lattice.exe` or run `Start-Lattice.ps1`.
 
 The .NET and Windows App SDK runtimes are bundled. The Microsoft Edge WebView2 Runtime must be installed. Initial dependency restore requires internet access; study after building is offline. Clean-machine installation has not yet been validated.
 
 ```powershell
-# Requires Node.js, PowerShell 7 and the .NET 10 SDK on Windows.
+# Requires Node.js 24, PowerShell 7 and the .NET 10 SDK on Windows.
 node scripts/build-content.mjs
 node --test tests/*.test.mjs
 pwsh -File scripts/build-windows.ps1 -SmokeTest
 ```
 
 The smoke test launches an isolated desktop profile, checks the local teaching surface and saves a native screenshot/report under `native/smoke/`. A non-interactive build can omit `-SmokeTest`.
+
+With GCC installed, `node scripts/check-cpp-examples.mjs` syntax-checks the complete C++ example files without running them. Set `CXX` to another compatible compiler path if needed. To package a built Windows folder, run `pwsh -File scripts/package-windows.ps1`; it creates a ZIP and SHA-256 checksum under `dist/`, excluding test profiles and debugging symbols.
 
 For interface development only:
 
@@ -54,6 +60,6 @@ Embedded resources are local. Clicking an optional source link opens the system 
 | `tests/` | Content, prerequisite, grading, backup and navigation regressions |
 | `blueprint/` | Original curriculum and teaching design |
 
-The build rejects missing prerequisites, dependency cycles, duplicate questions, invalid answers and incomplete bilingual structures. These checks cannot establish that every explanation or exercise is pedagogically sufficient.
+The build rejects missing prerequisites, dependency cycles, duplicate questions, invalid answers and incomplete bilingual structures. Tests require a chapter for all 540 modules, topic-specific teaching beyond shared framing, and a fresh application check for every science module. These checks cannot establish that every explanation or exercise is pedagogically sufficient.
 
 KaTeX and its fonts are bundled for offline use. [Third-party notices](THIRD-PARTY-NOTICES.md) identify dependencies. The [original blueprint](BLUEPRINT.md) describes longer-term ambitions, including features not implemented yet. [Integrated review](tests/UI-REVIEW.md) records validation and limitations.

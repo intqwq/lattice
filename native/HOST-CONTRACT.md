@@ -1,6 +1,6 @@
 # Lattice Windows host
 
-The app is an unpackaged WinUI 3 / C# executable with a bundled local WebView2 lesson surface. Build using `pwsh -File scripts/build-windows.ps1`; add `-SmokeTest` for a native launch check. The executable and its required sibling files are published in `native/bin/publish/`.
+The app is an unpackaged WinUI 3 / C# executable with a bundled local WebView2 lesson surface. Build using `pwsh -File scripts/build-windows.ps1`; add `-SmokeTest` for a native launch check. The executable and its required sibling files are published in `native/bin/publish-v0.2/`. Use `-OutputDirectory` for a separate build destination.
 
 The build bundles .NET and Windows App SDK. Microsoft Edge WebView2 Evergreen Runtime must already be installed. This machine has the runtime; the current folder distribution does not yet include an offline WebView2 installer. Do not call it a complete installer for a clean Windows machine.
 

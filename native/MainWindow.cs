@@ -34,7 +34,7 @@ internal sealed class MainWindow : Window
         _smokeDirectory = Path.GetFullPath(smokeOutput ?? Path.Combine(AppContext.BaseDirectory, "smoke"));
         _dataDirectory = smokeTest ? Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "smoke-profile", Guid.NewGuid().ToString("N"))) : Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Lattice");
         Title = "Lattice · 知序";
-        _root.Background = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 13, 17, 26));
+        _root.Background = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 24, 42, 36));
         _root.Children.Add(_status);
         _view.Opacity = 0;
         _root.Children.Add(_view);
@@ -46,9 +46,9 @@ internal sealed class MainWindow : Window
         appWindow.Resize(new Windows.Graphics.SizeInt32(1440, 960));
         if (AppWindowTitleBar.IsCustomizationSupported())
         {
-            appWindow.TitleBar.BackgroundColor = Windows.UI.Color.FromArgb(255, 13, 17, 26);
+            appWindow.TitleBar.BackgroundColor = Windows.UI.Color.FromArgb(255, 24, 42, 36);
             appWindow.TitleBar.ForegroundColor = Colors.White;
-            appWindow.TitleBar.ButtonBackgroundColor = Windows.UI.Color.FromArgb(255, 13, 17, 26);
+            appWindow.TitleBar.ButtonBackgroundColor = Windows.UI.Color.FromArgb(255, 24, 42, 36);
             appWindow.TitleBar.ButtonForegroundColor = Colors.White;
         }
         Activated += OnActivated;

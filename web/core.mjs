@@ -72,6 +72,9 @@ export function validateImport(value,lessons,courses){
     const attempts=retainedAttempts(checkedAttempts);
     const assistedExercises=[...new Set([...(Array.isArray(p.assistedExercises)?p.assistedExercises.filter(id=>typeof id==='string'&&exerciseById.has(id)):[]),...checkedAttempts.map(a=>a.exerciseId)])];
     fresh.progress[key]={startedAt:Number.isFinite(p.startedAt)&&p.startedAt>=0?p.startedAt:Date.now(),attempts,assistedExercises};
+    // Retain earlier-edition answers as history, never as evidence for current questions.
+    const retired=[...(Array.isArray(p.retiredAttempts)?p.retiredAttempts:[]),...(Array.isArray(p.attempts)?p.attempts.filter(a=>a&&!exerciseById.has(a.exerciseId)):[])].filter(a=>a&&typeof a.exerciseId==='string'&&a.exerciseId.length<=160&&typeof a.answer==='string'&&a.answer.length<=1000&&Number.isFinite(a.at)&&a.at>=0).map(a=>({exerciseId:a.exerciseId,answer:a.answer,at:a.at}));
+    if(retired.length)fresh.progress[key].retiredAttempts=retired.slice(-200);
     const correct=new Set(attempts.filter(a=>a.correct&&!a.assisted).map(a=>a.exerciseId));
     if(lesson.exercises.length&&lesson.exercises.every(e=>correct.has(e.id))&&Number.isFinite(p.practicedAt)&&p.practicedAt>=0){fresh.progress[key].practicedAt=p.practicedAt;fresh.progress[key].dueAt=Number.isFinite(p.dueAt)&&p.dueAt>=p.practicedAt?p.dueAt:p.practicedAt+3*86400000;if(Number.isFinite(p.reviewedAt)&&p.reviewedAt>=p.practicedAt&&p.reviewedAt<=fresh.progress[key].dueAt)fresh.progress[key].reviewedAt=p.reviewedAt;}
   }

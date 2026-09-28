@@ -30,3 +30,14 @@ body{font-family:'Segoe UI Variable','Segoe UI','Microsoft YaHei UI',sans-serif;
 @media(min-width:651px){.sidebar .brand{padding-bottom:24px}.sidebar .nav-button{padding-top:10px;padding-bottom:10px}.sidebar .subject-nav button{padding-top:7px;padding-bottom:7px}.sidebar .nav-section-label{padding-top:24px}.sidebar .sidebar-bottom{padding:16px 1px 0}}
 .badge,.notice.quiet,.connection-line span,.module-number,.prereq-links button,.prose code:not(pre code),.fraction-piece,.trace-cell,.cell-labels span,.inheritance-grid span,.progress-track{background:var(--soft)}
 .prereq-links button:hover{background:var(--hover)}
+
+/* Preserve scrolling at Windows display scaling without a bright native gutter. */
+html,.sidebar{scrollbar-width:thin;scrollbar-color:var(--muted) var(--bg)}
+.sidebar{scrollbar-color:#496254 var(--rail)}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#8c9b90;border-radius:8px}
+.sidebar::-webkit-scrollbar-track{background:var(--rail)}
+.sidebar::-webkit-scrollbar-thumb{background:#496254}
+::-webkit-scrollbar-button{display:none}
+@media(forced-colors:active){html,.sidebar{scrollbar-color:auto}}

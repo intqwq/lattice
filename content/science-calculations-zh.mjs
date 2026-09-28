@@ -1,0 +1,51 @@
+// Translate the prose surrounding symbolic worked calculations. Mathematical
+// variable names, chemical symbols and SI units retain their standard notation.
+const phrases=[
+ ['One H atom adds to each carbon; total 2 H = 1 H2.','两个碳各加上一个 H 原子，总共 2 个 H，即 1 个 H2。'],
+ ['The independent biological units are the 4 animals, not 12 readings.','独立生物单位为 4 只动物；12 次读数不代表 12 个独立生物单位。'],
+ ['One bilateral plane separates left and right: 2 sides.','一个双侧对称平面分出左右两侧，共 2 侧。'],
+ ['Each CO2 has one carbon; total = 6.','每个 CO2 含一个碳原子，共有 6 个碳原子。'],
+ ['Each split adds one terminal lineage: 1 + 3 = 4.','每次分叉增加一个末端谱系：1+3=4。'],
+ ['30 nucleotides / 3 per codon = 10 amino acids.','30 个核苷酸 ÷ 每密码子 3 个核苷酸 = 10 个氨基酸。'],
+ ['At steady state RNA = synthesis/decay constant; factor = 2.','稳态 RNA 量=合成速率/降解常数；合成加倍而降解常数不变，因此含量变为 2 倍。'],
+ ['3 nucleotides = 1 codon; frame is retained.','3 个核苷酸对应 1 个密码子，阅读框保留。'],
+ ['P(aa) = P(a from each parent) = 1/2 × 1/2 = 1/4.','P(aa)=双方分别贡献 a 的概率之积=1/2×1/2=1/4。'],
+ ['Unaffected genotypes: AA, Aa, aA; 2 of 3 are carriers.','未表现性状的等概率组合为 AA、Aa、aA，其中 3 种组合中的 2 种为携带者，因此概率为 2/3。'],
+ ['Trisomy adds one chromosome: 2n + 1 = 11.','三体比正常二倍体多一条染色体：2n+1=11。'],
+ ['4 replicated chromosomes × 2 sister chromatids = 8.','4 条已复制染色体 × 每条 2 条姐妹染色单体 = 8 条姐妹染色单体。'],
+ ['A linear chain of n residues has n − 1 links: 6 − 1 = 5.','由 n 个残基构成的线性链有 n−1 个连接：6−1=5。'],
+ ['Three singly occupied t2g orbitals give 3 unpaired electrons.','三个各被单个电子占据的 t2g 轨道，共有 3 个未配对电子。'],
+ ['Fe2+ → Fe3+ + e−: one electron.','Fe2+ → Fe3+ + e−，失去 1 个电子。'],
+ ['One-for-one replacement of two sites releases 2 H2O.','两个位点分别发生一对一取代，共释放 2 个 H2O。'],
+ ['At most one fermion per complete state: 3.','每个完整单粒子量子态至多容纳一个相同费米子，因此至多为 3 个。'],
+ ['ms = +1/2 or −1/2: two spin states.','ms=+1/2 或 −1/2，共两个自旋态。'],
+ ['3 coordinates − 1 independent constraint = 2.','3 个坐标减去 1 个独立约束，剩下 2 个自由度。'],
+ ['3 bonding domains + 1 lone-pair domain = 4.','3 个成键电子域加上 1 个孤电子对域，共 4 个电子域。'],
+ ['3 settings × 4 repeats = 12 measurements.','3 种设置 × 每种 4 次重复 = 12 次测量。'],
+ ['Mass ∝ volume ∝ length³; factor = 2³ = 8.','质量 ∝ 体积 ∝ 长度³，因此倍数为 2³=8。'],
+ ['Expected false positives','期望假阳性数'],['Expected smaller class','较小类别的期望计数'],
+ ['true positives/all actual positives','真阳性数/全部实际阳性数'],
+ ['image length/actual length','图像长度/实际长度'],['stroke volume × frequency','每搏输出量 × 频率'],
+ ['independent units','个独立单位'],['individuals/m²','个体/m²'],['pyruvate molecules','个丙酮酸分子'],
+ ['Overall fraction','总产率分数'],['Overall yield','总产率'],['Transferred energy','传递能量'],['Turnover time','周转时间'],
+ ['inflow − outflow','流入量 − 流出量'],['filtered − reabsorbed','滤过量 − 重吸收量'],
+ ['measured − target','测量值 − 目标值'],['observed − predicted','观测值 − 预测值'],
+ ['distance/speed','距离/速率'],['pool/flux','库总量/通量'],['ions/cycle','离子/周期'],
+ ['half-lives','个半衰期'],['nucleotides','个核苷酸'],['chromosomes','条染色体'],['molecules','个分子'],
+ ['Sensitivity','灵敏度'],['Magnification','放大倍数'],['Accumulation','积累速率'],['Overestimate','高估比例'],
+ ['Bond order','键级'],['Charge/e','电荷量/e'],['Net gain','净收益'],['Rate factor','速率倍数'],
+ ['Remaining fraction','剩余比例'],['Neutrality: electrons = protons','电中性要求电子数 = 质子数'],
+ ['Retained','保留比例'],['Density','密度'],['Length','长度'],['Difference','差值'],['Identity','一致性'],
+ ['Decrease','减小量'],['Deviation','偏差'],['Excreted','排出量'],['Increase','增加比例'],['Reduction','减少比例'],
+ ['Recovery','回收率'],['Maximum','最大数量'],['Yield','产率'],['Scale','缩放因子'],['Flow','流量'],
+ ['Rate','速率'],['Net','净值'],['largest','最大峰'],['remaining','剩余比例'],['yield','产率'],['electrons','个电子'],
+ ['particles','个粒子'],['cells','个细胞'],['cycles','个周期'],['ions','个离子'],['records','条记录'],
+ ['candidates','个候选'],['atom','个原子'],['units/min','单位/min'],['units','单位'],
+ ['so ','因此 '],['count','数量'],['years','年'],['minutes','分钟'],['mean','平均值'],['residual','残差'],
+ ['magnitude','大小'],[' east','，向东'],
+].sort((a,b)=>b[0].length-a[0].length);
+
+export function calculationZh(value){
+ for(const [english,chinese] of phrases)value=value.replaceAll(english,chinese);
+ return value;
+}

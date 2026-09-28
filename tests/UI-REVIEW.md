@@ -8,7 +8,9 @@ The application now has a consistent forest-and-mint palette, aligned cards, res
 
 ## Automated checks
 
-The current suite contains 35 tests. It covers content mappings and both languages, unique assessments, resolving acyclic dependencies, mathematics-to-physics/genetics routes, offline KaTeX rendering, numerical parsing and grading, assisted practice, versioned questions, backup validation, retained evidence and review dates. Atlas tests verify subject-level entry, filter membership, preserved direct connections, bounded initial neighbor counts and title escaping. Search tests exercise concepts inside both languages, full-width course IDs and literal punctuation.
+The current suite contains 39 tests. It covers content mappings and both languages, all 540 module chapters, topic-specific teaching beyond repeated framing, fresh science application checks, unique assessments, resolving acyclic dependencies, mathematics-to-physics/genetics routes, offline KaTeX rendering, numerical parsing and grading, assisted practice, versioned questions, backup validation, retained evidence and review dates. Tiny nonzero scientific answers are checked to ensure their tolerances reject zero. Atlas tests verify subject-level entry, filter membership, preserved direct connections, bounded initial neighbor counts and title escaping. Search tests exercise concepts inside both languages, full-width course IDs and literal punctuation. Choice ordering preserves option IDs and stays stable across language changes without a catalogue-wide answer-position cue.
+
+All 10 C++ example files passed GCC C++20 syntax checks with no warnings. Several original examples were fragments; they now have includes, a main function and visible output for export. This check does not execute submissions or provide an in-app judge.
 
 The content builder generates [current counts](../content/coverage.json), [course coverage](../content/COVERAGE.md) and the [editorial audit](../content/editorial-audit.json). Mechanical checks are not an independent subject review.
 
@@ -24,12 +26,13 @@ The same local `web/` interface was tested on localhost in a development profile
 - Full-width search `Ｍ０９` found the course and its lessons. Search also covers concepts in explanation bodies and outline targets.
 - A new matrix question accepted `17/1`; the new linearity check accepted the correct map. Both first-attempt records survived a language switch and reload.
 - A note containing `$Ax=x_1a_1+x_2a_2$` survived reload and rendered with the bundled math renderer.
+- The expanded cell-division chapter rendered its new third application question, paragraph breaks and translated worked calculation in Chinese. Its subject navigation correctly highlighted Biology while retaining Course library as the current surface.
 - The captured browser warning/error list was empty during these revised flows.
 
 Earlier integration checks also exercised placement, hint-assisted evidence, backup validation, C++ draft persistence and interactive diagrams. Those mechanisms remain covered by their existing model tests; they were not all re-run manually for each content-writing batch.
 
 ## Native Windows check
 
-Version 0.2 is built into `native/bin/publish-v0.2/`, allowing an older open build to remain undisturbed. The isolated WinUI smoke test verifies a loaded local WebView2 teaching surface, positive curriculum counts, local storage, the narrow host-info bridge, no captured startup errors, and a blocked external fetch. Its actual screenshot and report are written to `native/smoke/`; those machine-local outputs are excluded from source control.
+Version 0.2.0 was built into `native/bin/publish-v0.2/`, allowing an older open build to remain undisturbed. The final isolated WinUI smoke test passed with WebView2 153.0.4234.48: 90 courses, 540 modules, 595 lessons and 1,450 exercises loaded from `https://lattice.local/`; local storage and the host-info bridge worked, no startup errors were captured, and the external fetch probe was blocked. Its actual screenshot and report are written to `native/smoke/`; those machine-local reports are excluded from source control. The reviewed, learner-data-free screenshot is copied to [docs/screenshots/windows-studio.png](../docs/screenshots/windows-studio.png).
 
 A clean-machine install, full screen-reader/high-contrast audit, sustained animation benchmark, complete subject-expert review and real learner progression study remain unverified. The application is an unpackaged Windows x64 build and requires WebView2. It edits and exports C++ but does not compile or judge submissions.

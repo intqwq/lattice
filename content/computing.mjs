@@ -1,3 +1,4 @@
+import {cppExamples} from './cpp-examples.mjs';
 const b=(en,zh)=>({en,zh});
 const section=(type,en,zh,bodyEn,bodyZh)=>({type,title:b(en,zh),body:b(bodyEn,bodyZh)});
 const number=(id,en,zh,answer,hintEn,hintZh,exEn,exZh)=>({id,type:'numeric',prompt:b(en,zh),answer,tolerance:0,hints:[b(hintEn,hintZh)],explanation:b(exEn,exZh)});
@@ -5,7 +6,7 @@ const choice=(id,en,zh,options,answer,hintEn,hintZh,exEn,exZh)=>({id,type:'choic
 const cpp={title:'C++ Core Guidelines — language and program correctness reference',url:'https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines'};
 const algo={title:'MIT OpenCourseWare — Introduction to Algorithms, Spring 2020',url:'https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/'};
 const gcc={title:'GCC — C++ language standard support',url:'https://gcc.gnu.org/projects/cxx-status.html'};
-function lesson(id,courseId,moduleId,title,summary,prerequisites,objectives,sections,exercises,visual=null,code=null){return{id,courseId,moduleId,title,summary,prerequisites,objectives,sections,exercises,visual,code,minutes:20,sources:[cpp,algo,gcc],contentStatus:'original-starter-lesson'};}
+function lesson(id,courseId,moduleId,title,summary,prerequisites,objectives,sections,exercises,visual=null,code=null){return{id,courseId,moduleId,title,summary,prerequisites,objectives,sections,exercises,visual,code:cppExamples[id]??code,minutes:20,sources:[cpp,algo,gcc],contentStatus:'original-starter-lesson'};}
 
 export const lessons=[
 lesson('cs.instructions','S01','S01.01',b('What is a program?','什么是程序？'),b('Turn a task into exact, executable instructions.','把任务变成精确、可执行的指令。'),[],[b('Separate a problem, an algorithm, and a program.','区分问题、算法和程序。'),b('Trace instructions in their stated order.','按给定顺序跟踪指令。')],[

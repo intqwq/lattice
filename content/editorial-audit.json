@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-28T12:17:25.244Z",
+  "generatedAt": "2026-09-28T13:04:14.193Z",
   "methodology": "Word counts describe breadth only. Unique teaching words exclude whole section bodies repeated across module chapters; this does not detect paraphrased repetition or prove correctness, concept coverage or pedagogical depth. All introductions still require independent editorial review.",
   "totals": {
     "modules": 540,
-    "chapters": 450,
-    "missingChapters": 90,
-    "missingTranslations": 72,
-    "chaptersBelow160UniqueWords": 206
+    "chapters": 540,
+    "missingChapters": 0,
+    "missingTranslations": 0,
+    "chaptersBelow160UniqueWords": 0
   },
   "modules": [
     {
@@ -15,8 +15,8 @@
       "chapter": "module.F01.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 243,
-      "uniqueEnglishTeachingWords": 243,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -81,8 +81,8 @@
       "chapter": "module.F02.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 159,
+      "englishTeachingWords": 194,
+      "uniqueEnglishTeachingWords": 194,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -92,8 +92,8 @@
       "chapter": "module.F02.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 166,
-      "uniqueEnglishTeachingWords": 166,
+      "englishTeachingWords": 203,
+      "uniqueEnglishTeachingWords": 203,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -114,8 +114,8 @@
       "chapter": "module.F02.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 180,
-      "uniqueEnglishTeachingWords": 180,
+      "englishTeachingWords": 218,
+      "uniqueEnglishTeachingWords": 218,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -312,8 +312,8 @@
       "chapter": "module.M01.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 181,
-      "uniqueEnglishTeachingWords": 181,
+      "englishTeachingWords": 216,
+      "uniqueEnglishTeachingWords": 216,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -323,8 +323,8 @@
       "chapter": "module.M01.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 175,
-      "uniqueEnglishTeachingWords": 175,
+      "englishTeachingWords": 210,
+      "uniqueEnglishTeachingWords": 210,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -345,8 +345,8 @@
       "chapter": "module.M02.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 165,
-      "uniqueEnglishTeachingWords": 165,
+      "englishTeachingWords": 200,
+      "uniqueEnglishTeachingWords": 200,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -378,8 +378,8 @@
       "chapter": "module.M02.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 168,
-      "uniqueEnglishTeachingWords": 168,
+      "englishTeachingWords": 198,
+      "uniqueEnglishTeachingWords": 198,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -411,8 +411,8 @@
       "chapter": "module.M03.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 162,
-      "uniqueEnglishTeachingWords": 162,
+      "englishTeachingWords": 198,
+      "uniqueEnglishTeachingWords": 198,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -477,8 +477,8 @@
       "chapter": "module.M04.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 158,
-      "uniqueEnglishTeachingWords": 158,
+      "englishTeachingWords": 189,
+      "uniqueEnglishTeachingWords": 189,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -488,8 +488,8 @@
       "chapter": "module.M04.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 171,
-      "uniqueEnglishTeachingWords": 171,
+      "englishTeachingWords": 205,
+      "uniqueEnglishTeachingWords": 205,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -499,8 +499,8 @@
       "chapter": "module.M04.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 175,
-      "uniqueEnglishTeachingWords": 175,
+      "englishTeachingWords": 208,
+      "uniqueEnglishTeachingWords": 208,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -510,8 +510,8 @@
       "chapter": "module.M04.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 167,
-      "uniqueEnglishTeachingWords": 167,
+      "englishTeachingWords": 203,
+      "uniqueEnglishTeachingWords": 203,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -543,8 +543,8 @@
       "chapter": "module.M05.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 139,
-      "uniqueEnglishTeachingWords": 40,
+      "englishTeachingWords": 197,
+      "uniqueEnglishTeachingWords": 197,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -554,8 +554,8 @@
       "chapter": "module.M05.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 148,
-      "uniqueEnglishTeachingWords": 49,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -565,8 +565,8 @@
       "chapter": "module.M05.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 53,
+      "englishTeachingWords": 195,
+      "uniqueEnglishTeachingWords": 195,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -576,8 +576,8 @@
       "chapter": "module.M05.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 141,
-      "uniqueEnglishTeachingWords": 42,
+      "englishTeachingWords": 185,
+      "uniqueEnglishTeachingWords": 185,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -587,8 +587,8 @@
       "chapter": "module.M05.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 57,
+      "englishTeachingWords": 196,
+      "uniqueEnglishTeachingWords": 196,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -598,8 +598,8 @@
       "chapter": "module.M05.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 147,
-      "uniqueEnglishTeachingWords": 48,
+      "englishTeachingWords": 187,
+      "uniqueEnglishTeachingWords": 187,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -609,8 +609,8 @@
       "chapter": "module.M06.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 154,
-      "uniqueEnglishTeachingWords": 58,
+      "englishTeachingWords": 198,
+      "uniqueEnglishTeachingWords": 198,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -620,8 +620,8 @@
       "chapter": "module.M06.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 147,
-      "uniqueEnglishTeachingWords": 51,
+      "englishTeachingWords": 194,
+      "uniqueEnglishTeachingWords": 194,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -631,8 +631,8 @@
       "chapter": "module.M06.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 63,
+      "englishTeachingWords": 230,
+      "uniqueEnglishTeachingWords": 230,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -642,8 +642,8 @@
       "chapter": "module.M06.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 164,
-      "uniqueEnglishTeachingWords": 68,
+      "englishTeachingWords": 210,
+      "uniqueEnglishTeachingWords": 210,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -653,8 +653,8 @@
       "chapter": "module.M06.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 155,
-      "uniqueEnglishTeachingWords": 59,
+      "englishTeachingWords": 209,
+      "uniqueEnglishTeachingWords": 209,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -664,8 +664,8 @@
       "chapter": "module.M06.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 160,
-      "uniqueEnglishTeachingWords": 64,
+      "englishTeachingWords": 207,
+      "uniqueEnglishTeachingWords": 207,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -675,8 +675,8 @@
       "chapter": "module.M07.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 153,
-      "uniqueEnglishTeachingWords": 55,
+      "englishTeachingWords": 202,
+      "uniqueEnglishTeachingWords": 202,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -686,8 +686,8 @@
       "chapter": "module.M07.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 157,
-      "uniqueEnglishTeachingWords": 59,
+      "englishTeachingWords": 201,
+      "uniqueEnglishTeachingWords": 201,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -697,8 +697,8 @@
       "chapter": "module.M07.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 147,
-      "uniqueEnglishTeachingWords": 49,
+      "englishTeachingWords": 195,
+      "uniqueEnglishTeachingWords": 195,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -708,8 +708,8 @@
       "chapter": "module.M07.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 158,
-      "uniqueEnglishTeachingWords": 60,
+      "englishTeachingWords": 202,
+      "uniqueEnglishTeachingWords": 202,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -719,8 +719,8 @@
       "chapter": "module.M07.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 196,
+      "uniqueEnglishTeachingWords": 196,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -730,8 +730,8 @@
       "chapter": "module.M07.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 153,
-      "uniqueEnglishTeachingWords": 55,
+      "englishTeachingWords": 201,
+      "uniqueEnglishTeachingWords": 201,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -741,8 +741,8 @@
       "chapter": "module.M08.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 51,
+      "englishTeachingWords": 194,
+      "uniqueEnglishTeachingWords": 194,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -752,8 +752,8 @@
       "chapter": "module.M08.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 142,
-      "uniqueEnglishTeachingWords": 42,
+      "englishTeachingWords": 193,
+      "uniqueEnglishTeachingWords": 193,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -763,8 +763,8 @@
       "chapter": "module.M08.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 52,
+      "englishTeachingWords": 192,
+      "uniqueEnglishTeachingWords": 192,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -774,8 +774,8 @@
       "chapter": "module.M08.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 149,
-      "uniqueEnglishTeachingWords": 49,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -785,8 +785,8 @@
       "chapter": "module.M08.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 154,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 200,
+      "uniqueEnglishTeachingWords": 200,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -796,8 +796,8 @@
       "chapter": "module.M08.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 52,
+      "englishTeachingWords": 200,
+      "uniqueEnglishTeachingWords": 200,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -939,8 +939,8 @@
       "chapter": "module.M11.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 146,
-      "uniqueEnglishTeachingWords": 49,
+      "englishTeachingWords": 172,
+      "uniqueEnglishTeachingWords": 172,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -950,8 +950,8 @@
       "chapter": "module.M11.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 179,
+      "uniqueEnglishTeachingWords": 179,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -961,8 +961,8 @@
       "chapter": "module.M11.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 55,
+      "englishTeachingWords": 207,
+      "uniqueEnglishTeachingWords": 207,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -972,8 +972,8 @@
       "chapter": "module.M11.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 150,
-      "uniqueEnglishTeachingWords": 53,
+      "englishTeachingWords": 203,
+      "uniqueEnglishTeachingWords": 203,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -983,8 +983,8 @@
       "chapter": "module.M11.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 154,
-      "uniqueEnglishTeachingWords": 57,
+      "englishTeachingWords": 214,
+      "uniqueEnglishTeachingWords": 214,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -994,8 +994,8 @@
       "chapter": "module.M11.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 150,
-      "uniqueEnglishTeachingWords": 53,
+      "englishTeachingWords": 196,
+      "uniqueEnglishTeachingWords": 196,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1005,8 +1005,8 @@
       "chapter": "module.M12.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 55,
+      "englishTeachingWords": 174,
+      "uniqueEnglishTeachingWords": 174,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1016,8 +1016,8 @@
       "chapter": "module.M12.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 162,
-      "uniqueEnglishTeachingWords": 61,
+      "englishTeachingWords": 214,
+      "uniqueEnglishTeachingWords": 214,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1027,8 +1027,8 @@
       "chapter": "module.M12.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 58,
+      "englishTeachingWords": 210,
+      "uniqueEnglishTeachingWords": 210,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1038,8 +1038,8 @@
       "chapter": "module.M12.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 51,
+      "englishTeachingWords": 170,
+      "uniqueEnglishTeachingWords": 170,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1049,8 +1049,8 @@
       "chapter": "module.M12.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 55,
+      "englishTeachingWords": 202,
+      "uniqueEnglishTeachingWords": 202,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1060,8 +1060,8 @@
       "chapter": "module.M12.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 160,
-      "uniqueEnglishTeachingWords": 59,
+      "englishTeachingWords": 212,
+      "uniqueEnglishTeachingWords": 212,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1071,8 +1071,8 @@
       "chapter": "module.M13.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1082,8 +1082,8 @@
       "chapter": "module.M13.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 59,
+      "englishTeachingWords": 195,
+      "uniqueEnglishTeachingWords": 195,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1093,8 +1093,8 @@
       "chapter": "module.M13.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 150,
-      "uniqueEnglishTeachingWords": 53,
+      "englishTeachingWords": 185,
+      "uniqueEnglishTeachingWords": 185,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1104,8 +1104,8 @@
       "chapter": "module.M13.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 55,
+      "englishTeachingWords": 188,
+      "uniqueEnglishTeachingWords": 188,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1115,8 +1115,8 @@
       "chapter": "module.M13.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 154,
-      "uniqueEnglishTeachingWords": 57,
+      "englishTeachingWords": 195,
+      "uniqueEnglishTeachingWords": 195,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1126,8 +1126,8 @@
       "chapter": "module.M13.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 59,
+      "englishTeachingWords": 184,
+      "uniqueEnglishTeachingWords": 184,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1137,8 +1137,8 @@
       "chapter": "module.M14.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 157,
-      "uniqueEnglishTeachingWords": 60,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1148,8 +1148,8 @@
       "chapter": "module.M14.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 183,
+      "uniqueEnglishTeachingWords": 183,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1159,8 +1159,8 @@
       "chapter": "module.M14.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 153,
-      "uniqueEnglishTeachingWords": 56,
+      "englishTeachingWords": 178,
+      "uniqueEnglishTeachingWords": 178,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1170,8 +1170,8 @@
       "chapter": "module.M14.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 153,
-      "uniqueEnglishTeachingWords": 56,
+      "englishTeachingWords": 183,
+      "uniqueEnglishTeachingWords": 183,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1181,8 +1181,8 @@
       "chapter": "module.M14.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 175,
+      "uniqueEnglishTeachingWords": 175,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1192,8 +1192,8 @@
       "chapter": "module.M14.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 169,
-      "uniqueEnglishTeachingWords": 72,
+      "englishTeachingWords": 202,
+      "uniqueEnglishTeachingWords": 202,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1203,8 +1203,8 @@
       "chapter": "module.M15.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 158,
-      "uniqueEnglishTeachingWords": 56,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1214,8 +1214,8 @@
       "chapter": "module.M15.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 157,
-      "uniqueEnglishTeachingWords": 55,
+      "englishTeachingWords": 182,
+      "uniqueEnglishTeachingWords": 182,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1225,8 +1225,8 @@
       "chapter": "module.M15.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 154,
-      "uniqueEnglishTeachingWords": 52,
+      "englishTeachingWords": 182,
+      "uniqueEnglishTeachingWords": 182,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1236,8 +1236,8 @@
       "chapter": "module.M15.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 185,
+      "uniqueEnglishTeachingWords": 185,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1247,8 +1247,8 @@
       "chapter": "module.M15.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 148,
-      "uniqueEnglishTeachingWords": 46,
+      "englishTeachingWords": 200,
+      "uniqueEnglishTeachingWords": 200,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1258,8 +1258,8 @@
       "chapter": "module.M15.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 176,
-      "uniqueEnglishTeachingWords": 74,
+      "englishTeachingWords": 198,
+      "uniqueEnglishTeachingWords": 198,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1269,8 +1269,8 @@
       "chapter": "module.M16.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 58,
+      "englishTeachingWords": 216,
+      "uniqueEnglishTeachingWords": 216,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1280,8 +1280,8 @@
       "chapter": "module.M16.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 149,
-      "uniqueEnglishTeachingWords": 51,
+      "englishTeachingWords": 207,
+      "uniqueEnglishTeachingWords": 207,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1291,8 +1291,8 @@
       "chapter": "module.M16.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 161,
-      "uniqueEnglishTeachingWords": 63,
+      "englishTeachingWords": 218,
+      "uniqueEnglishTeachingWords": 218,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1302,8 +1302,8 @@
       "chapter": "module.M16.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 150,
-      "uniqueEnglishTeachingWords": 52,
+      "englishTeachingWords": 208,
+      "uniqueEnglishTeachingWords": 208,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1313,8 +1313,8 @@
       "chapter": "module.M16.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 61,
+      "englishTeachingWords": 211,
+      "uniqueEnglishTeachingWords": 211,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1324,8 +1324,8 @@
       "chapter": "module.M16.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 157,
-      "uniqueEnglishTeachingWords": 59,
+      "englishTeachingWords": 181,
+      "uniqueEnglishTeachingWords": 181,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1335,8 +1335,8 @@
       "chapter": "module.M17.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 141,
-      "uniqueEnglishTeachingWords": 44,
+      "englishTeachingWords": 173,
+      "uniqueEnglishTeachingWords": 173,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1346,8 +1346,8 @@
       "chapter": "module.M17.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 149,
-      "uniqueEnglishTeachingWords": 52,
+      "englishTeachingWords": 173,
+      "uniqueEnglishTeachingWords": 173,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1357,8 +1357,8 @@
       "chapter": "module.M17.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 155,
-      "uniqueEnglishTeachingWords": 58,
+      "englishTeachingWords": 224,
+      "uniqueEnglishTeachingWords": 224,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1368,8 +1368,8 @@
       "chapter": "module.M17.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 147,
-      "uniqueEnglishTeachingWords": 50,
+      "englishTeachingWords": 173,
+      "uniqueEnglishTeachingWords": 173,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1379,8 +1379,8 @@
       "chapter": "module.M17.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 160,
-      "uniqueEnglishTeachingWords": 63,
+      "englishTeachingWords": 195,
+      "uniqueEnglishTeachingWords": 195,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1390,8 +1390,8 @@
       "chapter": "module.M17.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 157,
-      "uniqueEnglishTeachingWords": 60,
+      "englishTeachingWords": 188,
+      "uniqueEnglishTeachingWords": 188,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1401,8 +1401,8 @@
       "chapter": "module.M18.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 155,
-      "uniqueEnglishTeachingWords": 60,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1412,8 +1412,8 @@
       "chapter": "module.M18.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 56,
+      "englishTeachingWords": 189,
+      "uniqueEnglishTeachingWords": 189,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1423,8 +1423,8 @@
       "chapter": "module.M18.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 57,
+      "englishTeachingWords": 192,
+      "uniqueEnglishTeachingWords": 192,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1434,8 +1434,8 @@
       "chapter": "module.M18.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 149,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 189,
+      "uniqueEnglishTeachingWords": 189,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1445,8 +1445,8 @@
       "chapter": "module.M18.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 56,
+      "englishTeachingWords": 184,
+      "uniqueEnglishTeachingWords": 184,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1456,8 +1456,8 @@
       "chapter": "module.M18.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 161,
-      "uniqueEnglishTeachingWords": 66,
+      "englishTeachingWords": 197,
+      "uniqueEnglishTeachingWords": 197,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1467,8 +1467,8 @@
       "chapter": "module.M19.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 155,
-      "uniqueEnglishTeachingWords": 54,
+      "englishTeachingWords": 181,
+      "uniqueEnglishTeachingWords": 181,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1478,8 +1478,8 @@
       "chapter": "module.M19.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 58,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1489,8 +1489,8 @@
       "chapter": "module.M19.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 58,
+      "englishTeachingWords": 191,
+      "uniqueEnglishTeachingWords": 191,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1500,8 +1500,8 @@
       "chapter": "module.M19.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 165,
-      "uniqueEnglishTeachingWords": 64,
+      "englishTeachingWords": 231,
+      "uniqueEnglishTeachingWords": 231,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1511,8 +1511,8 @@
       "chapter": "module.M19.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 154,
-      "uniqueEnglishTeachingWords": 53,
+      "englishTeachingWords": 214,
+      "uniqueEnglishTeachingWords": 214,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1522,8 +1522,8 @@
       "chapter": "module.M19.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 161,
-      "uniqueEnglishTeachingWords": 60,
+      "englishTeachingWords": 190,
+      "uniqueEnglishTeachingWords": 190,
       "exercises": 2,
       "editorialReview": "review-pending"
     },
@@ -1533,9 +1533,9 @@
       "chapter": "module.M20.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 61,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1544,9 +1544,9 @@
       "chapter": "module.M20.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 56,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1555,9 +1555,9 @@
       "chapter": "module.M20.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 146,
-      "uniqueEnglishTeachingWords": 51,
-      "exercises": 2,
+      "englishTeachingWords": 242,
+      "uniqueEnglishTeachingWords": 242,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1566,9 +1566,9 @@
       "chapter": "module.M20.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 153,
-      "uniqueEnglishTeachingWords": 58,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1577,9 +1577,9 @@
       "chapter": "module.M20.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 160,
-      "uniqueEnglishTeachingWords": 65,
-      "exercises": 2,
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1588,9 +1588,9 @@
       "chapter": "module.M20.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 145,
-      "uniqueEnglishTeachingWords": 50,
-      "exercises": 2,
+      "englishTeachingWords": 243,
+      "uniqueEnglishTeachingWords": 243,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1599,9 +1599,9 @@
       "chapter": "module.M21.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 150,
-      "uniqueEnglishTeachingWords": 54,
-      "exercises": 2,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1610,9 +1610,9 @@
       "chapter": "module.M21.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 142,
-      "uniqueEnglishTeachingWords": 46,
-      "exercises": 2,
+      "englishTeachingWords": 230,
+      "uniqueEnglishTeachingWords": 230,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1621,9 +1621,9 @@
       "chapter": "module.M21.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 55,
-      "exercises": 2,
+      "englishTeachingWords": 288,
+      "uniqueEnglishTeachingWords": 288,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1632,9 +1632,9 @@
       "chapter": "module.M21.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 148,
-      "uniqueEnglishTeachingWords": 52,
-      "exercises": 2,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1643,9 +1643,9 @@
       "chapter": "module.M21.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 56,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1654,9 +1654,9 @@
       "chapter": "module.M21.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 157,
-      "uniqueEnglishTeachingWords": 61,
-      "exercises": 2,
+      "englishTeachingWords": 269,
+      "uniqueEnglishTeachingWords": 269,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1665,9 +1665,9 @@
       "chapter": "module.M22.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 170,
-      "uniqueEnglishTeachingWords": 70,
-      "exercises": 2,
+      "englishTeachingWords": 273,
+      "uniqueEnglishTeachingWords": 273,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1676,9 +1676,9 @@
       "chapter": "module.M22.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 163,
-      "uniqueEnglishTeachingWords": 63,
-      "exercises": 2,
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1687,9 +1687,9 @@
       "chapter": "module.M22.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 164,
-      "uniqueEnglishTeachingWords": 64,
-      "exercises": 2,
+      "englishTeachingWords": 266,
+      "uniqueEnglishTeachingWords": 266,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1698,9 +1698,9 @@
       "chapter": "module.M22.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 158,
-      "uniqueEnglishTeachingWords": 58,
-      "exercises": 2,
+      "englishTeachingWords": 264,
+      "uniqueEnglishTeachingWords": 264,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1709,9 +1709,9 @@
       "chapter": "module.M22.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 166,
-      "uniqueEnglishTeachingWords": 66,
-      "exercises": 2,
+      "englishTeachingWords": 271,
+      "uniqueEnglishTeachingWords": 271,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1720,9 +1720,9 @@
       "chapter": "module.M22.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 166,
-      "uniqueEnglishTeachingWords": 66,
-      "exercises": 2,
+      "englishTeachingWords": 269,
+      "uniqueEnglishTeachingWords": 269,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1731,9 +1731,9 @@
       "chapter": "module.M23.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 147,
-      "uniqueEnglishTeachingWords": 54,
-      "exercises": 2,
+      "englishTeachingWords": 260,
+      "uniqueEnglishTeachingWords": 260,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1742,9 +1742,9 @@
       "chapter": "module.M23.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 150,
-      "uniqueEnglishTeachingWords": 57,
-      "exercises": 2,
+      "englishTeachingWords": 264,
+      "uniqueEnglishTeachingWords": 264,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1753,9 +1753,9 @@
       "chapter": "module.M23.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 63,
-      "exercises": 2,
+      "englishTeachingWords": 266,
+      "uniqueEnglishTeachingWords": 266,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1764,9 +1764,9 @@
       "chapter": "module.M23.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 143,
-      "uniqueEnglishTeachingWords": 50,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1775,9 +1775,9 @@
       "chapter": "module.M23.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 152,
-      "uniqueEnglishTeachingWords": 59,
-      "exercises": 2,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1786,9 +1786,9 @@
       "chapter": "module.M23.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 144,
-      "uniqueEnglishTeachingWords": 51,
-      "exercises": 2,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1797,9 +1797,9 @@
       "chapter": "module.M24.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 143,
-      "uniqueEnglishTeachingWords": 51,
-      "exercises": 2,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1808,9 +1808,9 @@
       "chapter": "module.M24.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 149,
-      "uniqueEnglishTeachingWords": 57,
-      "exercises": 2,
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1819,9 +1819,9 @@
       "chapter": "module.M24.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 153,
-      "uniqueEnglishTeachingWords": 61,
-      "exercises": 2,
+      "englishTeachingWords": 267,
+      "uniqueEnglishTeachingWords": 267,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1830,9 +1830,9 @@
       "chapter": "module.M24.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 140,
-      "uniqueEnglishTeachingWords": 48,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1841,9 +1841,9 @@
       "chapter": "module.M24.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 146,
-      "uniqueEnglishTeachingWords": 54,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1852,9 +1852,9 @@
       "chapter": "module.M24.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 146,
-      "uniqueEnglishTeachingWords": 54,
-      "exercises": 2,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1863,9 +1863,9 @@
       "chapter": "module.M25.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 156,
-      "uniqueEnglishTeachingWords": 59,
-      "exercises": 2,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1874,9 +1874,9 @@
       "chapter": "module.M25.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 154,
-      "uniqueEnglishTeachingWords": 57,
-      "exercises": 2,
+      "englishTeachingWords": 265,
+      "uniqueEnglishTeachingWords": 265,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1885,9 +1885,9 @@
       "chapter": "module.M25.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 166,
-      "uniqueEnglishTeachingWords": 69,
-      "exercises": 2,
+      "englishTeachingWords": 273,
+      "uniqueEnglishTeachingWords": 273,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1896,9 +1896,9 @@
       "chapter": "module.M25.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 158,
-      "uniqueEnglishTeachingWords": 61,
-      "exercises": 2,
+      "englishTeachingWords": 262,
+      "uniqueEnglishTeachingWords": 262,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1907,9 +1907,9 @@
       "chapter": "module.M25.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 153,
-      "uniqueEnglishTeachingWords": 56,
-      "exercises": 2,
+      "englishTeachingWords": 257,
+      "uniqueEnglishTeachingWords": 257,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1918,9 +1918,9 @@
       "chapter": "module.M25.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 161,
-      "uniqueEnglishTeachingWords": 64,
-      "exercises": 2,
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1929,9 +1929,9 @@
       "chapter": "module.M26.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 151,
-      "uniqueEnglishTeachingWords": 52,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1940,9 +1940,9 @@
       "chapter": "module.M26.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 165,
-      "uniqueEnglishTeachingWords": 66,
-      "exercises": 2,
+      "englishTeachingWords": 272,
+      "uniqueEnglishTeachingWords": 272,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1951,9 +1951,9 @@
       "chapter": "module.M26.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 160,
-      "uniqueEnglishTeachingWords": 61,
-      "exercises": 2,
+      "englishTeachingWords": 264,
+      "uniqueEnglishTeachingWords": 264,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1962,9 +1962,9 @@
       "chapter": "module.M26.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 158,
-      "uniqueEnglishTeachingWords": 59,
-      "exercises": 2,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1973,9 +1973,9 @@
       "chapter": "module.M26.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 60,
-      "exercises": 2,
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1984,9 +1984,9 @@
       "chapter": "module.M26.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 159,
-      "uniqueEnglishTeachingWords": 60,
-      "exercises": 2,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -1995,9 +1995,9 @@
       "chapter": "module.P01.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 220,
-      "uniqueEnglishTeachingWords": 105,
-      "exercises": 2,
+      "englishTeachingWords": 303,
+      "uniqueEnglishTeachingWords": 303,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2006,9 +2006,9 @@
       "chapter": "module.P01.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 228,
-      "uniqueEnglishTeachingWords": 113,
-      "exercises": 2,
+      "englishTeachingWords": 326,
+      "uniqueEnglishTeachingWords": 326,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2017,9 +2017,9 @@
       "chapter": "module.P01.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 225,
-      "uniqueEnglishTeachingWords": 110,
-      "exercises": 2,
+      "englishTeachingWords": 321,
+      "uniqueEnglishTeachingWords": 321,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2028,9 +2028,9 @@
       "chapter": "module.P01.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 219,
-      "uniqueEnglishTeachingWords": 104,
-      "exercises": 2,
+      "englishTeachingWords": 316,
+      "uniqueEnglishTeachingWords": 316,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2039,9 +2039,9 @@
       "chapter": "module.P01.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 226,
-      "uniqueEnglishTeachingWords": 111,
-      "exercises": 2,
+      "englishTeachingWords": 324,
+      "uniqueEnglishTeachingWords": 324,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2050,9 +2050,9 @@
       "chapter": "module.P01.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 225,
-      "uniqueEnglishTeachingWords": 110,
-      "exercises": 2,
+      "englishTeachingWords": 316,
+      "uniqueEnglishTeachingWords": 316,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2061,9 +2061,9 @@
       "chapter": "module.P02.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 228,
-      "uniqueEnglishTeachingWords": 75,
-      "exercises": 2,
+      "englishTeachingWords": 289,
+      "uniqueEnglishTeachingWords": 289,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2072,9 +2072,9 @@
       "chapter": "module.P02.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 233,
-      "uniqueEnglishTeachingWords": 80,
-      "exercises": 2,
+      "englishTeachingWords": 282,
+      "uniqueEnglishTeachingWords": 282,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2083,9 +2083,9 @@
       "chapter": "module.P02.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 240,
-      "uniqueEnglishTeachingWords": 87,
-      "exercises": 2,
+      "englishTeachingWords": 295,
+      "uniqueEnglishTeachingWords": 295,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2094,9 +2094,9 @@
       "chapter": "module.P02.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 239,
-      "uniqueEnglishTeachingWords": 86,
-      "exercises": 2,
+      "englishTeachingWords": 288,
+      "uniqueEnglishTeachingWords": 288,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2105,9 +2105,9 @@
       "chapter": "module.P02.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 239,
-      "uniqueEnglishTeachingWords": 86,
-      "exercises": 2,
+      "englishTeachingWords": 298,
+      "uniqueEnglishTeachingWords": 298,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2116,9 +2116,9 @@
       "chapter": "module.P02.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 248,
-      "uniqueEnglishTeachingWords": 95,
-      "exercises": 2,
+      "englishTeachingWords": 294,
+      "uniqueEnglishTeachingWords": 294,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2127,9 +2127,9 @@
       "chapter": "module.P03.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 222,
-      "uniqueEnglishTeachingWords": 70,
-      "exercises": 2,
+      "englishTeachingWords": 262,
+      "uniqueEnglishTeachingWords": 262,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2138,9 +2138,9 @@
       "chapter": "module.P03.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 236,
-      "uniqueEnglishTeachingWords": 84,
-      "exercises": 2,
+      "englishTeachingWords": 293,
+      "uniqueEnglishTeachingWords": 293,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2149,9 +2149,9 @@
       "chapter": "module.P03.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 229,
-      "uniqueEnglishTeachingWords": 77,
-      "exercises": 2,
+      "englishTeachingWords": 284,
+      "uniqueEnglishTeachingWords": 284,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2160,9 +2160,9 @@
       "chapter": "module.P03.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 238,
-      "uniqueEnglishTeachingWords": 86,
-      "exercises": 2,
+      "englishTeachingWords": 289,
+      "uniqueEnglishTeachingWords": 289,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2171,9 +2171,9 @@
       "chapter": "module.P03.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 253,
-      "uniqueEnglishTeachingWords": 101,
-      "exercises": 2,
+      "englishTeachingWords": 302,
+      "uniqueEnglishTeachingWords": 302,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2182,9 +2182,9 @@
       "chapter": "module.P03.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 247,
-      "uniqueEnglishTeachingWords": 95,
-      "exercises": 2,
+      "englishTeachingWords": 305,
+      "uniqueEnglishTeachingWords": 305,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2193,9 +2193,9 @@
       "chapter": "module.P04.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 249,
-      "uniqueEnglishTeachingWords": 72,
-      "exercises": 2,
+      "englishTeachingWords": 240,
+      "uniqueEnglishTeachingWords": 240,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2204,9 +2204,9 @@
       "chapter": "module.P04.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 244,
-      "uniqueEnglishTeachingWords": 67,
-      "exercises": 2,
+      "englishTeachingWords": 239,
+      "uniqueEnglishTeachingWords": 239,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2215,9 +2215,9 @@
       "chapter": "module.P04.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 253,
-      "uniqueEnglishTeachingWords": 76,
-      "exercises": 2,
+      "englishTeachingWords": 242,
+      "uniqueEnglishTeachingWords": 242,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2226,9 +2226,9 @@
       "chapter": "module.P04.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 248,
-      "uniqueEnglishTeachingWords": 71,
-      "exercises": 2,
+      "englishTeachingWords": 239,
+      "uniqueEnglishTeachingWords": 239,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2237,9 +2237,9 @@
       "chapter": "module.P04.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 254,
-      "uniqueEnglishTeachingWords": 77,
-      "exercises": 2,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2248,9 +2248,9 @@
       "chapter": "module.P04.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 269,
-      "uniqueEnglishTeachingWords": 92,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2259,9 +2259,9 @@
       "chapter": "module.P05.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 245,
-      "uniqueEnglishTeachingWords": 68,
-      "exercises": 2,
+      "englishTeachingWords": 238,
+      "uniqueEnglishTeachingWords": 238,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2270,9 +2270,9 @@
       "chapter": "module.P05.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 255,
-      "uniqueEnglishTeachingWords": 78,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2281,9 +2281,9 @@
       "chapter": "module.P05.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 252,
-      "uniqueEnglishTeachingWords": 75,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2292,9 +2292,9 @@
       "chapter": "module.P05.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 248,
-      "uniqueEnglishTeachingWords": 71,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2303,9 +2303,9 @@
       "chapter": "module.P05.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 256,
-      "uniqueEnglishTeachingWords": 79,
-      "exercises": 2,
+      "englishTeachingWords": 248,
+      "uniqueEnglishTeachingWords": 248,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2314,9 +2314,9 @@
       "chapter": "module.P05.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 256,
-      "uniqueEnglishTeachingWords": 79,
-      "exercises": 2,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2325,9 +2325,9 @@
       "chapter": "module.P06.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 261,
-      "uniqueEnglishTeachingWords": 84,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2336,9 +2336,9 @@
       "chapter": "module.P06.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 252,
-      "uniqueEnglishTeachingWords": 75,
-      "exercises": 2,
+      "englishTeachingWords": 243,
+      "uniqueEnglishTeachingWords": 243,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2347,9 +2347,9 @@
       "chapter": "module.P06.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 264,
-      "uniqueEnglishTeachingWords": 87,
-      "exercises": 2,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2358,9 +2358,9 @@
       "chapter": "module.P06.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 259,
-      "uniqueEnglishTeachingWords": 82,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2369,9 +2369,9 @@
       "chapter": "module.P06.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 250,
-      "uniqueEnglishTeachingWords": 73,
-      "exercises": 2,
+      "englishTeachingWords": 233,
+      "uniqueEnglishTeachingWords": 233,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2380,9 +2380,9 @@
       "chapter": "module.P06.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 245,
-      "uniqueEnglishTeachingWords": 68,
-      "exercises": 2,
+      "englishTeachingWords": 240,
+      "uniqueEnglishTeachingWords": 240,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2391,9 +2391,9 @@
       "chapter": "module.P07.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 249,
-      "uniqueEnglishTeachingWords": 72,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2402,9 +2402,9 @@
       "chapter": "module.P07.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 254,
-      "uniqueEnglishTeachingWords": 77,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2413,9 +2413,9 @@
       "chapter": "module.P07.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 258,
-      "uniqueEnglishTeachingWords": 81,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2424,9 +2424,9 @@
       "chapter": "module.P07.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 266,
-      "uniqueEnglishTeachingWords": 89,
-      "exercises": 2,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2435,9 +2435,9 @@
       "chapter": "module.P07.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 256,
-      "uniqueEnglishTeachingWords": 79,
-      "exercises": 2,
+      "englishTeachingWords": 248,
+      "uniqueEnglishTeachingWords": 248,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2446,9 +2446,9 @@
       "chapter": "module.P07.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 253,
-      "uniqueEnglishTeachingWords": 76,
-      "exercises": 2,
+      "englishTeachingWords": 241,
+      "uniqueEnglishTeachingWords": 241,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2457,9 +2457,9 @@
       "chapter": "module.P08.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 269,
-      "uniqueEnglishTeachingWords": 92,
-      "exercises": 2,
+      "englishTeachingWords": 257,
+      "uniqueEnglishTeachingWords": 257,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2468,9 +2468,9 @@
       "chapter": "module.P08.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 271,
-      "uniqueEnglishTeachingWords": 94,
-      "exercises": 2,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2479,9 +2479,9 @@
       "chapter": "module.P08.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 267,
-      "uniqueEnglishTeachingWords": 90,
-      "exercises": 2,
+      "englishTeachingWords": 245,
+      "uniqueEnglishTeachingWords": 245,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2490,9 +2490,9 @@
       "chapter": "module.P08.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 274,
-      "uniqueEnglishTeachingWords": 97,
-      "exercises": 2,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2501,9 +2501,9 @@
       "chapter": "module.P08.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 273,
-      "uniqueEnglishTeachingWords": 96,
-      "exercises": 2,
+      "englishTeachingWords": 251,
+      "uniqueEnglishTeachingWords": 251,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2512,9 +2512,9 @@
       "chapter": "module.P08.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 267,
-      "uniqueEnglishTeachingWords": 90,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2523,9 +2523,9 @@
       "chapter": "module.P09.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 277,
-      "uniqueEnglishTeachingWords": 100,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2534,9 +2534,9 @@
       "chapter": "module.P09.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 278,
-      "uniqueEnglishTeachingWords": 101,
-      "exercises": 2,
+      "englishTeachingWords": 260,
+      "uniqueEnglishTeachingWords": 260,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2545,9 +2545,9 @@
       "chapter": "module.P09.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 274,
-      "uniqueEnglishTeachingWords": 97,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2556,9 +2556,9 @@
       "chapter": "module.P09.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 272,
-      "uniqueEnglishTeachingWords": 95,
-      "exercises": 2,
+      "englishTeachingWords": 251,
+      "uniqueEnglishTeachingWords": 251,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2567,9 +2567,9 @@
       "chapter": "module.P09.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 279,
-      "uniqueEnglishTeachingWords": 102,
-      "exercises": 2,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2578,9 +2578,9 @@
       "chapter": "module.P09.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 270,
-      "uniqueEnglishTeachingWords": 93,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2589,9 +2589,9 @@
       "chapter": "module.P10.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 267,
-      "uniqueEnglishTeachingWords": 90,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2600,9 +2600,9 @@
       "chapter": "module.P10.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 269,
-      "uniqueEnglishTeachingWords": 92,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2611,9 +2611,9 @@
       "chapter": "module.P10.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 265,
-      "uniqueEnglishTeachingWords": 88,
-      "exercises": 2,
+      "englishTeachingWords": 243,
+      "uniqueEnglishTeachingWords": 243,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2622,9 +2622,9 @@
       "chapter": "module.P10.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 265,
-      "uniqueEnglishTeachingWords": 88,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2633,9 +2633,9 @@
       "chapter": "module.P10.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 274,
-      "uniqueEnglishTeachingWords": 97,
-      "exercises": 2,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2644,9 +2644,9 @@
       "chapter": "module.P10.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 280,
-      "uniqueEnglishTeachingWords": 103,
-      "exercises": 2,
+      "englishTeachingWords": 270,
+      "uniqueEnglishTeachingWords": 270,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2655,9 +2655,9 @@
       "chapter": "module.P11.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 282,
-      "uniqueEnglishTeachingWords": 105,
-      "exercises": 2,
+      "englishTeachingWords": 269,
+      "uniqueEnglishTeachingWords": 269,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2666,9 +2666,9 @@
       "chapter": "module.P11.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 268,
-      "uniqueEnglishTeachingWords": 91,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2677,9 +2677,9 @@
       "chapter": "module.P11.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 271,
-      "uniqueEnglishTeachingWords": 94,
-      "exercises": 2,
+      "englishTeachingWords": 242,
+      "uniqueEnglishTeachingWords": 242,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2688,9 +2688,9 @@
       "chapter": "module.P11.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 289,
-      "uniqueEnglishTeachingWords": 112,
-      "exercises": 2,
+      "englishTeachingWords": 267,
+      "uniqueEnglishTeachingWords": 267,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2699,9 +2699,9 @@
       "chapter": "module.P11.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 279,
-      "uniqueEnglishTeachingWords": 102,
-      "exercises": 2,
+      "englishTeachingWords": 260,
+      "uniqueEnglishTeachingWords": 260,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2710,9 +2710,9 @@
       "chapter": "module.P11.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 269,
-      "uniqueEnglishTeachingWords": 92,
-      "exercises": 2,
+      "englishTeachingWords": 242,
+      "uniqueEnglishTeachingWords": 242,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2721,9 +2721,9 @@
       "chapter": "module.P12.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 267,
-      "uniqueEnglishTeachingWords": 90,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2732,9 +2732,9 @@
       "chapter": "module.P12.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 265,
-      "uniqueEnglishTeachingWords": 88,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2743,9 +2743,9 @@
       "chapter": "module.P12.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 267,
-      "uniqueEnglishTeachingWords": 90,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2754,9 +2754,9 @@
       "chapter": "module.P12.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 281,
-      "uniqueEnglishTeachingWords": 104,
-      "exercises": 2,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2765,9 +2765,9 @@
       "chapter": "module.P12.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 271,
-      "uniqueEnglishTeachingWords": 94,
-      "exercises": 2,
+      "englishTeachingWords": 245,
+      "uniqueEnglishTeachingWords": 245,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2776,9 +2776,9 @@
       "chapter": "module.P12.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 268,
-      "uniqueEnglishTeachingWords": 91,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2787,9 +2787,9 @@
       "chapter": "module.P13.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 271,
-      "uniqueEnglishTeachingWords": 94,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2798,9 +2798,9 @@
       "chapter": "module.P13.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 281,
-      "uniqueEnglishTeachingWords": 104,
-      "exercises": 2,
+      "englishTeachingWords": 265,
+      "uniqueEnglishTeachingWords": 265,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2809,9 +2809,9 @@
       "chapter": "module.P13.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 274,
-      "uniqueEnglishTeachingWords": 97,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2820,9 +2820,9 @@
       "chapter": "module.P13.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 274,
-      "uniqueEnglishTeachingWords": 97,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2831,9 +2831,9 @@
       "chapter": "module.P13.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 281,
-      "uniqueEnglishTeachingWords": 104,
-      "exercises": 2,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2842,9 +2842,9 @@
       "chapter": "module.P13.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 284,
-      "uniqueEnglishTeachingWords": 107,
-      "exercises": 2,
+      "englishTeachingWords": 269,
+      "uniqueEnglishTeachingWords": 269,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2853,9 +2853,9 @@
       "chapter": "module.P14.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 261,
-      "uniqueEnglishTeachingWords": 84,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2864,9 +2864,9 @@
       "chapter": "module.P14.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 269,
-      "uniqueEnglishTeachingWords": 92,
-      "exercises": 2,
+      "englishTeachingWords": 248,
+      "uniqueEnglishTeachingWords": 248,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2875,9 +2875,9 @@
       "chapter": "module.P14.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 271,
-      "uniqueEnglishTeachingWords": 94,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2886,9 +2886,9 @@
       "chapter": "module.P14.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 270,
-      "uniqueEnglishTeachingWords": 93,
-      "exercises": 2,
+      "englishTeachingWords": 260,
+      "uniqueEnglishTeachingWords": 260,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2897,9 +2897,9 @@
       "chapter": "module.P14.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 270,
-      "uniqueEnglishTeachingWords": 93,
-      "exercises": 2,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2908,9 +2908,9 @@
       "chapter": "module.P14.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 277,
-      "uniqueEnglishTeachingWords": 100,
-      "exercises": 2,
+      "englishTeachingWords": 265,
+      "uniqueEnglishTeachingWords": 265,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2919,9 +2919,9 @@
       "chapter": "module.C01.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 341,
-      "uniqueEnglishTeachingWords": 273,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2930,9 +2930,9 @@
       "chapter": "module.C01.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 346,
-      "uniqueEnglishTeachingWords": 278,
-      "exercises": 2,
+      "englishTeachingWords": 251,
+      "uniqueEnglishTeachingWords": 251,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2941,9 +2941,9 @@
       "chapter": "module.C01.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 340,
-      "uniqueEnglishTeachingWords": 272,
-      "exercises": 2,
+      "englishTeachingWords": 245,
+      "uniqueEnglishTeachingWords": 245,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2952,9 +2952,9 @@
       "chapter": "module.C01.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 335,
-      "uniqueEnglishTeachingWords": 267,
-      "exercises": 2,
+      "englishTeachingWords": 240,
+      "uniqueEnglishTeachingWords": 240,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2963,9 +2963,9 @@
       "chapter": "module.C01.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 339,
-      "uniqueEnglishTeachingWords": 271,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2974,9 +2974,9 @@
       "chapter": "module.C01.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 341,
-      "uniqueEnglishTeachingWords": 273,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2985,9 +2985,9 @@
       "chapter": "module.C02.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 334,
-      "uniqueEnglishTeachingWords": 266,
-      "exercises": 2,
+      "englishTeachingWords": 239,
+      "uniqueEnglishTeachingWords": 239,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -2996,9 +2996,9 @@
       "chapter": "module.C02.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 329,
-      "uniqueEnglishTeachingWords": 261,
-      "exercises": 2,
+      "englishTeachingWords": 234,
+      "uniqueEnglishTeachingWords": 234,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3007,9 +3007,9 @@
       "chapter": "module.C02.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 339,
-      "uniqueEnglishTeachingWords": 271,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3018,9 +3018,9 @@
       "chapter": "module.C02.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 342,
-      "uniqueEnglishTeachingWords": 274,
-      "exercises": 2,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3029,9 +3029,9 @@
       "chapter": "module.C02.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 348,
-      "uniqueEnglishTeachingWords": 280,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3040,9 +3040,9 @@
       "chapter": "module.C02.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 341,
-      "uniqueEnglishTeachingWords": 273,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3051,9 +3051,9 @@
       "chapter": "module.C03.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 339,
-      "uniqueEnglishTeachingWords": 271,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3062,9 +3062,9 @@
       "chapter": "module.C03.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 339,
-      "uniqueEnglishTeachingWords": 271,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3073,9 +3073,9 @@
       "chapter": "module.C03.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 350,
-      "uniqueEnglishTeachingWords": 282,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3084,9 +3084,9 @@
       "chapter": "module.C03.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 337,
-      "uniqueEnglishTeachingWords": 269,
-      "exercises": 2,
+      "englishTeachingWords": 242,
+      "uniqueEnglishTeachingWords": 242,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3095,9 +3095,9 @@
       "chapter": "module.C03.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 344,
-      "uniqueEnglishTeachingWords": 276,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3106,9 +3106,9 @@
       "chapter": "module.C03.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 344,
-      "uniqueEnglishTeachingWords": 276,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3117,9 +3117,9 @@
       "chapter": "module.C04.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 354,
-      "uniqueEnglishTeachingWords": 286,
-      "exercises": 2,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3128,9 +3128,9 @@
       "chapter": "module.C04.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 319,
-      "uniqueEnglishTeachingWords": 251,
-      "exercises": 2,
+      "englishTeachingWords": 224,
+      "uniqueEnglishTeachingWords": 224,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3139,9 +3139,9 @@
       "chapter": "module.C04.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 358,
-      "uniqueEnglishTeachingWords": 290,
-      "exercises": 2,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3150,9 +3150,9 @@
       "chapter": "module.C04.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 345,
-      "uniqueEnglishTeachingWords": 277,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3161,9 +3161,9 @@
       "chapter": "module.C04.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 353,
-      "uniqueEnglishTeachingWords": 285,
-      "exercises": 2,
+      "englishTeachingWords": 258,
+      "uniqueEnglishTeachingWords": 258,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3172,9 +3172,9 @@
       "chapter": "module.C04.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 351,
-      "uniqueEnglishTeachingWords": 283,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3183,9 +3183,9 @@
       "chapter": "module.C05.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 343,
-      "uniqueEnglishTeachingWords": 275,
-      "exercises": 2,
+      "englishTeachingWords": 248,
+      "uniqueEnglishTeachingWords": 248,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3194,9 +3194,9 @@
       "chapter": "module.C05.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 341,
-      "uniqueEnglishTeachingWords": 273,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3205,9 +3205,9 @@
       "chapter": "module.C05.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 347,
-      "uniqueEnglishTeachingWords": 279,
-      "exercises": 2,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3216,9 +3216,9 @@
       "chapter": "module.C05.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 335,
-      "uniqueEnglishTeachingWords": 267,
-      "exercises": 2,
+      "englishTeachingWords": 240,
+      "uniqueEnglishTeachingWords": 240,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3227,9 +3227,9 @@
       "chapter": "module.C05.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 350,
-      "uniqueEnglishTeachingWords": 282,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3238,9 +3238,9 @@
       "chapter": "module.C05.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 341,
-      "uniqueEnglishTeachingWords": 273,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3249,9 +3249,9 @@
       "chapter": "module.C06.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 340,
-      "uniqueEnglishTeachingWords": 272,
-      "exercises": 2,
+      "englishTeachingWords": 245,
+      "uniqueEnglishTeachingWords": 245,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3260,9 +3260,9 @@
       "chapter": "module.C06.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 339,
-      "uniqueEnglishTeachingWords": 271,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3271,9 +3271,9 @@
       "chapter": "module.C06.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 346,
-      "uniqueEnglishTeachingWords": 278,
-      "exercises": 2,
+      "englishTeachingWords": 251,
+      "uniqueEnglishTeachingWords": 251,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3282,9 +3282,9 @@
       "chapter": "module.C06.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 332,
-      "uniqueEnglishTeachingWords": 264,
-      "exercises": 2,
+      "englishTeachingWords": 237,
+      "uniqueEnglishTeachingWords": 237,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3293,9 +3293,9 @@
       "chapter": "module.C06.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 350,
-      "uniqueEnglishTeachingWords": 282,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3304,9 +3304,9 @@
       "chapter": "module.C06.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 345,
-      "uniqueEnglishTeachingWords": 277,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3315,9 +3315,9 @@
       "chapter": "module.C07.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 337,
-      "uniqueEnglishTeachingWords": 269,
-      "exercises": 2,
+      "englishTeachingWords": 242,
+      "uniqueEnglishTeachingWords": 242,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3326,9 +3326,9 @@
       "chapter": "module.C07.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 350,
-      "uniqueEnglishTeachingWords": 282,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3337,9 +3337,9 @@
       "chapter": "module.C07.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 350,
-      "uniqueEnglishTeachingWords": 282,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3348,9 +3348,9 @@
       "chapter": "module.C07.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 342,
-      "uniqueEnglishTeachingWords": 274,
-      "exercises": 2,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3359,9 +3359,9 @@
       "chapter": "module.C07.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 338,
-      "uniqueEnglishTeachingWords": 270,
-      "exercises": 2,
+      "englishTeachingWords": 243,
+      "uniqueEnglishTeachingWords": 243,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3370,9 +3370,9 @@
       "chapter": "module.C07.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 351,
-      "uniqueEnglishTeachingWords": 283,
-      "exercises": 2,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3381,9 +3381,9 @@
       "chapter": "module.C08.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 358,
-      "uniqueEnglishTeachingWords": 290,
-      "exercises": 2,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3392,9 +3392,9 @@
       "chapter": "module.C08.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 355,
-      "uniqueEnglishTeachingWords": 287,
-      "exercises": 2,
+      "englishTeachingWords": 260,
+      "uniqueEnglishTeachingWords": 260,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3403,9 +3403,9 @@
       "chapter": "module.C08.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 349,
-      "uniqueEnglishTeachingWords": 281,
-      "exercises": 2,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3414,9 +3414,9 @@
       "chapter": "module.C08.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 348,
-      "uniqueEnglishTeachingWords": 280,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3425,9 +3425,9 @@
       "chapter": "module.C08.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 352,
-      "uniqueEnglishTeachingWords": 284,
-      "exercises": 2,
+      "englishTeachingWords": 257,
+      "uniqueEnglishTeachingWords": 257,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3436,9 +3436,9 @@
       "chapter": "module.C08.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 358,
-      "uniqueEnglishTeachingWords": 290,
-      "exercises": 2,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3447,9 +3447,9 @@
       "chapter": "module.C09.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 348,
-      "uniqueEnglishTeachingWords": 280,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3458,9 +3458,9 @@
       "chapter": "module.C09.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 342,
-      "uniqueEnglishTeachingWords": 274,
-      "exercises": 2,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3469,9 +3469,9 @@
       "chapter": "module.C09.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 345,
-      "uniqueEnglishTeachingWords": 277,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3480,9 +3480,9 @@
       "chapter": "module.C09.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 345,
-      "uniqueEnglishTeachingWords": 277,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3491,9 +3491,9 @@
       "chapter": "module.C09.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 345,
-      "uniqueEnglishTeachingWords": 277,
-      "exercises": 2,
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3502,9 +3502,9 @@
       "chapter": "module.C09.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 352,
-      "uniqueEnglishTeachingWords": 284,
-      "exercises": 2,
+      "englishTeachingWords": 257,
+      "uniqueEnglishTeachingWords": 257,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3513,9 +3513,9 @@
       "chapter": "module.C10.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 358,
-      "uniqueEnglishTeachingWords": 290,
-      "exercises": 2,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3524,9 +3524,9 @@
       "chapter": "module.C10.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 368,
-      "uniqueEnglishTeachingWords": 300,
-      "exercises": 2,
+      "englishTeachingWords": 273,
+      "uniqueEnglishTeachingWords": 273,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3535,9 +3535,9 @@
       "chapter": "module.C10.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 341,
-      "uniqueEnglishTeachingWords": 273,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3546,9 +3546,9 @@
       "chapter": "module.C10.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 356,
-      "uniqueEnglishTeachingWords": 288,
-      "exercises": 2,
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3557,9 +3557,9 @@
       "chapter": "module.C10.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 347,
-      "uniqueEnglishTeachingWords": 279,
-      "exercises": 2,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3568,9 +3568,9 @@
       "chapter": "module.C10.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 361,
-      "uniqueEnglishTeachingWords": 293,
-      "exercises": 2,
+      "englishTeachingWords": 266,
+      "uniqueEnglishTeachingWords": 266,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3579,9 +3579,9 @@
       "chapter": "module.B01.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 348,
-      "uniqueEnglishTeachingWords": 280,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3590,9 +3590,9 @@
       "chapter": "module.B01.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 350,
-      "uniqueEnglishTeachingWords": 282,
-      "exercises": 2,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3601,9 +3601,9 @@
       "chapter": "module.B01.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 331,
-      "uniqueEnglishTeachingWords": 263,
-      "exercises": 2,
+      "englishTeachingWords": 236,
+      "uniqueEnglishTeachingWords": 236,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3612,9 +3612,9 @@
       "chapter": "module.B01.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 338,
-      "uniqueEnglishTeachingWords": 270,
-      "exercises": 2,
+      "englishTeachingWords": 243,
+      "uniqueEnglishTeachingWords": 243,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3623,9 +3623,9 @@
       "chapter": "module.B01.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 348,
-      "uniqueEnglishTeachingWords": 280,
-      "exercises": 2,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3634,9 +3634,9 @@
       "chapter": "module.B01.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 349,
-      "uniqueEnglishTeachingWords": 281,
-      "exercises": 2,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3645,9 +3645,9 @@
       "chapter": "module.B02.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 341,
-      "uniqueEnglishTeachingWords": 273,
-      "exercises": 2,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3656,9 +3656,9 @@
       "chapter": "module.B02.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 346,
-      "uniqueEnglishTeachingWords": 278,
-      "exercises": 2,
+      "englishTeachingWords": 251,
+      "uniqueEnglishTeachingWords": 251,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3667,9 +3667,9 @@
       "chapter": "module.B02.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 352,
-      "uniqueEnglishTeachingWords": 284,
-      "exercises": 2,
+      "englishTeachingWords": 257,
+      "uniqueEnglishTeachingWords": 257,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3678,9 +3678,9 @@
       "chapter": "module.B02.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 338,
-      "uniqueEnglishTeachingWords": 270,
-      "exercises": 2,
+      "englishTeachingWords": 243,
+      "uniqueEnglishTeachingWords": 243,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3689,9 +3689,9 @@
       "chapter": "module.B02.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 349,
-      "uniqueEnglishTeachingWords": 281,
-      "exercises": 2,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3700,9 +3700,9 @@
       "chapter": "module.B02.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 344,
-      "uniqueEnglishTeachingWords": 276,
-      "exercises": 2,
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3711,9 +3711,9 @@
       "chapter": "module.B03.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 353,
-      "uniqueEnglishTeachingWords": 285,
-      "exercises": 2,
+      "englishTeachingWords": 258,
+      "uniqueEnglishTeachingWords": 258,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3722,9 +3722,9 @@
       "chapter": "module.B03.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 339,
-      "uniqueEnglishTeachingWords": 271,
-      "exercises": 2,
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3733,9 +3733,9 @@
       "chapter": "module.B03.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 353,
-      "uniqueEnglishTeachingWords": 285,
-      "exercises": 2,
+      "englishTeachingWords": 258,
+      "uniqueEnglishTeachingWords": 258,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3744,9 +3744,9 @@
       "chapter": "module.B03.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 368,
-      "uniqueEnglishTeachingWords": 300,
-      "exercises": 2,
+      "englishTeachingWords": 273,
+      "uniqueEnglishTeachingWords": 273,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3755,9 +3755,9 @@
       "chapter": "module.B03.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 357,
-      "uniqueEnglishTeachingWords": 289,
-      "exercises": 2,
+      "englishTeachingWords": 262,
+      "uniqueEnglishTeachingWords": 262,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -3766,472 +3766,472 @@
       "chapter": "module.B03.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 355,
-      "uniqueEnglishTeachingWords": 287,
-      "exercises": 2,
+      "englishTeachingWords": 260,
+      "uniqueEnglishTeachingWords": 260,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
       "module": "B04.01",
       "title": "Evolutionary mechanisms",
-      "chapter": null,
+      "chapter": "module.B04.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B04.02",
       "title": "Phylogeny and comparative evidence",
-      "chapter": null,
+      "chapter": "module.B04.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 258,
+      "uniqueEnglishTeachingWords": 258,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B04.03",
       "title": "Population dynamics",
-      "chapter": null,
+      "chapter": "module.B04.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B04.04",
       "title": "Communities and ecosystems",
-      "chapter": null,
+      "chapter": "module.B04.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B04.05",
       "title": "Behavioral ecology",
-      "chapter": null,
+      "chapter": "module.B04.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B04.06",
       "title": "Biodiversity and conservation reasoning",
-      "chapter": null,
+      "chapter": "module.B04.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B05.01",
       "title": "Plant diversity and life cycles",
-      "chapter": null,
+      "chapter": "module.B05.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 250,
+      "uniqueEnglishTeachingWords": 250,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B05.02",
       "title": "Tissues, growth and development",
-      "chapter": null,
+      "chapter": "module.B05.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 248,
+      "uniqueEnglishTeachingWords": 248,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B05.03",
       "title": "Water and mineral transport",
-      "chapter": null,
+      "chapter": "module.B05.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 262,
+      "uniqueEnglishTeachingWords": 262,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B05.04",
       "title": "Photosynthesis and carbon allocation",
-      "chapter": null,
+      "chapter": "module.B05.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B05.05",
       "title": "Hormones and environmental responses",
-      "chapter": null,
+      "chapter": "module.B05.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 249,
+      "uniqueEnglishTeachingWords": 249,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B05.06",
       "title": "Plant experiments and adaptations",
-      "chapter": null,
+      "chapter": "module.B05.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B06.01",
       "title": "Animal diversity and body plans",
-      "chapter": null,
+      "chapter": "module.B06.01",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B06.02",
       "title": "Homeostasis and feedback",
-      "chapter": null,
+      "chapter": "module.B06.02",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 260,
+      "uniqueEnglishTeachingWords": 260,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B06.03",
       "title": "Transport, respiration and nutrition",
-      "chapter": null,
+      "chapter": "module.B06.03",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B06.04",
       "title": "Excretion and osmoregulation",
-      "chapter": null,
+      "chapter": "module.B06.04",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 242,
+      "uniqueEnglishTeachingWords": 242,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B06.05",
       "title": "Neural and endocrine systems",
-      "chapter": null,
+      "chapter": "module.B06.05",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B06.06",
       "title": "Reproduction and integrated physiology",
-      "chapter": null,
+      "chapter": "module.B06.06",
       "bilingualTitle": true,
       "conceptTargets": 3,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "englishTeachingWords": 244,
+      "uniqueEnglishTeachingWords": 244,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B07.01",
       "title": "Microbial diversity and growth",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B07.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 245,
+      "uniqueEnglishTeachingWords": 245,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B07.02",
       "title": "Viruses and host interactions",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B07.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 257,
+      "uniqueEnglishTeachingWords": 257,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B07.03",
       "title": "Microbial ecology and evolution",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B07.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 253,
+      "uniqueEnglishTeachingWords": 253,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B07.04",
       "title": "Innate immunity",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B07.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B07.05",
       "title": "Adaptive immunity",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B07.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 256,
+      "uniqueEnglishTeachingWords": 256,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B07.06",
       "title": "Experimental and population-level immune evidence",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B07.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 261,
+      "uniqueEnglishTeachingWords": 261,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B08.01",
       "title": "Pattern formation and cell fate",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B08.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 248,
+      "uniqueEnglishTeachingWords": 248,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B08.02",
       "title": "Gene regulation in development",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B08.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 263,
+      "uniqueEnglishTeachingWords": 263,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B08.03",
       "title": "Neural cells and electrical signaling",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B08.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B08.04",
       "title": "Synapses and circuits",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B08.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 246,
+      "uniqueEnglishTeachingWords": 246,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B08.05",
       "title": "Sensory systems and behavior",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B08.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 259,
+      "uniqueEnglishTeachingWords": 259,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B08.06",
       "title": "Experimental models and ethical interpretation",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B08.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 258,
+      "uniqueEnglishTeachingWords": 258,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B09.01",
       "title": "Microscopy, observation and sampling",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B09.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 251,
+      "uniqueEnglishTeachingWords": 251,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B09.02",
       "title": "Experimental controls and reproducibility",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B09.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 257,
+      "uniqueEnglishTeachingWords": 257,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B09.03",
       "title": "Biostatistics bridge and data visualization",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B09.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 247,
+      "uniqueEnglishTeachingWords": 247,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B09.04",
       "title": "Sequence alignment and databases",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B09.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B09.05",
       "title": "Phylogenetic and omics interpretation",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B09.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 251,
+      "uniqueEnglishTeachingWords": 251,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B09.06",
       "title": "Integrated experimental report",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B09.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B10.01",
       "title": "Cellular and molecular evidence problems",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B10.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 254,
+      "uniqueEnglishTeachingWords": 254,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B10.02",
       "title": "Genetics and evolution synthesis",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B10.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B10.03",
       "title": "Plant and animal physiology problems",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B10.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 252,
+      "uniqueEnglishTeachingWords": 252,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B10.04",
       "title": "Ecology, ethology and classification",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B10.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 239,
+      "uniqueEnglishTeachingWords": 239,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B10.05",
       "title": "Practical images, data and experimental design",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B10.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 255,
+      "uniqueEnglishTeachingWords": 255,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "B10.06",
       "title": "Timed integrated sets",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.B10.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 267,
+      "uniqueEnglishTeachingWords": 267,
+      "exercises": 3,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S01.01",
@@ -4604,7 +4604,7 @@
       "conceptTargets": 3,
       "englishTeachingWords": 209,
       "uniqueEnglishTeachingWords": 209,
-      "exercises": 2,
+      "exercises": 3,
       "editorialReview": "review-pending"
     },
     {
@@ -5424,530 +5424,530 @@
     {
       "module": "S19.01",
       "title": "Threat models and trust boundaries",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S19.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 222,
+      "uniqueEnglishTeachingWords": 222,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S19.02",
       "title": "Cryptographic primitives and protocols",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S19.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 215,
+      "uniqueEnglishTeachingWords": 215,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S19.03",
       "title": "Authentication and authorization",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S19.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 214,
+      "uniqueEnglishTeachingWords": 214,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S19.04",
       "title": "Memory and application security",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S19.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 219,
+      "uniqueEnglishTeachingWords": 219,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S19.05",
       "title": "Network and systems defense",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S19.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 208,
+      "uniqueEnglishTeachingWords": 208,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S19.06",
       "title": "Controlled security analysis",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S19.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 214,
+      "uniqueEnglishTeachingWords": 214,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S20.01",
       "title": "Geometric transformations",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S20.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 207,
+      "uniqueEnglishTeachingWords": 207,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S20.02",
       "title": "Cameras and projection",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S20.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 211,
+      "uniqueEnglishTeachingWords": 211,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S20.03",
       "title": "Rasterization and shading",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S20.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 215,
+      "uniqueEnglishTeachingWords": 215,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S20.04",
       "title": "Curves, surfaces and animation",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S20.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 217,
+      "uniqueEnglishTeachingWords": 217,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S20.05",
       "title": "Ray tracing and numerical issues",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S20.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 220,
+      "uniqueEnglishTeachingWords": 220,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S20.06",
       "title": "Scientific visualization and perception",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S20.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 207,
+      "uniqueEnglishTeachingWords": 207,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S21.01",
       "title": "Human perception and interaction models",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S21.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 205,
+      "uniqueEnglishTeachingWords": 205,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S21.02",
       "title": "User research and task analysis",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S21.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 218,
+      "uniqueEnglishTeachingWords": 218,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S21.03",
       "title": "Information architecture and prototyping",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S21.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 217,
+      "uniqueEnglishTeachingWords": 217,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S21.04",
       "title": "Accessibility and inclusive design",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S21.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 207,
+      "uniqueEnglishTeachingWords": 207,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S21.05",
       "title": "Usability evaluation",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S21.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 213,
+      "uniqueEnglishTeachingWords": 213,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S21.06",
       "title": "Iterative design with evidence",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S21.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 223,
+      "uniqueEnglishTeachingWords": 223,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S22.01",
       "title": "Parallel models and decomposition",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S22.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 208,
+      "uniqueEnglishTeachingWords": 208,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S22.02",
       "title": "Synchronization and memory models",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S22.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 214,
+      "uniqueEnglishTeachingWords": 214,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S22.03",
       "title": "Distributed communication and failure",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S22.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 206,
+      "uniqueEnglishTeachingWords": 206,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S22.04",
       "title": "Replication and consistency",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S22.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 212,
+      "uniqueEnglishTeachingWords": 212,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S22.05",
       "title": "Consensus and coordination",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S22.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 206,
+      "uniqueEnglishTeachingWords": 206,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "S22.06",
       "title": "Performance, reliability and trade-offs",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.S22.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 209,
+      "uniqueEnglishTeachingWords": 209,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X01.01",
       "title": "Reproducible computational notebooks",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X01.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 221,
+      "uniqueEnglishTeachingWords": 221,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X01.02",
       "title": "Numerical-model validation",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X01.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 211,
+      "uniqueEnglishTeachingWords": 211,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X01.03",
       "title": "ODE and physical simulation",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X01.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 224,
+      "uniqueEnglishTeachingWords": 224,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X01.04",
       "title": "Monte Carlo and uncertainty bridges",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X01.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 214,
+      "uniqueEnglishTeachingWords": 214,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X01.05",
       "title": "Data-driven biological or chemical models",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X01.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 223,
+      "uniqueEnglishTeachingWords": 223,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X01.06",
       "title": "Reproducible simulation project",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X01.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 223,
+      "uniqueEnglishTeachingWords": 223,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X02.01",
       "title": "Data provenance and cleaning",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X02.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 217,
+      "uniqueEnglishTeachingWords": 217,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X02.02",
       "title": "Exploratory visualization",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X02.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 209,
+      "uniqueEnglishTeachingWords": 209,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X02.03",
       "title": "Statistical models and diagnostics",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X02.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 208,
+      "uniqueEnglishTeachingWords": 208,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X02.04",
       "title": "Confounding and causal diagrams",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X02.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 213,
+      "uniqueEnglishTeachingWords": 213,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X02.05",
       "title": "Experiments and observational limitations",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X02.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 216,
+      "uniqueEnglishTeachingWords": 216,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X02.06",
       "title": "Reproducible evidence report",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X02.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 216,
+      "uniqueEnglishTeachingWords": 216,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X03.01",
       "title": "Signals and linear systems",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X03.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 218,
+      "uniqueEnglishTeachingWords": 218,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X03.02",
       "title": "Convolution and impulse response",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X03.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 219,
+      "uniqueEnglishTeachingWords": 219,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X03.03",
       "title": "Fourier analysis",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X03.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 215,
+      "uniqueEnglishTeachingWords": 215,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X03.04",
       "title": "Laplace and frequency response",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X03.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 220,
+      "uniqueEnglishTeachingWords": 220,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X03.05",
       "title": "Feedback and stability",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X03.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 225,
+      "uniqueEnglishTeachingWords": 225,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X03.06",
       "title": "Control design and simulation",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X03.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 224,
+      "uniqueEnglishTeachingWords": 224,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X04.01",
       "title": "Question selection and literature reading",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X04.01",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 222,
+      "uniqueEnglishTeachingWords": 222,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X04.02",
       "title": "Prerequisite bridge plan",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X04.02",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 220,
+      "uniqueEnglishTeachingWords": 220,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X04.03",
       "title": "Model or experiment design",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X04.03",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 220,
+      "uniqueEnglishTeachingWords": 220,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X04.04",
       "title": "Implementation and evidence collection",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X04.04",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 219,
+      "uniqueEnglishTeachingWords": 219,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X04.05",
       "title": "Critique, replication and revision",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X04.05",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 218,
+      "uniqueEnglishTeachingWords": 218,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     },
     {
       "module": "X04.06",
       "title": "Bilingual presentation and open questions",
-      "chapter": null,
-      "bilingualTitle": false,
-      "conceptTargets": 0,
-      "englishTeachingWords": 0,
-      "uniqueEnglishTeachingWords": 0,
-      "exercises": 0,
-      "editorialReview": "not-authored"
+      "chapter": "module.X04.06",
+      "bilingualTitle": true,
+      "conceptTargets": 3,
+      "englishTeachingWords": 218,
+      "uniqueEnglishTeachingWords": 218,
+      "exercises": 2,
+      "editorialReview": "review-pending"
     }
   ]
 }

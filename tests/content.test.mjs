@@ -53,6 +53,36 @@ test('actual course and lesson graphs are acyclic with no missing prerequisites'
   assert.equal(topological(blueprint.courses.map(c=>({...c,prerequisites:c.fullRouteReadiness}))).length,blueprint.courses.length);
 });
 
+test('every curriculum module has original bilingual teaching beyond shared framing', () => {
+  const chapters=lessons.filter(l=>l.id.startsWith('module.'));
+  const byModule=new Map(chapters.map(l=>[l.moduleId,l]));
+  const bodyFrequency=new Map();
+  for(const chapter of chapters)for(const section of chapter.sections){
+    const body=section.body.en.trim();bodyFrequency.set(body,(bodyFrequency.get(body)??0)+1);
+  }
+  assert.equal(byModule.size,540);
+  for(const course of blueprint.courses)for(const module of course.modules){
+    const chapter=byModule.get(module.id);
+    assert.ok(chapter,`Missing introductory chapter ${module.id}`);
+    assert.ok(titles[module.id]?.zh&&outlines[module.id]?.concepts.length>=3,module.id);
+    const uniqueText=chapter.sections.filter(s=>bodyFrequency.get(s.body.en.trim())===1).map(s=>s.body.en).join(' ');
+    const count=(uniqueText.match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu)??[]).length;
+    assert.ok(count>=160,`${module.id}: only ${count} topic-specific English words; investigate a stub or repeated framing`);
+  }
+});
+
+test('every science module has a new application check and small nonzero keys reject zero', () => {
+  for(const lesson of lessons){
+    if(/^module\.[PCB]/.test(lesson.id)){
+      assert.ok(lesson.exercises.some(e=>e.id.startsWith(lesson.id+'.transfer-v')&&Number(e.id.split('.transfer-v')[1])>=2),`${lesson.id}: missing new application check`);
+    }
+    for(const exercise of lesson.exercises){
+      if(exercise.type==='numeric'&&exercise.answer!==0)
+        assert.equal(grade(exercise,'0').correct,false,`${exercise.id}: tolerance incorrectly accepts zero`);
+    }
+  }
+});
+
 test('cross-subject routes include the mathematics needed by calculus physics and genetics', () => {
   const velocity=routeTo('physics.velocity-calculus',lessons).map(l=>l.id);
   for(const id of ['math.whole-numbers','math.fractions','math.variables','math.functions','math.limits','math.derivatives'])

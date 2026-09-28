@@ -141,6 +141,12 @@ test('new assessment versions require new evidence while preserving earlier work
   assert.equal(state.progress[lesson.id].practicedAt,at+10);
   assert.equal(state.progress[lesson.id].attempts.length,3);
   assert.equal(state.notes[lesson.id],'My earlier reasoning');
+  const restored=validateImport({version:1,state},[revisedLesson],courses);
+  assert.equal(restored.progress[lesson.id].attempts.length,2);
+  assert.deepEqual(restored.progress[lesson.id].retiredAttempts,[{exerciseId:numeric.id,answer:'.5',at}]);
+  assert.equal(progressEvidence(revisedLesson,restored),2);
+  const restoredAgain=validateImport({version:1,state:restored},[revisedLesson],courses);
+  assert.equal(restoredAgain.progress[lesson.id].retiredAttempts.length,1);
 });
 
 test('backup validation rejects unsupported outer formats', () => {
