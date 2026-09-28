@@ -1,6 +1,6 @@
 # Course coverage
 
-Generated from the same original sources as the local teaching pack. 444/540 modules have introductory chapters. These counts describe authored material, not mastery, completed textbook depth or expert review.
+Generated from the same original sources as the local teaching pack. 450/540 modules have introductory chapters. These counts describe authored material, not mastery, completed textbook depth or expert review.
 
 Unique English words exclude whole section bodies repeated across chapters. They are a check against stubs and reused framing, not a quality score. Read the [editorial policy](coverage-map.md).
 
@@ -12,8 +12,8 @@ Unique English words exclude whole section bodies repeated across chapters. They
 | F04 | Learning & scientific communication / 学习方法与科学表达 | 6/6 | 6 | 12 | 175–188 | Pending |
 | M01 | Algebra & functions / 代数与函数 | 6/6 | 10 | 20 | 170–181 | Pending |
 | M02 | Trigonometry / 三角学 | 6/6 | 6 | 12 | 165–189 | Pending |
-| M03 | Euclidean geometry / 欧几里得几何 | 6/6 | 6 | 12 | 59–81 | Pending |
-| M04 | Coordinate geometry & vectors / 解析几何与向量 | 6/6 | 8 | 16 | 58–81 | Pending |
+| M03 | Euclidean geometry / 欧几里得几何 | 6/6 | 6 | 12 | 162–185 | Pending |
+| M04 | Coordinate geometry & vectors / 解析几何与向量 | 6/6 | 8 | 16 | 158–187 | Pending |
 | M05 | Complex numbers & polynomials / 复数与多项式 | 6/6 | 6 | 12 | 40–57 | Pending |
 | M06 | Sequences & recurrence relations / 数列与递推 | 6/6 | 6 | 12 | 51–68 | Pending |
 | M07 | Calculus I: limits & derivatives / 微积分一：极限与导数 | 6/6 | 9 | 18 | 49–60 | Pending |
@@ -62,7 +62,7 @@ Unique English words exclude whole section bodies repeated across chapters. They
 | C10 | Chemistry Olympiad studio / 化学奥林匹克专题 | 6/6 | 6 | 12 | 273–300 | Pending |
 | B01 | Cell biology / 细胞生物学 | 6/6 | 10 | 20 | 263–282 | Pending |
 | B02 | Genetics / 遗传学 | 6/6 | 7 | 15 | 270–284 | Pending |
-| B03 | Molecular biology / 分子生物学 | 0/6 | 1 | 3 | — | Pending |
+| B03 | Molecular biology / 分子生物学 | 6/6 | 7 | 15 | 271–300 | Pending |
 | B04 | Evolution, ecology & behavior / 进化、生态与行为 | 0/6 | 0 | 0 | — | Pending |
 | B05 | Plant biology & physiology / 植物学与植物生理学 | 0/6 | 0 | 0 | — | Pending |
 | B06 | Animal biology & physiology / 动物学与动物生理学 | 0/6 | 0 | 0 | — | Pending |

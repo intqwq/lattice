@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-28T12:15:43.863Z",
+  "generatedAt": "2026-09-28T12:17:25.192Z",
   "courses": [
     {
       "id": "F01",
@@ -5005,62 +5005,68 @@
         {
           "id": "B03.01",
           "title": {
-            "en": "DNA structure and replication"
+            "en": "DNA structure and replication",
+            "zh": "DNA 结构与复制"
           },
-          "translationState": "zh-planned",
+          "translationState": "bilingual",
           "availability": "teaching-available",
           "prerequisiteAuthoringState": "requires-lesson-level-mapping",
-          "chapterId": null
+          "chapterId": "module.B03.01"
         },
         {
           "id": "B03.02",
           "title": {
-            "en": "Transcription and RNA processing"
+            "en": "Transcription and RNA processing",
+            "zh": "转录与 RNA 加工"
           },
-          "translationState": "zh-planned",
-          "availability": "planned",
+          "translationState": "bilingual",
+          "availability": "teaching-available",
           "prerequisiteAuthoringState": "requires-lesson-level-mapping",
-          "chapterId": null
+          "chapterId": "module.B03.02"
         },
         {
           "id": "B03.03",
           "title": {
-            "en": "Translation and genetic code"
+            "en": "Translation and genetic code",
+            "zh": "翻译与遗传密码"
           },
-          "translationState": "zh-planned",
-          "availability": "planned",
+          "translationState": "bilingual",
+          "availability": "teaching-available",
           "prerequisiteAuthoringState": "requires-lesson-level-mapping",
-          "chapterId": null
+          "chapterId": "module.B03.03"
         },
         {
           "id": "B03.04",
           "title": {
-            "en": "Gene regulation"
+            "en": "Gene regulation",
+            "zh": "基因调控"
           },
-          "translationState": "zh-planned",
-          "availability": "planned",
+          "translationState": "bilingual",
+          "availability": "teaching-available",
           "prerequisiteAuthoringState": "requires-lesson-level-mapping",
-          "chapterId": null
+          "chapterId": "module.B03.04"
         },
         {
           "id": "B03.05",
           "title": {
-            "en": "Mutation, repair and recombination"
+            "en": "Mutation, repair and recombination",
+            "zh": "突变、修复与重组"
           },
-          "translationState": "zh-planned",
-          "availability": "planned",
+          "translationState": "bilingual",
+          "availability": "teaching-available",
           "prerequisiteAuthoringState": "requires-lesson-level-mapping",
-          "chapterId": null
+          "chapterId": "module.B03.05"
         },
         {
           "id": "B03.06",
           "title": {
-            "en": "Molecular methods and experimental interpretation"
+            "en": "Molecular methods and experimental interpretation",
+            "zh": "分子方法与实验解释"
           },
-          "translationState": "zh-planned",
-          "availability": "planned",
+          "translationState": "bilingual",
+          "availability": "teaching-available",
           "prerequisiteAuthoringState": "requires-lesson-level-mapping",
-          "chapterId": null
+          "chapterId": "module.B03.06"
         }
       ],
       "exitTask": {
@@ -21384,12 +21390,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Euclidean geometry reasons from explicit assumptions about points, lines, distances, and angles. Congruence preserves lengths and angles; similarity preserves angles and ratios of corresponding lengths. Mark which statements come from the problem and which require proof. Auxiliary lines can create triangles with known angle or side relations, but they must be defined precisely. Area can be calculated in different ways to expose ratios. A diagram helps choose a strategy, yet apparent perpendicularity or equal length is not evidence unless justified. Degenerate configurations, such as collinear triangle vertices, must be excluded when a theorem requires a genuine triangle.",
-            "zh": "欧氏几何从点、线、距离与角的明确假设出发。全等保持长度与角，相似保持角与对应长度比。应区分题设与待证结论；辅助线可创造已知边角关系，但要精确定义。用不同方式计算面积可揭示比值。图形帮助选择策略，却不能仅凭外观看出垂直或等长。定理要求真正三角形时，应排除顶点共线等退化情形。"
+            "en": "Congruence means a rigid motion can make two figures coincide, so corresponding lengths and angles agree. Similarity also permits a uniform scale factor. For triangles, angle sum explains why two corresponding equal angles force the third equal. The remaining shape then fixes all side ratios. A scale factor k multiplies every altitude and every base by k, so area multiplies by k² through the triangle-area formula. To use a ratio, write vertices in corresponding order and check the side pairings against the equal angles. A congruence criterion needs its full data: two sides and a nonincluded angle generally do not determine one triangle.",
+            "zh": "全等可由刚体运动重合，保对应边角；相似还允许统一缩放。三角形两角相等由角和迫使第三角等，形状固定后边比一致。缩放k使底与高都乘k，面积按k²变。列比时应按对应顶点顺序并用角核对边。全等判据数据须完整，两边与非夹角一般不能唯一确定三角形。"
           }
         },
         {
@@ -21427,8 +21433,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Three corresponding equal sides imply triangle congruence. Two corresponding equal angles imply similarity; lengths scale by k and areas by k².",
+              "zh": "三组对应边相等推出三角形全等；两组角相等推出相似，长度乘k，面积乘k²。"
             }
           ],
           "explanation": {
@@ -21437,23 +21443,23 @@
           }
         },
         {
-          "id": "module.M03.01.2",
+          "id": "module.M03.01.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "A side 7 scales by 2.5. Find its corresponding length.",
-            "zh": "边长7按2.5倍放大，对应边多少？"
+            "en": "Two similar triangles have area ratio 25:9. A side in the smaller triangle is 12. What is the corresponding larger side?",
+            "zh": "相似三角形面积比25:9，小三角形一边12，对应大边多少？"
           },
-          "answer": 17.5,
+          "answer": 20,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Length ratio is the positive square root of area ratio.",
+              "zh": "长度比为面积比的正平方根。"
             }
           ],
           "explanation": {
-            "en": "7×2.5=17.5.",
-            "zh": "7×2.5=17.5。"
+            "en": "The length ratio is 5:3, so 12×5/3=20.",
+            "zh": "边比5:3，12×5/3=20。"
           }
         }
       ],
@@ -21515,12 +21521,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Euclidean geometry reasons from explicit assumptions about points, lines, distances, and angles. Congruence preserves lengths and angles; similarity preserves angles and ratios of corresponding lengths. Mark which statements come from the problem and which require proof. Auxiliary lines can create triangles with known angle or side relations, but they must be defined precisely. Area can be calculated in different ways to expose ratios. A diagram helps choose a strategy, yet apparent perpendicularity or equal length is not evidence unless justified. Degenerate configurations, such as collinear triangle vertices, must be excluded when a theorem requires a genuine triangle.",
-            "zh": "欧氏几何从点、线、距离与角的明确假设出发。全等保持长度与角，相似保持角与对应长度比。应区分题设与待证结论；辅助线可创造已知边角关系，但要精确定义。用不同方式计算面积可揭示比值。图形帮助选择策略，却不能仅凭外观看出垂直或等长。定理要求真正三角形时，应排除顶点共线等退化情形。"
+            "en": "Each triangle center comes from a locus. Points on a perpendicular bisector are equally distant from its segment endpoints, so the intersection of two such bisectors is equidistant from all three vertices and defines the circumcircle center. Points on an internal angle bisector are equally distant from its two side lines, giving the incenter and an inscribed circle. A median joins a vertex to the opposite midpoint; using coordinates or area ratios shows the three medians meet at the average of the vertex coordinates. In an equilateral triangle these constructions coincide by symmetry, but in a general triangle they produce different points.",
+            "zh": "每种中心来自轨迹。垂直平分线点到两端等距，两条交点遂到三顶点等距，定义外心。内角平分线点到两边直线等距，产生内心与内切圆。中线连顶点与对边中点，坐标或面积比可证三中线交于顶点坐标平均。等边三角形因对称这些点重合，一般三角形则不同。"
           }
         },
         {
@@ -21558,8 +21564,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Medians meet at the centroid, perpendicular bisectors at the circumcenter, and angle bisectors at the incenter. Each center is defined by a different geometric condition.",
+              "zh": "中线交于重心，垂直平分线交于外心，角平分线交于内心；各中心对应不同几何条件。"
             }
           ],
           "explanation": {
@@ -21568,23 +21574,23 @@
           }
         },
         {
-          "id": "module.M03.02.2",
+          "id": "module.M03.02.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "An equilateral triangle has angle sum 180 degrees. Find each angle.",
-            "zh": "等边三角形角和180度，每角多少度？"
+            "en": "A triangle has vertices (0,0),(6,0),(0,9). What is the centroid y-coordinate?",
+            "zh": "三角形顶点(0,0)、(6,0)、(0,9)，重心y坐标多少？"
           },
-          "answer": 60,
+          "answer": 3,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Average the three vertex y-coordinates.",
+              "zh": "三个顶点y坐标取平均。"
             }
           ],
           "explanation": {
-            "en": "Equal angles divide 180 into three equal parts.",
-            "zh": "三等角均分180。"
+            "en": "(0+0+9)/3=3. The centroid is (2,3).",
+            "zh": "(0+0+9)/3=3，重心为(2,3)。"
           }
         }
       ],
@@ -21646,12 +21652,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Euclidean geometry reasons from explicit assumptions about points, lines, distances, and angles. Congruence preserves lengths and angles; similarity preserves angles and ratios of corresponding lengths. Mark which statements come from the problem and which require proof. Auxiliary lines can create triangles with known angle or side relations, but they must be defined precisely. Area can be calculated in different ways to expose ratios. A diagram helps choose a strategy, yet apparent perpendicularity or equal length is not evidence unless justified. Degenerate configurations, such as collinear triangle vertices, must be excluded when a theorem requires a genuine triangle.",
-            "zh": "欧氏几何从点、线、距离与角的明确假设出发。全等保持长度与角，相似保持角与对应长度比。应区分题设与待证结论；辅助线可创造已知边角关系，但要精确定义。用不同方式计算面积可揭示比值。图形帮助选择策略，却不能仅凭外观看出垂直或等长。定理要求真正三角形时，应排除顶点共线等退化情形。"
+            "en": "Circle theorems connect angles to arcs and products to distances along lines. The inscribed-angle theorem can be proved by joining the center to the angle vertex and arc endpoints, then using equal radii to create isosceles triangles. Two opposite angles of a cyclic quadrilateral intercept complementary arcs whose measures total a full turn, so their half-arc angles total a half-turn. For intersecting chords, similar triangles give a ratio that rearranges to equal segment products. A tangent is perpendicular to the radius at the contact point. Label which arc is intercepted, because switching to the other arc changes the associated angle.",
+            "zh": "圆定理把角连到弧，把乘积连到共线距离。连接圆心与角顶点、弧端点，用等半径形成等腰三角形可证圆周角定理。内接四边形对角截互补弧，总弧整周，半弧角和半周。交弦可由相似三角形比值改写成乘积相等。切线垂直切点半径，必须标清所截弧，换弧会改角。"
           }
         },
         {
@@ -21689,8 +21695,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "An inscribed angle is half the central angle subtending the same arc. Opposite angles of a cyclic quadrilateral sum to 180 degrees. Intersecting chord segment products are equal.",
+              "zh": "同弧圆周角为圆心角一半；圆内接四边形对角和180度；相交弦分段乘积相等。"
             }
           ],
           "explanation": {
@@ -21699,23 +21705,23 @@
           }
         },
         {
-          "id": "module.M03.03.2",
+          "id": "module.M03.03.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "A central angle is 100 degrees. Find an inscribed angle on the same arc.",
-            "zh": "同弧圆心角100度，圆周角多少度？"
+            "en": "Two intersecting chords have segments 2 and 15 on one chord, 5 and x on the other. Find x.",
+            "zh": "两相交弦一条分段2、15，另一条5、x，x多少？"
           },
-          "answer": 50,
+          "answer": 6,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Use equality of the two segment products.",
+              "zh": "令两条弦分段乘积相等。"
             }
           ],
           "explanation": {
-            "en": "The inscribed angle is half.",
-            "zh": "圆周角为一半。"
+            "en": "2×15=5x, so x=30/5=6.",
+            "zh": "2×15=5x，x=6。"
           }
         }
       ],
@@ -21777,12 +21783,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Euclidean geometry reasons from explicit assumptions about points, lines, distances, and angles. Congruence preserves lengths and angles; similarity preserves angles and ratios of corresponding lengths. Mark which statements come from the problem and which require proof. Auxiliary lines can create triangles with known angle or side relations, but they must be defined precisely. Area can be calculated in different ways to expose ratios. A diagram helps choose a strategy, yet apparent perpendicularity or equal length is not evidence unless justified. Degenerate configurations, such as collinear triangle vertices, must be excluded when a theorem requires a genuine triangle.",
-            "zh": "欧氏几何从点、线、距离与角的明确假设出发。全等保持长度与角，相似保持角与对应长度比。应区分题设与待证结论；辅助线可创造已知边角关系，但要精确定义。用不同方式计算面积可揭示比值。图形帮助选择策略，却不能仅凭外观看出垂直或等长。定理要求真正三角形时，应排除顶点共线等退化情形。"
+            "en": "Area is often a bridge between unrelated-looking lengths. If two triangles have the same base, their area ratio equals their altitude ratio; if they share an altitude, it equals their base ratio. Splitting a larger figure into nonoverlapping pieces makes total area the sum of piece areas. An altitude may lie outside an obtuse triangle, but the perpendicular distance to the extended base line still gives the area. Triangle inequality can be understood as the shortest path between two points being a straight segment. A strict inequality is required for three positive lengths to form a nondegenerate triangle; equality collapses its area to zero.",
+            "zh": "面积常连接看似无关的长度。同底三角形面积比等于高比，同高则等于底比。分成不交部分时总面积相加。钝角三角形高脚可在外部，但到延长底线的垂距仍用于面积。三角不等式来自两点间直线最短，三正边成非退化三角形需严格不等，取等面积零。"
           }
         },
         {
@@ -21820,8 +21826,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Triangle area is half base times perpendicular height. Triangles sharing an altitude have areas proportional to bases. Genuine triangle sides satisfy each side less than the sum of the other two.",
+              "zh": "三角形面积为底乘垂直高的一半；同高三角形面积比等于底比。非退化三角形任一边小于另外两边和。"
             }
           ],
           "explanation": {
@@ -21830,23 +21836,23 @@
           }
         },
         {
-          "id": "module.M03.04.2",
+          "id": "module.M03.04.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "A total area 30 is divided in ratio 2:3. Find the smaller area.",
-            "zh": "总面积30按2:3分，小块面积多少？"
+            "en": "Triangles sharing a base have heights 4 and 10. The smaller area is 18. What is the larger area?",
+            "zh": "同底三角形高4与10，小面积18，大面积多少？"
           },
-          "answer": 12,
+          "answer": 45,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Use the ratio of heights because the base is shared.",
+              "zh": "同底所以用高比。"
             }
           ],
           "explanation": {
-            "en": "Two of five equal shares gives 30×2/5=12.",
-            "zh": "五份取二，30×2/5=12。"
+            "en": "Larger area=18×10/4=45.",
+            "zh": "大面积18×10/4=45。"
           }
         }
       ],
@@ -21908,12 +21914,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Euclidean geometry reasons from explicit assumptions about points, lines, distances, and angles. Congruence preserves lengths and angles; similarity preserves angles and ratios of corresponding lengths. Mark which statements come from the problem and which require proof. Auxiliary lines can create triangles with known angle or side relations, but they must be defined precisely. Area can be calculated in different ways to expose ratios. A diagram helps choose a strategy, yet apparent perpendicularity or equal length is not evidence unless justified. Degenerate configurations, such as collinear triangle vertices, must be excluded when a theorem requires a genuine triangle.",
-            "zh": "欧氏几何从点、线、距离与角的明确假设出发。全等保持长度与角，相似保持角与对应长度比。应区分题设与待证结论；辅助线可创造已知边角关系，但要精确定义。用不同方式计算面积可揭示比值。图形帮助选择策略，却不能仅凭外观看出垂直或等长。定理要求真正三角形时，应排除顶点共线等退化情形。"
+            "en": "A transformation gives a systematic way to compare figures. A translation adds one fixed displacement to every point. A rotation fixes a center and changes each point’s direction by the same angle. A reflection reverses the perpendicular coordinate relative to its mirror line, keeping points on the mirror fixed. Their compositions preserve distances, so they can prove congruence. In a construction, separate the recipe from the proof: drawing two equal circles creates candidate intersections, while their equal-distance properties establish the perpendicular bisector. Existence must also be checked; two circles with insufficient radius may fail to intersect, so the construction requires an appropriate radius choice.",
+            "zh": "变换系统比较图形。平移给每点加同位移，旋转绕中心统一转角，反射改变到镜线的垂直有向坐标，镜线上点固定。它们复合保距，可证全等。作图应分流程与证明：等圆交点是候选，等距性质才证明垂直平分线。还须查存在性，半径太小两圆不交，因此半径选择有条件。"
           }
         },
         {
@@ -21951,8 +21957,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Translations, rotations, and reflections preserve distances. A compass-and-straightedge construction must use permitted operations and justify why the resulting point meets the requested conditions.",
+              "zh": "平移、旋转、反射保持距离。尺规作图须使用允许操作，并解释构造点为什么满足条件。"
             }
           ],
           "explanation": {
@@ -21961,23 +21967,23 @@
           }
         },
         {
-          "id": "module.M03.05.2",
+          "id": "module.M03.05.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "A length 4 is dilated by 3. Find the image length.",
-            "zh": "长4按3倍位似，像长多少？"
+            "en": "Rotate point (2,5) by 90 degrees counterclockwise about the origin. What is the new x-coordinate?",
+            "zh": "点(2,5)绕原点逆时针90度，新x坐标多少？"
           },
-          "answer": 12,
+          "answer": -5,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "The rotation sends (x,y) to (−y,x).",
+              "zh": "旋转规则为(x,y)→(−y,x)。"
             }
           ],
           "explanation": {
-            "en": "4×3=12.",
-            "zh": "4×3=12。"
+            "en": "The image is (−5,2), so its x-coordinate is −5.",
+            "zh": "像为(−5,2)，x坐标−5。"
           }
         }
       ],
@@ -22039,12 +22045,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Euclidean geometry reasons from explicit assumptions about points, lines, distances, and angles. Congruence preserves lengths and angles; similarity preserves angles and ratios of corresponding lengths. Mark which statements come from the problem and which require proof. Auxiliary lines can create triangles with known angle or side relations, but they must be defined precisely. Area can be calculated in different ways to expose ratios. A diagram helps choose a strategy, yet apparent perpendicularity or equal length is not evidence unless justified. Degenerate configurations, such as collinear triangle vertices, must be excluded when a theorem requires a genuine triangle.",
-            "zh": "欧氏几何从点、线、距离与角的明确假设出发。全等保持长度与角，相似保持角与对应长度比。应区分题设与待证结论；辅助线可创造已知边角关系，但要精确定义。用不同方式计算面积可揭示比值。图形帮助选择策略，却不能仅凭外观看出垂直或等长。定理要求真正三角形时，应排除顶点共线等退化情形。"
+            "en": "A three-dimensional diagram compresses depth, so apparent lengths and angles on the page need not be true lengths and angles. Introduce perpendicular coordinate directions or choose a useful cross-section to reduce the problem to a plane. For a cuboid, first find a base diagonal with the Pythagorean theorem, then combine that diagonal with the perpendicular height. Volumes of prisms equal base area times height, whereas pyramids with the same base and height have one third that volume. Surface area requires adding exposed faces, not multiplying three lengths. Scaling every dimension by k explains why areas and volumes have different power laws.",
+            "zh": "立体图压缩深度，纸面长角不一定真实。可引入垂直坐标或取有用截面化为平面。长方体先求底面对角线，再与垂直高用勾股。棱柱体积底面积乘高，同底同高棱锥为三分之一。表面积加外露面，不是三长度相乘。所有尺寸放大k解释面积与体积的不同幂律。"
           }
         },
         {
@@ -22082,8 +22088,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "A solid can be studied through cross-sections and projections. Similar solids scale area by k² and volume by k³. Perpendicularity must be checked in space, not inferred from a flat sketch.",
+              "zh": "立体可通过截面和投影研究；相似立体面积按k²、体积按k³变化。空间垂直不能只从平面草图判断。"
             }
           ],
           "explanation": {
@@ -22092,23 +22098,23 @@
           }
         },
         {
-          "id": "module.M03.06.2",
+          "id": "module.M03.06.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "All lengths double. What is the volume factor?",
-            "zh": "全部长度加倍，体积扩大几倍？"
+            "en": "A pyramid has base area 30 and perpendicular height 9. What is its volume?",
+            "zh": "棱锥底面积30、垂直高9，体积多少？"
           },
-          "answer": 8,
+          "answer": 90,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "A pyramid occupies one third of the corresponding prism volume.",
+              "zh": "棱锥为同底同高棱柱体积三分之一。"
             }
           ],
           "explanation": {
-            "en": "2³=8.",
-            "zh": "2³=8。"
+            "en": "Volume=30×9/3=90.",
+            "zh": "体积30×9/3=90。"
           }
         }
       ],
@@ -22170,12 +22176,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Coordinates convert geometric conditions into equations. Choose axes and an origin that simplify the objects, while remembering that distances and angles describe geometry rather than the coordinate labels themselves. A vector records displacement, so translating its starting point does not change it. Dot products turn angle and perpendicularity questions into algebra; cross products in three dimensions encode oriented area. Solve intersections by requiring the same point to satisfy both descriptions. After an algebraic calculation, reconstruct the geometry: verify dimensions, directions, and whether the calculated point lies on the intended line, segment, ray, or curve.",
-            "zh": "坐标把几何条件化为方程。应选择使对象简单的轴与原点，同时记住距离和角描述几何本身，而不依坐标标签。向量记录位移，平移起点不改变向量。点积把角与垂直问题化为代数，三维叉积编码有向面积。求交点就是让同一点同时满足两种描述。计算后须还原几何，检查量纲、方向以及点是否位于指定直线、线段、射线或曲线上。"
+            "en": "The distance formula comes from a right triangle formed by horizontal and vertical coordinate differences. The signs of those differences determine displacement direction, but squaring removes sign for length. A midpoint is obtained by taking half of the displacement from the first endpoint, yielding the average-coordinate formula. More generally, a point dividing a segment in a given ratio is a weighted average of endpoints. Translating the coordinate origin changes both endpoint coordinates by the same amount, so their difference and distance stay unchanged. This provides an algebraic check that the formula describes geometry rather than a special choice of axes.",
+            "zh": "距离公式来自横纵坐标差组成的直角三角形。差的符号决定位移方向，平方后得到无向长度。中点从首端沿位移走一半，因此坐标平均；一般分点是端点的加权平均。平移原点使两端坐标同改，差与距离不变，说明公式描述几何而非特殊坐标选择。"
           }
         },
         {
@@ -22213,8 +22219,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Coordinates are signed distances along perpendicular axes. The distance between (x₁,y₁),(x₂,y₂) is √((x₂−x₁)²+(y₂−y₁)²). The midpoint averages coordinates.",
+              "zh": "坐标为沿垂直轴的有向位置；两点距离为坐标差平方和开方，中点取各坐标平均。"
             }
           ],
           "explanation": {
@@ -22223,23 +22229,23 @@
           }
         },
         {
-          "id": "module.M04.01.2",
+          "id": "module.M04.01.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "Find the midpoint x-coordinate of (2,1),(8,9).",
-            "zh": "(2,1)、(8,9)中点的x坐标多少？"
+            "en": "Point P is one quarter of the way from A=(2,4) to B=(10,12). What is P y-coordinate?",
+            "zh": "P从A=(2,4)向B=(10,12)走四分之一路程，y坐标多少？"
           },
-          "answer": 5,
+          "answer": 6,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Add one quarter of the y-displacement to the starting y-coordinate.",
+              "zh": "起始y加四分之一y位移。"
             }
           ],
           "explanation": {
-            "en": "(2+8)/2=5.",
-            "zh": "(2+8)/2=5。"
+            "en": "P_y=4+(12−4)/4=6.",
+            "zh": "P_y=4+(12−4)/4=6。"
           }
         }
       ],
@@ -22301,12 +22307,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Coordinates convert geometric conditions into equations. Choose axes and an origin that simplify the objects, while remembering that distances and angles describe geometry rather than the coordinate labels themselves. A vector records displacement, so translating its starting point does not change it. Dot products turn angle and perpendicularity questions into algebra; cross products in three dimensions encode oriented area. Solve intersections by requiring the same point to satisfy both descriptions. After an algebraic calculation, reconstruct the geometry: verify dimensions, directions, and whether the calculated point lies on the intended line, segment, ray, or curve.",
-            "zh": "坐标把几何条件化为方程。应选择使对象简单的轴与原点，同时记住距离和角描述几何本身，而不依坐标标签。向量记录位移，平移起点不改变向量。点积把角与垂直问题化为代数，三维叉积编码有向面积。求交点就是让同一点同时满足两种描述。计算后须还原几何，检查量纲、方向以及点是否位于指定直线、线段、射线或曲线上。"
+            "en": "A line equation describes every point whose displacement from a fixed point is perpendicular to a chosen normal. Writing n·(x−p)=0 makes this geometric meaning explicit. Two nonparallel planar lines produce two independent linear constraints and generally meet at one point. Parallel normals make the equations dependent or inconsistent, corresponding to the same line or separate parallel lines. In three dimensions, one plane equation leaves two free directions, and two nonparallel planes generally intersect in a line. To determine whether a computed intersection belongs to a segment or ray, check its parameter range rather than relying only on the infinite-line equation.",
+            "zh": "直线方程描述从定点位移垂直法向量的全部点，n·(x−p)=0直接体现意义。平面两非平行线给两独立约束，一般一交点；法向平行时方程依赖或矛盾，对应重合或平行。三维一个平面方程留两自由方向，两非平行平面一般交成线。线段射线还须核参数范围，不能只看无限直线方程。"
           }
         },
         {
@@ -22344,8 +22350,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "A line ax+by=c has normal (a,b). In space, ax+by+cz=d defines a plane when the normal is nonzero. Intersections satisfy all relevant equations.",
+              "zh": "直线ax+by=c的法向量是(a,b)；空间中非零法向量下ax+by+cz=d定义平面。交点满足全部相关方程。"
             }
           ],
           "explanation": {
@@ -22354,23 +22360,23 @@
           }
         },
         {
-          "id": "module.M04.02.2",
+          "id": "module.M04.02.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "For plane x+2y+z=8 with x=1,y=2, find z.",
-            "zh": "平面x+2y+z=8中x=1、y=2，求z。"
+            "en": "Lines 2x+y=11 and x−y=1 intersect. What is x?",
+            "zh": "2x+y=11与x−y=1交点x多少？"
           },
-          "answer": 3,
+          "answer": 4,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Add the equations to eliminate y.",
+              "zh": "两式相加消y。"
             }
           ],
           "explanation": {
-            "en": "z=8−1−4=3.",
-            "zh": "z=8−1−4=3。"
+            "en": "3x=12 gives x=4, then y=3 satisfies both lines.",
+            "zh": "3x=12得4，y=3同时满足两线。"
           }
         }
       ],
@@ -22432,12 +22438,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Coordinates convert geometric conditions into equations. Choose axes and an origin that simplify the objects, while remembering that distances and angles describe geometry rather than the coordinate labels themselves. A vector records displacement, so translating its starting point does not change it. Dot products turn angle and perpendicularity questions into algebra; cross products in three dimensions encode oriented area. Solve intersections by requiring the same point to satisfy both descriptions. After an algebraic calculation, reconstruct the geometry: verify dimensions, directions, and whether the calculated point lies on the intended line, segment, ray, or curve.",
-            "zh": "坐标把几何条件化为方程。应选择使对象简单的轴与原点，同时记住距离和角描述几何本身，而不依坐标标签。向量记录位移，平移起点不改变向量。点积把角与垂直问题化为代数，三维叉积编码有向面积。求交点就是让同一点同时满足两种描述。计算后须还原几何，检查量纲、方向以及点是否位于指定直线、线段、射线或曲线上。"
+            "en": "Vector addition models consecutive displacements because the intermediate position cancels when endpoint differences are added. Scalar multiplication changes magnitude and may reverse direction. The dot product formula follows from the cosine law applied to the triangle formed by two vectors: expanding ||u−v||² gives the coordinate products, while the geometric version gives the cosine of the included angle. This connects algebra and geometry. Projection onto a nonzero vector v is ((u·v)/(v·v))v, because the remainder must be perpendicular to v. The scalar coefficient can be negative, indicating that the projected component points opposite v.",
+            "zh": "向量相加表示连续位移，因为端点差相加时中间点抵消。数乘改变长度并可能反向。把余弦定理用于两向量形成的三角形，展开||u−v||²即可连接坐标点积与夹角。投影到非零v为((u·v)/(v·v))v，因为余项须垂直v；系数可负，表示反向分量。"
           }
         },
         {
@@ -22475,8 +22481,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Vectors add componentwise. The dot product u·v equals the sum of coordinate products and also |u||v|cos θ. Nonzero perpendicular vectors have zero dot product.",
+              "zh": "向量逐坐标相加；点积为坐标乘积之和，也等于|u||v|cos θ。非零垂直向量点积为零。"
             }
           ],
           "explanation": {
@@ -22485,23 +22491,23 @@
           }
         },
         {
-          "id": "module.M04.03.2",
+          "id": "module.M04.03.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "Find the length of (6,8).",
-            "zh": "向量(6,8)的长度多少？"
+            "en": "Project u=(4,7) onto v=(0,2). What is the projection y-coordinate?",
+            "zh": "把u=(4,7)投影到v=(0,2)，投影y坐标多少？"
           },
-          "answer": 10,
+          "answer": 7,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Use ((u·v)/(v·v))v or recognize the vertical axis.",
+              "zh": "用投影公式，或识别竖轴。"
             }
           ],
           "explanation": {
-            "en": "√(36+64)=10.",
-            "zh": "√(36+64)=10。"
+            "en": "u·v=14 and v·v=4, giving (14/4)(0,2)=(0,7).",
+            "zh": "点积14，v平方长4，投影(14/4)(0,2)=(0,7)。"
           }
         }
       ],
@@ -22563,12 +22569,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Coordinates convert geometric conditions into equations. Choose axes and an origin that simplify the objects, while remembering that distances and angles describe geometry rather than the coordinate labels themselves. A vector records displacement, so translating its starting point does not change it. Dot products turn angle and perpendicularity questions into algebra; cross products in three dimensions encode oriented area. Solve intersections by requiring the same point to satisfy both descriptions. After an algebraic calculation, reconstruct the geometry: verify dimensions, directions, and whether the calculated point lies on the intended line, segment, ray, or curve.",
-            "zh": "坐标把几何条件化为方程。应选择使对象简单的轴与原点，同时记住距离和角描述几何本身，而不依坐标标签。向量记录位移，平移起点不改变向量。点积把角与垂直问题化为代数，三维叉积编码有向面积。求交点就是让同一点同时满足两种描述。计算后须还原几何，检查量纲、方向以及点是否位于指定直线、线段、射线或曲线上。"
+            "en": "Each conic also has a distance-based definition. An ellipse has a fixed sum of distances to two foci, a hyperbola a fixed absolute difference, and a parabola equal distance to a focus and a directrix line. Squaring these distance equations produces standard quadratic equations after appropriate coordinates are chosen. Completing squares reveals translations and axis scales. For an axis-aligned ellipse, the larger semiaxis determines the major direction and focal distance satisfies c²=a²−b² when a≥b. A hyperbola instead satisfies c²=a²+b². These distinct signs reflect different geometric definitions, so they should not be memorized without context.",
+            "zh": "圆锥曲线也有距离定义：椭圆到两焦点距离和固定，双曲线绝对差固定，抛物线到焦点与准线等距。选坐标后平方距离式得到二次标准式，配方揭示平移与轴尺度。轴向椭圆a≥b时c²=a²−b²，双曲线则c²=a²+b²；符号差来自几何定义，不宜脱离背景硬记。"
           }
         },
         {
@@ -22606,8 +22612,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Conics are plane sections of a cone. Standard equations reveal their symmetry: an ellipse has x²/a²+y²/b²=1, while a hyperbola changes one plus sign to minus.",
+              "zh": "圆锥曲线来自平面截圆锥；标准方程揭示对称性。椭圆为x²/a²+y²/b²=1，双曲线把一个加号改为减号。"
             }
           ],
           "explanation": {
@@ -22616,23 +22622,23 @@
           }
         },
         {
-          "id": "module.M04.04.2",
+          "id": "module.M04.04.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "For y=x²/4, find y at x=6.",
-            "zh": "y=x²/4中x=6，y多少？"
+            "en": "Ellipse x²/25+y²/16=1 has foci on the x-axis. What is each focus distance from the center?",
+            "zh": "椭圆x²/25+y²/16=1焦点在x轴，焦距中心多少？"
           },
-          "answer": 9,
+          "answer": 3,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Use c²=a²−b² for an ellipse.",
+              "zh": "椭圆使用c²=a²−b²。"
             }
           ],
           "explanation": {
-            "en": "36/4=9.",
-            "zh": "36/4=9。"
+            "en": "c=√(25−16)=3, so foci are (±3,0).",
+            "zh": "c=√9=3，焦点(±3,0)。"
           }
         }
       ],
@@ -22694,12 +22700,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Coordinates convert geometric conditions into equations. Choose axes and an origin that simplify the objects, while remembering that distances and angles describe geometry rather than the coordinate labels themselves. A vector records displacement, so translating its starting point does not change it. Dot products turn angle and perpendicularity questions into algebra; cross products in three dimensions encode oriented area. Solve intersections by requiring the same point to satisfy both descriptions. After an algebraic calculation, reconstruct the geometry: verify dimensions, directions, and whether the calculated point lies on the intended line, segment, ray, or curve.",
-            "zh": "坐标把几何条件化为方程。应选择使对象简单的轴与原点，同时记住距离和角描述几何本身，而不依坐标标签。向量记录位移，平移起点不改变向量。点积把角与垂直问题化为代数，三维叉积编码有向面积。求交点就是让同一点同时满足两种描述。计算后须还原几何，检查量纲、方向以及点是否位于指定直线、线段、射线或曲线上。"
+            "en": "A parameter is not necessarily time, but when it is time the parameterization contains motion information that the geometric curve alone lacks. Two parameterizations can trace the same circle at different speeds or in opposite directions. Cartesian elimination often loses this distinction. Polar coordinates describe a point using a ray and distance along it; adding 2π to the angle gives the same ray. With conventions allowing negative r, reversing the radial sign and adding π can also describe the same point. To transform equations, substitute x=r cosθ and y=r sinθ and then check whether special cases such as r=0 were lost through division.",
+            "zh": "参数未必是时间，但当它是时间时，参数式含曲线本身没有的运动信息。不同参数可沿同圆以不同速率或反向走，消参常丢此区别。极坐标用射线与沿线距离表示点，角加2π同射线；允许负r时，r反号并角加π也同点。换式后须查如除r可能丢掉原点的特殊情形。"
           }
         },
         {
@@ -22737,8 +22743,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "A parametric curve gives coordinates as functions of t. Polar coordinates use x=r cos θ,y=r sin θ, allowing a point to have multiple angle representations.",
+              "zh": "参数曲线把坐标写成t的函数；极坐标用x=r cos θ、y=r sin θ，同一点可有多个角表示。"
             }
           ],
           "explanation": {
@@ -22747,23 +22753,23 @@
           }
         },
         {
-          "id": "module.M04.05.2",
+          "id": "module.M04.05.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "Polar r=5,θ=0. Find x.",
-            "zh": "极坐标r=5、θ=0，x多少？"
+            "en": "For x=1+2t,y=5−t with 0≤t≤3, what is the largest x on the traced segment?",
+            "zh": "x=1+2t、y=5−t，0≤t≤3，所描线段最大x多少？"
           },
-          "answer": 5,
+          "answer": 7,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "x increases with t, so inspect the final parameter endpoint.",
+              "zh": "x随t增，在末端参数取最大。"
             }
           ],
           "explanation": {
-            "en": "x=5cos0=5.",
-            "zh": "x=5cos0=5。"
+            "en": "At t=3, x=1+6=7. The unrestricted line extends farther, but the segment does not.",
+            "zh": "t=3时x=7，无限直线还能延伸，指定线段不能。"
           }
         }
       ],
@@ -22825,12 +22831,12 @@
         {
           "type": "concept",
           "title": {
-            "en": "Why the method works",
-            "zh": "方法为什么成立"
+            "en": "Reasoning in detail",
+            "zh": "深入推理"
           },
           "body": {
-            "en": "Coordinates convert geometric conditions into equations. Choose axes and an origin that simplify the objects, while remembering that distances and angles describe geometry rather than the coordinate labels themselves. A vector records displacement, so translating its starting point does not change it. Dot products turn angle and perpendicularity questions into algebra; cross products in three dimensions encode oriented area. Solve intersections by requiring the same point to satisfy both descriptions. After an algebraic calculation, reconstruct the geometry: verify dimensions, directions, and whether the calculated point lies on the intended line, segment, ray, or curve.",
-            "zh": "坐标把几何条件化为方程。应选择使对象简单的轴与原点，同时记住距离和角描述几何本身，而不依坐标标签。向量记录位移，平移起点不改变向量。点积把角与垂直问题化为代数，三维叉积编码有向面积。求交点就是让同一点同时满足两种描述。计算后须还原几何，检查量纲、方向以及点是否位于指定直线、线段、射线或曲线上。"
+            "en": "The cross product packages the area and orientation of a parallelogram. Its components can be computed by the determinant pattern, but the geometric checks are equally important: it must be perpendicular to both input vectors, reverse under swapping them, and scale appropriately when an input is multiplied by a scalar. The magnitude is area, so the associated triangle has half that magnitude. Dotting a third vector with the cross product measures signed height times base area, giving oriented volume. A zero scalar triple product means the three vectors are coplanar or dependent, whereas its absolute value gives ordinary nonnegative volume.",
+            "zh": "叉积编码平行四边形面积与方向。分量可按行列式模式算，但须核垂直两个输入、交换反号、数乘相应缩放。其模是面积，三角形取一半。再与第三向量点乘就是有向高乘底面积，得有向体积；三重积零表示共面或相关，绝对值给普通非负体积。"
           }
         },
         {
@@ -22868,8 +22874,8 @@
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "In three dimensions u×v is perpendicular to both vectors and has magnitude |u||v|sin θ. Its orientation follows the right-hand rule. A scalar triple product gives signed volume.",
+              "zh": "三维叉积u×v垂直两向量，大小为|u||v|sin θ，方向遵循右手定则；数量三重积给有向体积。"
             }
           ],
           "explanation": {
@@ -22878,23 +22884,23 @@
           }
         },
         {
-          "id": "module.M04.06.2",
+          "id": "module.M04.06.transfer-v2",
           "type": "numeric",
           "prompt": {
-            "en": "Find volume of the parallelepiped along axes with lengths 2,3,4.",
-            "zh": "沿三轴边长2、3、4的平行六面体体积多少？"
+            "en": "Vectors (3,0,0) and (0,4,0) form two sides of a triangle. What is its area?",
+            "zh": "(3,0,0)与(0,4,0)作三角形两边，面积多少？"
           },
-          "answer": 24,
+          "answer": 6,
           "tolerance": 1e-8,
           "hints": [
             {
-              "en": "Identify the quantities and apply the stated rule step by step.",
-              "zh": "明确各量，逐步使用本节规则。"
+              "en": "Take half the cross-product magnitude.",
+              "zh": "叉积模取一半。"
             }
           ],
           "explanation": {
-            "en": "The scalar triple product is 2×3×4=24.",
-            "zh": "数量三重积为2×3×4=24。"
+            "en": "The cross-product magnitude is 3×4=12, so triangle area is 6.",
+            "zh": "叉积模12，三角形面积6。"
           }
         }
       ],
@@ -40403,6 +40409,925 @@
       "coverage": "introductory-module-chapter",
       "editorialStatus": "review-pending",
       "group": "M"
+    },
+    {
+      "id": "module.B03.01",
+      "courseId": "B03",
+      "moduleId": "B03.01",
+      "title": {
+        "en": "DNA structure and replication",
+        "zh": "DNA 结构与复制"
+      },
+      "summary": {
+        "en": "DNA strands have complementary bases and opposite chemical directions.",
+        "zh": "DNA 双链碱基互补、化学方向相反。"
+      },
+      "prerequisites": [
+        "module.B02.06",
+        "module.C09.01"
+      ],
+      "minutes": 25,
+      "visual": null,
+      "contentStatus": "original-module-survey-review-pending",
+      "coverage": "introductory-module-chapter",
+      "objectives": [
+        {
+          "en": "Explain antiparallel strands using the stated model.",
+          "zh": "用给定模型解释反向平行链。"
+        },
+        {
+          "en": "Apply semiconservative copying and check polymerase direction.",
+          "zh": "应用半保留复制，并检查聚合方向。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Build the complete conceptual picture",
+            "zh": "建立完整概念图景"
+          },
+          "body": {
+            "en": "DNA is a polymer of nucleotides linked through a sugar–phosphate backbone. Each strand has chemical polarity, conventionally described from 5′ to 3′, and complementary strands run antiparallel. Adenine pairs with thymine and guanine with cytosine in the common double-helical structure; stacking interactions and the surrounding solution also contribute to stability. Semiconservative replication separates parental strands and uses each as a template. DNA polymerases require a suitable primer end and add nucleotides to the 3′ hydroxyl, so synthesis proceeds 5′ to 3′. Because the templates are antiparallel, one new strand can be synthesized continuously near a moving fork while the other is made in short fragments that are later joined. Helicases separate strands, primases provide primers, and other proteins manage tension, stabilize exposed DNA and seal backbone interruptions. Proofreading and repair lower error rates but do not make copying infallible. Eukaryotic chromosomes use many replication origins, and chromosome ends require special handling. A diagram showing one fork is therefore a local model, not the entire replication program. Distinguish nucleotide count, strand count and double-stranded molecule count when interpreting replication experiments.",
+            "zh": "DNA 由核苷酸经糖磷酸骨架连接，每链有 5′ 到 3′ 化学方向，互补链反向平行。常见双螺旋中 A 配 T、G 配 C，碱基堆积与溶液环境也贡献稳定。半保留复制分开旧链，各自作模板。DNA 聚合酶需要合适引物端，在 3′ 羟基加核苷酸，因此合成方向为 5′→3′。模板反向使一条新链可随复制叉连续合成，另一条以短片段合成后连接。解旋酶分链，引物酶供引物，其他蛋白处理张力、稳定单链及封闭骨架缺口。校对修复降低错误但并非绝对无误。真核染色体有多个起点，末端需特殊处理，一张复制叉图只是局部模型。解释实验时应区分核苷酸数、链数和双链分子数。"
+          }
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "Antiparallel strands · Semiconservative copying · Polymerase direction",
+            "zh": "反向平行链 · 半保留复制 · 聚合方向"
+          },
+          "body": {
+            "en": "DNA strands have complementary bases and opposite chemical directions. Replication uses each parental strand as a template, producing daughter duplexes with one old and one new strand. Polymerases extend a growing strand at its 3′ end.",
+            "zh": "DNA 双链碱基互补、化学方向相反。复制以各亲代链作模板，子双链各含一旧一新链。聚合酶在生长链 3′ 端延伸。"
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Work through a concrete case",
+            "zh": "分析具体例子"
+          },
+          "body": {
+            "en": "One double-stranded DNA molecule undergoes three ideal replication rounds. How many double-stranded molecules result? Apply the relation step by step: N = 1 × 2³ = 8 molecules. Check the units and the assumptions used.",
+            "zh": "一个 DNA 双链分子理想复制三轮，得到几个双链分子？逐步代入关系：N = 1 × 2³ = 8 molecules.并检查单位与假设。"
+          }
+        },
+        {
+          "type": "pitfall",
+          "title": {
+            "en": "Conditions and common errors",
+            "zh": "成立条件与常见误区"
+          },
+          "body": {
+            "en": "The statement “Replication puts both old strands together in one daughter molecule.” is not valid. Both daughter DNA molecules retain parental template material after one round. State the physical assumptions before extending this result beyond the example.",
+            "zh": "“复制后两条旧链仍一起放在同一个子分子中。”并不成立。一轮复制后两个子 DNA 都保留亲代模板材料。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        },
+        {
+          "type": "connection",
+          "title": {
+            "en": "Connect the ideas",
+            "zh": "连接知识"
+          },
+          "body": {
+            "en": "Before applying the relation to a new situation, draw the system boundary and identify what is measured, what is inferred and what is assumed constant. Change one parameter and predict the direction of the result before calculating. This separates understanding of a model from memorizing one numerical answer. This introductory survey establishes the named ideas; extended derivations, laboratory competence and comprehensive examination preparation require further study and review.",
+            "zh": "把关系应用于新情境前，先确定系统边界，区分测量量、推断量以及假定不变的量。改变一个参数，先预测结果的变化方向，再计算。这能区分理解模型与记忆数值答案。本入门概览建立所列核心概念；完整推导、实验操作和全面考试训练仍需进一步学习与审核。"
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "id": "module.B03.01.1",
+          "type": "numeric",
+          "prompt": {
+            "en": "One double-stranded DNA molecule undergoes three ideal replication rounds. How many double-stranded molecules result?",
+            "zh": "一个 DNA 双链分子理想复制三轮，得到几个双链分子？"
+          },
+          "answer": 8,
+          "tolerance": 0.000008,
+          "hints": [
+            {
+              "en": "Identify the quantities and relation in the worked example, then substitute the stated values.",
+              "zh": "先找出例题中的量与关系，再代入题目给定数值。"
+            }
+          ],
+          "explanation": {
+            "en": "N = 1 × 2³ = 8 molecules.",
+            "zh": "N = 1 × 2³ = 8 molecules."
+          }
+        },
+        {
+          "id": "module.B03.01.2",
+          "type": "choice",
+          "prompt": {
+            "en": "Which statement follows from the model and its conditions?",
+            "zh": "哪项陈述符合模型及其适用条件？"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Both daughter DNA molecules retain parental template material after one round.",
+                "zh": "一轮复制后两个子 DNA 都保留亲代模板材料。"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Replication puts both old strands together in one daughter molecule.",
+                "zh": "复制后两条旧链仍一起放在同一个子分子中。"
+              }
+            }
+          ],
+          "answer": "a",
+          "hints": [
+            {
+              "en": "Check the distinction explained under conditions and common errors.",
+              "zh": "检查“成立条件与常见误区”中所说明的区别。"
+            }
+          ],
+          "explanation": {
+            "en": "Both daughter DNA molecules retain parental template material after one round. The statement “Replication puts both old strands together in one daughter molecule.” is not valid. Both daughter DNA molecules retain parental template material after one round. State the physical assumptions before extending this result beyond the example.",
+            "zh": "一轮复制后两个子 DNA 都保留亲代模板材料。“复制后两条旧链仍一起放在同一个子分子中。”并不成立。一轮复制后两个子 DNA 都保留亲代模板材料。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenStax · Biology 2e",
+          "url": "https://openstax.org/details/books/biology-2e"
+        }
+      ],
+      "topicTeachingWords": 182,
+      "editorialStatus": "review-pending",
+      "group": "B"
+    },
+    {
+      "id": "module.B03.02",
+      "courseId": "B03",
+      "moduleId": "B03.02",
+      "title": {
+        "en": "Transcription and RNA processing",
+        "zh": "转录与 RNA 加工"
+      },
+      "summary": {
+        "en": "Transcription makes RNA from a DNA template.",
+        "zh": "转录以 DNA 为模板合成 RNA。"
+      },
+      "prerequisites": [
+        "module.B03.01"
+      ],
+      "minutes": 25,
+      "visual": null,
+      "contentStatus": "original-module-survey-review-pending",
+      "coverage": "introductory-module-chapter",
+      "objectives": [
+        {
+          "en": "Explain rna synthesis using the stated model.",
+          "zh": "用给定模型解释RNA 合成。"
+        },
+        {
+          "en": "Apply promoters and check splicing.",
+          "zh": "应用启动子，并检查剪接。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Build the complete conceptual picture",
+            "zh": "建立完整概念图景"
+          },
+          "body": {
+            "en": "Transcription transfers sequence information from a DNA template into an RNA strand. RNA polymerase selects complementary ribonucleotides and synthesizes RNA in the 5′ to 3′ direction while reading the template in the opposite direction. The RNA resembles the coding DNA strand except that uracil replaces thymine, but which strand is coding depends on the gene’s orientation. Promoter sequences and associated proteins help determine where transcription begins and how often it occurs. In many eukaryotic protein-coding genes, the initial transcript contains exons interrupted by introns. Splicing removes introns and joins selected exons, while a 5′ cap and a processed 3′ end contribute to stability, export and translation. Alternative splicing can generate several RNA forms from the same locus, but not every possible splice pattern is functional. Many RNAs instead function directly, including ribosomal, transfer and regulatory RNAs. RNA abundance depends on both synthesis and degradation, so more transcript can reflect slower decay rather than increased transcription. Distinguish the DNA template, primary RNA, mature RNA and final protein when following an experiment through the expression pathway.",
+            "zh": "转录把 DNA 模板信息转为 RNA。RNA 聚合酶选互补核糖核苷酸，按 5′→3′ 合成、反向读模板。RNA 与编码链相似但 U 代 T，哪链编码取决于基因朝向。启动子及相关蛋白影响起始位置与频率。许多真核蛋白编码基因的初转录本含外显子和内含子，剪接去内含子并连接所选外显子，5′ 帽和加工 3′ 端影响稳定、输出及翻译。可变剪接使同位点产生多种 RNA，但不是每种可能拼法都有功能。许多 RNA 直接工作，如核糖体、转运及调控 RNA。RNA 丰度同时取决于合成和降解，增多可能是衰减变慢而非转录增强。追踪表达实验时，应区分模板 DNA、初级 RNA、成熟 RNA 和最终蛋白。"
+          }
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "RNA synthesis · Promoters · Splicing",
+            "zh": "RNA 合成 · 启动子 · 剪接"
+          },
+          "body": {
+            "en": "Transcription makes RNA from a DNA template. In eukaryotes many primary transcripts are capped, spliced and polyadenylated before translation or other functions. Alternative processing can produce different RNA products from one locus.",
+            "zh": "转录以 DNA 为模板合成 RNA。真核许多初级转录本经加帽、剪接和加尾后用于翻译或其他功能。可变加工可使同一位点产生不同 RNA。"
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Work through a concrete case",
+            "zh": "分析具体例子"
+          },
+          "body": {
+            "en": "A precursor RNA is 1000 nucleotides and removed introns total 300. Ignoring added ends, find mature length. Apply the relation step by step: Length = 1000 − 300 = 700 nucleotides. Check the units and the assumptions used.",
+            "zh": "前体 RNA 长 1000 核苷酸，去除内含子共 300；忽略末端添加，成熟长度是多少？逐步代入关系：Length = 1000 − 300 = 700 nucleotides.并检查单位与假设。"
+          }
+        },
+        {
+          "type": "pitfall",
+          "title": {
+            "en": "Conditions and common errors",
+            "zh": "成立条件与常见误区"
+          },
+          "body": {
+            "en": "The statement “Every RNA molecule is translated into a protein.” is not valid. Not all transcribed RNAs encode proteins. State the physical assumptions before extending this result beyond the example.",
+            "zh": "“每个 RNA 分子都会翻译成蛋白。”并不成立。并非所有转录 RNA 都编码蛋白。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        },
+        {
+          "type": "connection",
+          "title": {
+            "en": "Connect the ideas",
+            "zh": "连接知识"
+          },
+          "body": {
+            "en": "Before applying the relation to a new situation, draw the system boundary and identify what is measured, what is inferred and what is assumed constant. Change one parameter and predict the direction of the result before calculating. This separates understanding of a model from memorizing one numerical answer. This introductory survey establishes the named ideas; extended derivations, laboratory competence and comprehensive examination preparation require further study and review.",
+            "zh": "把关系应用于新情境前，先确定系统边界，区分测量量、推断量以及假定不变的量。改变一个参数，先预测结果的变化方向，再计算。这能区分理解模型与记忆数值答案。本入门概览建立所列核心概念；完整推导、实验操作和全面考试训练仍需进一步学习与审核。"
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "id": "module.B03.02.1",
+          "type": "numeric",
+          "prompt": {
+            "en": "A precursor RNA is 1000 nucleotides and removed introns total 300. Ignoring added ends, find mature length.",
+            "zh": "前体 RNA 长 1000 核苷酸，去除内含子共 300；忽略末端添加，成熟长度是多少？"
+          },
+          "answer": 700,
+          "tolerance": 0.0007,
+          "hints": [
+            {
+              "en": "Identify the quantities and relation in the worked example, then substitute the stated values.",
+              "zh": "先找出例题中的量与关系，再代入题目给定数值。"
+            }
+          ],
+          "explanation": {
+            "en": "Length = 1000 − 300 = 700 nucleotides.",
+            "zh": "Length = 1000 − 300 = 700 nucleotides."
+          }
+        },
+        {
+          "id": "module.B03.02.2",
+          "type": "choice",
+          "prompt": {
+            "en": "Which statement follows from the model and its conditions?",
+            "zh": "哪项陈述符合模型及其适用条件？"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Every RNA molecule is translated into a protein.",
+                "zh": "每个 RNA 分子都会翻译成蛋白。"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Not all transcribed RNAs encode proteins.",
+                "zh": "并非所有转录 RNA 都编码蛋白。"
+              }
+            }
+          ],
+          "answer": "b",
+          "hints": [
+            {
+              "en": "Check the distinction explained under conditions and common errors.",
+              "zh": "检查“成立条件与常见误区”中所说明的区别。"
+            }
+          ],
+          "explanation": {
+            "en": "Not all transcribed RNAs encode proteins. The statement “Every RNA molecule is translated into a protein.” is not valid. Not all transcribed RNAs encode proteins. State the physical assumptions before extending this result beyond the example.",
+            "zh": "并非所有转录 RNA 都编码蛋白。“每个 RNA 分子都会翻译成蛋白。”并不成立。并非所有转录 RNA 都编码蛋白。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenStax · Biology 2e",
+          "url": "https://openstax.org/details/books/biology-2e"
+        }
+      ],
+      "topicTeachingWords": 176,
+      "editorialStatus": "review-pending",
+      "group": "B"
+    },
+    {
+      "id": "module.B03.03",
+      "courseId": "B03",
+      "moduleId": "B03.03",
+      "title": {
+        "en": "Translation and genetic code",
+        "zh": "翻译与遗传密码"
+      },
+      "summary": {
+        "en": "Ribosomes read mRNA in a defined frame, using tRNAs to connect codons with amino acids.",
+        "zh": "核糖体按确定阅读框读 mRNA，由 tRNA 联系密码子与氨基酸。"
+      },
+      "prerequisites": [
+        "module.B03.02"
+      ],
+      "minutes": 25,
+      "visual": null,
+      "contentStatus": "original-module-survey-review-pending",
+      "coverage": "introductory-module-chapter",
+      "objectives": [
+        {
+          "en": "Explain codons using the stated model.",
+          "zh": "用给定模型解释密码子。"
+        },
+        {
+          "en": "Apply trna and check ribosome.",
+          "zh": "应用转运 RNA，并检查核糖体。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Build the complete conceptual picture",
+            "zh": "建立完整概念图景"
+          },
+          "body": {
+            "en": "Translation decodes an mRNA sequence into a polypeptide using an existing molecular apparatus. A codon is a three-nucleotide unit read in a particular frame, so choosing the start site determines how later triplets are grouped. Transfer RNAs carry amino acids and pair their anticodons with suitable codons. Aminoacyl-tRNA synthetases attach the appropriate amino acid to each tRNA type, providing an essential layer of accuracy before the ribosome reads the message. The ribosome coordinates initiation, elongation and termination; peptide-bond formation extends the chain from its amino end toward its carboxyl end. Stop codons recruit termination machinery rather than a conventional aminoacyl-tRNA. The code is degenerate because several codons can specify one amino acid, but a given codon generally has a defined meaning within the organism’s translation system. Mitochondria and some organisms use variant code assignments, so the familiar table is widespread rather than exceptionless. A frameshift can alter every downstream codon until a new stop appears, whereas a multiple-of-three insertion may preserve the frame. After translation, folding, targeting and chemical modification further determine the protein’s mature function.",
+            "zh": "翻译用已有分子机器把 mRNA 解码成多肽。密码子是在特定框中读取的三个核苷酸，起始位点决定后续分组。tRNA 携氨基酸，以反密码子配密码子；氨酰 tRNA 合成酶先给各 tRNA 装正确氨基酸，提供关键准确性层。核糖体协调起始、延伸、终止，肽链由氨端向羧端延长。终止密码子招募终止机器，而非普通氨酰 tRNA。多种密码子可指同氨基酸，称简并，但在给定翻译系统内某密码子通常意义明确。线粒体和部分生物用变异密码表，因此常用表广泛而非无例外。移码可改所有下游密码直至新终止，三的倍数插入则可能保持阅读框。翻译后折叠、定位及化学修饰继续决定成熟蛋白功能。"
+          }
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "Codons · tRNA · Ribosome",
+            "zh": "密码子 · 转运 RNA · 核糖体"
+          },
+          "body": {
+            "en": "Ribosomes read mRNA in a defined frame, using tRNAs to connect codons with amino acids. Start and stop signals define an open reading frame. The genetic code is redundant but not arbitrary.",
+            "zh": "核糖体按确定阅读框读 mRNA，由 tRNA 联系密码子与氨基酸。起始和终止信号定义开放阅读框，遗传密码有简并但并非任意。"
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Work through a concrete case",
+            "zh": "分析具体例子"
+          },
+          "body": {
+            "en": "A coding segment contains 30 nucleotides for amino acids, excluding a stop codon. How many amino acids does it specify? Apply the relation step by step: 30 nucleotides / 3 per codon = 10 amino acids. Check the units and the assumptions used.",
+            "zh": "编码氨基酸的片段含 30 核苷酸，不含终止密码子，编码几个氨基酸？逐步代入关系：30 nucleotides / 3 per codon = 10 amino acids.并检查单位与假设。"
+          }
+        },
+        {
+          "type": "pitfall",
+          "title": {
+            "en": "Conditions and common errors",
+            "zh": "成立条件与常见误区"
+          },
+          "body": {
+            "en": "The statement “Every triplet in every reading frame is translated simultaneously.” is not valid. A stop codon signals termination rather than an ordinary amino acid. State the physical assumptions before extending this result beyond the example.",
+            "zh": "“所有阅读框中的每个三联体都同时被翻译。”并不成立。终止密码子表示终止，而非普通氨基酸。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        },
+        {
+          "type": "connection",
+          "title": {
+            "en": "Connect the ideas",
+            "zh": "连接知识"
+          },
+          "body": {
+            "en": "Before applying the relation to a new situation, draw the system boundary and identify what is measured, what is inferred and what is assumed constant. Change one parameter and predict the direction of the result before calculating. This separates understanding of a model from memorizing one numerical answer. This introductory survey establishes the named ideas; extended derivations, laboratory competence and comprehensive examination preparation require further study and review.",
+            "zh": "把关系应用于新情境前，先确定系统边界，区分测量量、推断量以及假定不变的量。改变一个参数，先预测结果的变化方向，再计算。这能区分理解模型与记忆数值答案。本入门概览建立所列核心概念；完整推导、实验操作和全面考试训练仍需进一步学习与审核。"
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "id": "module.B03.03.1",
+          "type": "numeric",
+          "prompt": {
+            "en": "A coding segment contains 30 nucleotides for amino acids, excluding a stop codon. How many amino acids does it specify?",
+            "zh": "编码氨基酸的片段含 30 核苷酸，不含终止密码子，编码几个氨基酸？"
+          },
+          "answer": 10,
+          "tolerance": 0.000009999999999999999,
+          "hints": [
+            {
+              "en": "Identify the quantities and relation in the worked example, then substitute the stated values.",
+              "zh": "先找出例题中的量与关系，再代入题目给定数值。"
+            }
+          ],
+          "explanation": {
+            "en": "30 nucleotides / 3 per codon = 10 amino acids.",
+            "zh": "30 nucleotides / 3 per codon = 10 amino acids."
+          }
+        },
+        {
+          "id": "module.B03.03.2",
+          "type": "choice",
+          "prompt": {
+            "en": "Which statement follows from the model and its conditions?",
+            "zh": "哪项陈述符合模型及其适用条件？"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A stop codon signals termination rather than an ordinary amino acid.",
+                "zh": "终止密码子表示终止，而非普通氨基酸。"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Every triplet in every reading frame is translated simultaneously.",
+                "zh": "所有阅读框中的每个三联体都同时被翻译。"
+              }
+            }
+          ],
+          "answer": "a",
+          "hints": [
+            {
+              "en": "Check the distinction explained under conditions and common errors.",
+              "zh": "检查“成立条件与常见误区”中所说明的区别。"
+            }
+          ],
+          "explanation": {
+            "en": "A stop codon signals termination rather than an ordinary amino acid. The statement “Every triplet in every reading frame is translated simultaneously.” is not valid. A stop codon signals termination rather than an ordinary amino acid. State the physical assumptions before extending this result beyond the example.",
+            "zh": "终止密码子表示终止，而非普通氨基酸。“所有阅读框中的每个三联体都同时被翻译。”并不成立。终止密码子表示终止，而非普通氨基酸。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenStax · Biology 2e",
+          "url": "https://openstax.org/details/books/biology-2e"
+        }
+      ],
+      "topicTeachingWords": 184,
+      "editorialStatus": "review-pending",
+      "group": "B"
+    },
+    {
+      "id": "module.B03.04",
+      "courseId": "B03",
+      "moduleId": "B03.04",
+      "title": {
+        "en": "Gene regulation",
+        "zh": "基因调控"
+      },
+      "summary": {
+        "en": "Gene expression is controlled at transcription, RNA processing and stability, translation and protein turnover.",
+        "zh": "基因表达可在转录、RNA 加工与稳定、翻译及蛋白周转层面调控。"
+      },
+      "prerequisites": [
+        "module.B03.03"
+      ],
+      "minutes": 25,
+      "visual": null,
+      "contentStatus": "original-module-survey-review-pending",
+      "coverage": "introductory-module-chapter",
+      "objectives": [
+        {
+          "en": "Explain transcription factors using the stated model.",
+          "zh": "用给定模型解释转录因子。"
+        },
+        {
+          "en": "Apply chromatin and check post-transcriptional control.",
+          "zh": "应用染色质，并检查转录后调控。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Build the complete conceptual picture",
+            "zh": "建立完整概念图景"
+          },
+          "body": {
+            "en": "Gene regulation determines when, where and how much a genetic product is made. At transcriptional initiation, DNA-binding proteins and other factors influence polymerase recruitment or activity. Regulatory sites can integrate several inputs, so a gene may respond only when a particular combination of signals is present. In eukaryotes, DNA packaging into chromatin affects accessibility, and modifications to chromatin-associated proteins can help maintain or change expression states. Regulation also acts after transcription through splicing, RNA localization, RNA degradation, translation efficiency and protein degradation. A promoter reporter measures the behavior of the tested construct and may omit distant regulatory elements or native chromatin context. RNA amount does not automatically equal protein amount because translation and turnover intervene. Some regulatory changes are rapid and reversible, while developmental programs can stabilize long-lived cell identities. Feedback loops connect gene products back to their own regulators and can create thresholds, adaptation or persistent states. Avoid the claim that a single gene is simply on or off in all cells: expression often varies continuously and heterogeneously. A convincing regulatory model links a defined perturbation to timing, molecular intermediates and a functional response with appropriate controls.",
+            "zh": "基因调控决定产物何时、何地和多少生成。转录起始时，DNA 结合蛋白等影响聚合酶招募或活性，调控位点可整合多输入，使基因只对特定信号组合响应。真核染色质包装影响可及性，相关蛋白修饰帮助维持或改变表达状态。转录后还可调剪接、RNA 定位降解、翻译效率及蛋白降解。启动子报告测的是该构建体行为，可能缺远端元件或天然染色质背景。RNA 量不自动等于蛋白量，因为中间有翻译和周转。有些调控迅速可逆，发育程序则可稳定长期细胞身份。反馈把产物连回其调节者，可形成阈值、适应和持续状态。不能把单基因说成所有细胞中简单开关，表达常连续且异质。可信模型需用对照连接扰动、时间、分子中间环节和功能响应。"
+          }
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "Transcription factors · Chromatin · Post-transcriptional control",
+            "zh": "转录因子 · 染色质 · 转录后调控"
+          },
+          "body": {
+            "en": "Gene expression is controlled at transcription, RNA processing and stability, translation and protein turnover. Regulatory DNA and interacting factors determine context-dependent expression; chromatin accessibility affects which sites can be used.",
+            "zh": "基因表达可在转录、RNA 加工与稳定、翻译及蛋白周转层面调控。调控 DNA 与作用因子决定情境相关表达，染色质可及性影响位点能否使用。"
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Work through a concrete case",
+            "zh": "分析具体例子"
+          },
+          "body": {
+            "en": "A transcript synthesis rate doubles while its first-order decay constant is unchanged. By what factor does its ideal steady-state amount change? Apply the relation step by step: At steady state RNA = synthesis/decay constant; factor = 2. Check the units and the assumptions used.",
+            "zh": "转录本合成速率加倍，一级降解常数不变，理想稳态量变为几倍？逐步代入关系：At steady state RNA = synthesis/decay constant; factor = 2.并检查单位与假设。"
+          }
+        },
+        {
+          "type": "pitfall",
+          "title": {
+            "en": "Conditions and common errors",
+            "zh": "成立条件与常见误区"
+          },
+          "body": {
+            "en": "The statement “Every gene is expressed equally in every cell at all times.” is not valid. Different cell types can express different genes despite sharing most DNA sequence. State the physical assumptions before extending this result beyond the example.",
+            "zh": "“每个基因在所有细胞和所有时间都等量表达。”并不成立。不同细胞类型虽共享大部分 DNA，仍可表达不同基因。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        },
+        {
+          "type": "connection",
+          "title": {
+            "en": "Connect the ideas",
+            "zh": "连接知识"
+          },
+          "body": {
+            "en": "Before applying the relation to a new situation, draw the system boundary and identify what is measured, what is inferred and what is assumed constant. Change one parameter and predict the direction of the result before calculating. This separates understanding of a model from memorizing one numerical answer. This introductory survey establishes the named ideas; extended derivations, laboratory competence and comprehensive examination preparation require further study and review.",
+            "zh": "把关系应用于新情境前，先确定系统边界，区分测量量、推断量以及假定不变的量。改变一个参数，先预测结果的变化方向，再计算。这能区分理解模型与记忆数值答案。本入门概览建立所列核心概念；完整推导、实验操作和全面考试训练仍需进一步学习与审核。"
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "id": "module.B03.04.1",
+          "type": "numeric",
+          "prompt": {
+            "en": "A transcript synthesis rate doubles while its first-order decay constant is unchanged. By what factor does its ideal steady-state amount change?",
+            "zh": "转录本合成速率加倍，一级降解常数不变，理想稳态量变为几倍？"
+          },
+          "answer": 2,
+          "tolerance": 0.000002,
+          "hints": [
+            {
+              "en": "Identify the quantities and relation in the worked example, then substitute the stated values.",
+              "zh": "先找出例题中的量与关系，再代入题目给定数值。"
+            }
+          ],
+          "explanation": {
+            "en": "At steady state RNA = synthesis/decay constant; factor = 2.",
+            "zh": "At steady state RNA = synthesis/decay constant; factor = 2."
+          }
+        },
+        {
+          "id": "module.B03.04.2",
+          "type": "choice",
+          "prompt": {
+            "en": "Which statement follows from the model and its conditions?",
+            "zh": "哪项陈述符合模型及其适用条件？"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Every gene is expressed equally in every cell at all times.",
+                "zh": "每个基因在所有细胞和所有时间都等量表达。"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Different cell types can express different genes despite sharing most DNA sequence.",
+                "zh": "不同细胞类型虽共享大部分 DNA，仍可表达不同基因。"
+              }
+            }
+          ],
+          "answer": "b",
+          "hints": [
+            {
+              "en": "Check the distinction explained under conditions and common errors.",
+              "zh": "检查“成立条件与常见误区”中所说明的区别。"
+            }
+          ],
+          "explanation": {
+            "en": "Different cell types can express different genes despite sharing most DNA sequence. The statement “Every gene is expressed equally in every cell at all times.” is not valid. Different cell types can express different genes despite sharing most DNA sequence. State the physical assumptions before extending this result beyond the example.",
+            "zh": "不同细胞类型虽共享大部分 DNA，仍可表达不同基因。“每个基因在所有细胞和所有时间都等量表达。”并不成立。不同细胞类型虽共享大部分 DNA，仍可表达不同基因。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenStax · Biology 2e",
+          "url": "https://openstax.org/details/books/biology-2e"
+        }
+      ],
+      "topicTeachingWords": 191,
+      "editorialStatus": "review-pending",
+      "group": "B"
+    },
+    {
+      "id": "module.B03.05",
+      "courseId": "B03",
+      "moduleId": "B03.05",
+      "title": {
+        "en": "Mutation, repair and recombination",
+        "zh": "突变、修复与重组"
+      },
+      "summary": {
+        "en": "Mutations alter sequence and may be neutral, harmful or beneficial depending on context.",
+        "zh": "突变改变序列，效应可中性、有害或有利，依情境而定。"
+      },
+      "prerequisites": [
+        "module.B03.04"
+      ],
+      "minutes": 25,
+      "visual": null,
+      "contentStatus": "original-module-survey-review-pending",
+      "coverage": "introductory-module-chapter",
+      "objectives": [
+        {
+          "en": "Explain sequence change using the stated model.",
+          "zh": "用给定模型解释序列变化。"
+        },
+        {
+          "en": "Apply repair pathways and check homologous exchange.",
+          "zh": "应用修复途径，并检查同源交换。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Build the complete conceptual picture",
+            "zh": "建立完整概念图景"
+          },
+          "body": {
+            "en": "DNA damage and mutation are related but distinct. Damage is a chemical or structural lesion, while a mutation is a heritable sequence change that remains after copying or repair. Substitutions, insertions and deletions can affect coding sequence, regulatory regions or apparently noncoding regions with important functions. A synonymous coding substitution preserves the encoded amino acid in the simple code interpretation but can still influence splicing, RNA structure or translation. A missense change alters an amino acid, and a nonsense change introduces a premature stop; their consequences depend on position and protein context. Repair pathways recognize different lesions, such as mismatches or damaged bases, and use templates or local chemistry to restore information. Homologous recombination can repair breaks using related sequence information and also generates meiotic variation. Nonhomologous repair can join ends with different error patterns. Mutation does not occur because an organism knows which change it needs; selection subsequently changes the frequencies of variants according to their consequences in an environment. Distinguish mutation rate, observed variant frequency and fitness effect, because each describes a different stage of the evolutionary and molecular process.",
+            "zh": "DNA 损伤与突变相关但不同：损伤是化学结构病变，突变是复制或修复后保留下的可遗传序列改变。替换、插入和缺失可影响编码、调控或有功能的非编码区。同义编码替换在简单密码解释下不改氨基酸，但仍可能影响剪接、RNA 结构或翻译；错义改氨基酸，无义产生提前终止，后果依位置和蛋白情境。修复路径识别错配、损坏碱基等不同病变，用模板或局部化学恢复信息。同源重组可用相关序列修断裂，也产生减数变异；非同源连接的错误模式不同。突变不是生物知道需要什么才发生，随后选择按环境中的后果改变变异频率。应区分突变率、观测变异频率与适合度效应，三者属于分子与进化过程不同环节。"
+          }
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "Sequence change · Repair pathways · Homologous exchange",
+            "zh": "序列变化 · 修复途径 · 同源交换"
+          },
+          "body": {
+            "en": "Mutations alter sequence and may be neutral, harmful or beneficial depending on context. Repair pathways recognize particular damage patterns, while recombination can exchange homologous information or repair breaks. Neither process is perfectly error-free.",
+            "zh": "突变改变序列，效应可中性、有害或有利，依情境而定。修复识别特定损伤，重组可交换同源信息或修复断裂，两者并非绝对无误。"
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Work through a concrete case",
+            "zh": "分析具体例子"
+          },
+          "body": {
+            "en": "A coding sequence loses 3 consecutive nucleotides without disrupting splice sites. How many full codons are removed in the simplest in-frame case? Apply the relation step by step: 3 nucleotides = 1 codon; frame is retained. Check the units and the assumptions used.",
+            "zh": "编码序列删除连续三个核苷酸，不影响剪接，最简单同框情形少几个密码子？逐步代入关系：3 nucleotides = 1 codon; frame is retained.并检查单位与假设。"
+          }
+        },
+        {
+          "type": "pitfall",
+          "title": {
+            "en": "Conditions and common errors",
+            "zh": "成立条件与常见误区"
+          },
+          "body": {
+            "en": "The statement “Every DNA change necessarily destroys gene function.” is not valid. A mutation’s effect depends on location and biological context. State the physical assumptions before extending this result beyond the example.",
+            "zh": "“每次 DNA 改变都必破坏基因功能。”并不成立。突变效应依位置与生物情境。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        },
+        {
+          "type": "connection",
+          "title": {
+            "en": "Connect the ideas",
+            "zh": "连接知识"
+          },
+          "body": {
+            "en": "Before applying the relation to a new situation, draw the system boundary and identify what is measured, what is inferred and what is assumed constant. Change one parameter and predict the direction of the result before calculating. This separates understanding of a model from memorizing one numerical answer. This introductory survey establishes the named ideas; extended derivations, laboratory competence and comprehensive examination preparation require further study and review.",
+            "zh": "把关系应用于新情境前，先确定系统边界，区分测量量、推断量以及假定不变的量。改变一个参数，先预测结果的变化方向，再计算。这能区分理解模型与记忆数值答案。本入门概览建立所列核心概念；完整推导、实验操作和全面考试训练仍需进一步学习与审核。"
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "id": "module.B03.05.1",
+          "type": "numeric",
+          "prompt": {
+            "en": "A coding sequence loses 3 consecutive nucleotides without disrupting splice sites. How many full codons are removed in the simplest in-frame case?",
+            "zh": "编码序列删除连续三个核苷酸，不影响剪接，最简单同框情形少几个密码子？"
+          },
+          "answer": 1,
+          "tolerance": 0.000001,
+          "hints": [
+            {
+              "en": "Identify the quantities and relation in the worked example, then substitute the stated values.",
+              "zh": "先找出例题中的量与关系，再代入题目给定数值。"
+            }
+          ],
+          "explanation": {
+            "en": "3 nucleotides = 1 codon; frame is retained.",
+            "zh": "3 nucleotides = 1 codon; frame is retained."
+          }
+        },
+        {
+          "id": "module.B03.05.2",
+          "type": "choice",
+          "prompt": {
+            "en": "Which statement follows from the model and its conditions?",
+            "zh": "哪项陈述符合模型及其适用条件？"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "A mutation’s effect depends on location and biological context.",
+                "zh": "突变效应依位置与生物情境。"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "Every DNA change necessarily destroys gene function.",
+                "zh": "每次 DNA 改变都必破坏基因功能。"
+              }
+            }
+          ],
+          "answer": "a",
+          "hints": [
+            {
+              "en": "Check the distinction explained under conditions and common errors.",
+              "zh": "检查“成立条件与常见误区”中所说明的区别。"
+            }
+          ],
+          "explanation": {
+            "en": "A mutation’s effect depends on location and biological context. The statement “Every DNA change necessarily destroys gene function.” is not valid. A mutation’s effect depends on location and biological context. State the physical assumptions before extending this result beyond the example.",
+            "zh": "突变效应依位置与生物情境。“每次 DNA 改变都必破坏基因功能。”并不成立。突变效应依位置与生物情境。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenStax · Biology 2e",
+          "url": "https://openstax.org/details/books/biology-2e"
+        }
+      ],
+      "topicTeachingWords": 182,
+      "editorialStatus": "review-pending",
+      "group": "B"
+    },
+    {
+      "id": "module.B03.06",
+      "courseId": "B03",
+      "moduleId": "B03.06",
+      "title": {
+        "en": "Molecular methods and experimental interpretation",
+        "zh": "分子方法与实验解释"
+      },
+      "summary": {
+        "en": "PCR amplifies a primer-defined DNA region, sequencing reads base information, and perturbations test functional hypotheses.",
+        "zh": "PCR 扩增引物限定 DNA，测序读取碱基信息，扰动检验功能假设。"
+      },
+      "prerequisites": [
+        "module.B03.05"
+      ],
+      "minutes": 25,
+      "visual": null,
+      "contentStatus": "original-module-survey-review-pending",
+      "coverage": "introductory-module-chapter",
+      "objectives": [
+        {
+          "en": "Explain pcr using the stated model.",
+          "zh": "用给定模型解释聚合酶链式反应。"
+        },
+        {
+          "en": "Apply sequencing and check perturbation controls.",
+          "zh": "应用测序，并检查扰动对照。"
+        }
+      ],
+      "sections": [
+        {
+          "type": "concept",
+          "title": {
+            "en": "Build the complete conceptual picture",
+            "zh": "建立完整概念图景"
+          },
+          "body": {
+            "en": "Molecular methods answer different questions and require controls tailored to their failure modes. PCR amplifies DNA between compatible primer sites through repeated copying cycles, but efficiency is not perfectly constant indefinitely and contamination can also be amplified. A no-template control checks contamination, while an appropriate positive control checks whether amplification conditions can work. Reverse-transcription assays add a conversion from RNA to DNA and need controls for residual genomic DNA. Sequencing provides base calls with quality limits; an apparent variant can arise from sampling, mapping or read errors unless supported appropriately. Protein detection depends on reagent specificity, so a band at an expected size is suggestive rather than automatically definitive. Gene disruption or knockdown can test function, but off-target changes and compensatory responses complicate interpretation. A rescue with a suitably controlled restored gene strengthens a causal argument. Quantitative comparisons need normalization justified by stable reference behavior, not an arbitrary convenient denominator. Combine molecular identity, abundance, localization and perturbation evidence, and keep the conclusion no broader than the method’s validated sensitivity and specificity. A negative result should be interpreted alongside controls before being called absence.",
+            "zh": "分子方法回答不同问题，需匹配失误模式的对照。PCR 在相容引物位点间反复复制，但效率不会无限恒定，污染也会扩增；无模板对照查污染，阳性对照查条件能否工作。逆转录多了 RNA 到 DNA 转换，需控制残留基因组 DNA。测序碱基判读有质量限制，表观变异可能来自抽样、比对或读错。蛋白检测依赖试剂特异性，预期大小一条带只是提示，不自动确证。敲除或敲低可检验功能，但脱靶和补偿响应干扰解释；受控恢复基因的挽救能加强因果。定量比较应以稳定参照行为支持归一化，而非随意选分母。应综合身份、丰度、定位和扰动，结论不超出验证灵敏度与特异性；阴性必须结合对照再解释为缺失。"
+          }
+        },
+        {
+          "type": "concept",
+          "title": {
+            "en": "PCR · Sequencing · Perturbation controls",
+            "zh": "聚合酶链式反应 · 测序 · 扰动对照"
+          },
+          "body": {
+            "en": "PCR amplifies a primer-defined DNA region, sequencing reads base information, and perturbations test functional hypotheses. Each method has distinct controls and detection limits; a molecular signal alone does not establish biological causation.",
+            "zh": "PCR 扩增引物限定 DNA，测序读取碱基信息，扰动检验功能假设。各方法具有不同对照与检出限，分子信号本身不证明生物因果。"
+          }
+        },
+        {
+          "type": "example",
+          "title": {
+            "en": "Work through a concrete case",
+            "zh": "分析具体例子"
+          },
+          "body": {
+            "en": "Starting from 2 copies, ideal doubling for 4 PCR cycles gives how many copies? Apply the relation step by step: N = 2 × 2^4 = 32. Check the units and the assumptions used.",
+            "zh": "初始两份，PCR 理想倍增四周期，得到几份？逐步代入关系：N = 2 × 2^4 = 32.并检查单位与假设。"
+          }
+        },
+        {
+          "type": "pitfall",
+          "title": {
+            "en": "Conditions and common errors",
+            "zh": "成立条件与常见误区"
+          },
+          "body": {
+            "en": "The statement “Any visible PCR band proves the intended sequence without additional checks.” is not valid. A negative PCR result can reflect failed amplification rather than absence of template. State the physical assumptions before extending this result beyond the example.",
+            "zh": "“任何可见 PCR 条带都无需核查即可证明目标序列。”并不成立。PCR 阴性可由扩增失败造成，而非模板不存在。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        },
+        {
+          "type": "connection",
+          "title": {
+            "en": "Connect the ideas",
+            "zh": "连接知识"
+          },
+          "body": {
+            "en": "Before applying the relation to a new situation, draw the system boundary and identify what is measured, what is inferred and what is assumed constant. Change one parameter and predict the direction of the result before calculating. This separates understanding of a model from memorizing one numerical answer. This introductory survey establishes the named ideas; extended derivations, laboratory competence and comprehensive examination preparation require further study and review.",
+            "zh": "把关系应用于新情境前，先确定系统边界，区分测量量、推断量以及假定不变的量。改变一个参数，先预测结果的变化方向，再计算。这能区分理解模型与记忆数值答案。本入门概览建立所列核心概念；完整推导、实验操作和全面考试训练仍需进一步学习与审核。"
+          }
+        }
+      ],
+      "exercises": [
+        {
+          "id": "module.B03.06.1",
+          "type": "numeric",
+          "prompt": {
+            "en": "Starting from 2 copies, ideal doubling for 4 PCR cycles gives how many copies?",
+            "zh": "初始两份，PCR 理想倍增四周期，得到几份？"
+          },
+          "answer": 32,
+          "tolerance": 0.000032,
+          "hints": [
+            {
+              "en": "Identify the quantities and relation in the worked example, then substitute the stated values.",
+              "zh": "先找出例题中的量与关系，再代入题目给定数值。"
+            }
+          ],
+          "explanation": {
+            "en": "N = 2 × 2^4 = 32.",
+            "zh": "N = 2 × 2^4 = 32."
+          }
+        },
+        {
+          "id": "module.B03.06.2",
+          "type": "choice",
+          "prompt": {
+            "en": "Which statement follows from the model and its conditions?",
+            "zh": "哪项陈述符合模型及其适用条件？"
+          },
+          "options": [
+            {
+              "id": "a",
+              "text": {
+                "en": "Any visible PCR band proves the intended sequence without additional checks.",
+                "zh": "任何可见 PCR 条带都无需核查即可证明目标序列。"
+              }
+            },
+            {
+              "id": "b",
+              "text": {
+                "en": "A negative PCR result can reflect failed amplification rather than absence of template.",
+                "zh": "PCR 阴性可由扩增失败造成，而非模板不存在。"
+              }
+            }
+          ],
+          "answer": "b",
+          "hints": [
+            {
+              "en": "Check the distinction explained under conditions and common errors.",
+              "zh": "检查“成立条件与常见误区”中所说明的区别。"
+            }
+          ],
+          "explanation": {
+            "en": "A negative PCR result can reflect failed amplification rather than absence of template. The statement “Any visible PCR band proves the intended sequence without additional checks.” is not valid. A negative PCR result can reflect failed amplification rather than absence of template. State the physical assumptions before extending this result beyond the example.",
+            "zh": "PCR 阴性可由扩增失败造成，而非模板不存在。“任何可见 PCR 条带都无需核查即可证明目标序列。”并不成立。PCR 阴性可由扩增失败造成，而非模板不存在。将结果推广到例题以外之前，要明确物理假设。"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "OpenStax · Biology 2e",
+          "url": "https://openstax.org/details/books/biology-2e"
+        }
+      ],
+      "topicTeachingWords": 187,
+      "editorialStatus": "review-pending",
+      "group": "B"
     },
     {
       "id": "module.B02.01",
@@ -86464,6 +87389,126 @@
         "zh": "约束最小点多少？"
       }
     },
+    "B03.01": {
+      "concepts": [
+        {
+          "en": "Antiparallel strands",
+          "zh": "反向平行链"
+        },
+        {
+          "en": "Semiconservative copying",
+          "zh": "半保留复制"
+        },
+        {
+          "en": "Polymerase direction",
+          "zh": "聚合方向"
+        }
+      ],
+      "check": {
+        "en": "One double-stranded DNA molecule undergoes three ideal replication rounds. How many double-stranded molecules result?",
+        "zh": "一个 DNA 双链分子理想复制三轮，得到几个双链分子？"
+      }
+    },
+    "B03.02": {
+      "concepts": [
+        {
+          "en": "RNA synthesis",
+          "zh": "RNA 合成"
+        },
+        {
+          "en": "Promoters",
+          "zh": "启动子"
+        },
+        {
+          "en": "Splicing",
+          "zh": "剪接"
+        }
+      ],
+      "check": {
+        "en": "A precursor RNA is 1000 nucleotides and removed introns total 300. Ignoring added ends, find mature length.",
+        "zh": "前体 RNA 长 1000 核苷酸，去除内含子共 300；忽略末端添加，成熟长度是多少？"
+      }
+    },
+    "B03.03": {
+      "concepts": [
+        {
+          "en": "Codons",
+          "zh": "密码子"
+        },
+        {
+          "en": "tRNA",
+          "zh": "转运 RNA"
+        },
+        {
+          "en": "Ribosome",
+          "zh": "核糖体"
+        }
+      ],
+      "check": {
+        "en": "A coding segment contains 30 nucleotides for amino acids, excluding a stop codon. How many amino acids does it specify?",
+        "zh": "编码氨基酸的片段含 30 核苷酸，不含终止密码子，编码几个氨基酸？"
+      }
+    },
+    "B03.04": {
+      "concepts": [
+        {
+          "en": "Transcription factors",
+          "zh": "转录因子"
+        },
+        {
+          "en": "Chromatin",
+          "zh": "染色质"
+        },
+        {
+          "en": "Post-transcriptional control",
+          "zh": "转录后调控"
+        }
+      ],
+      "check": {
+        "en": "A transcript synthesis rate doubles while its first-order decay constant is unchanged. By what factor does its ideal steady-state amount change?",
+        "zh": "转录本合成速率加倍，一级降解常数不变，理想稳态量变为几倍？"
+      }
+    },
+    "B03.05": {
+      "concepts": [
+        {
+          "en": "Sequence change",
+          "zh": "序列变化"
+        },
+        {
+          "en": "Repair pathways",
+          "zh": "修复途径"
+        },
+        {
+          "en": "Homologous exchange",
+          "zh": "同源交换"
+        }
+      ],
+      "check": {
+        "en": "A coding sequence loses 3 consecutive nucleotides without disrupting splice sites. How many full codons are removed in the simplest in-frame case?",
+        "zh": "编码序列删除连续三个核苷酸，不影响剪接，最简单同框情形少几个密码子？"
+      }
+    },
+    "B03.06": {
+      "concepts": [
+        {
+          "en": "PCR",
+          "zh": "聚合酶链式反应"
+        },
+        {
+          "en": "Sequencing",
+          "zh": "测序"
+        },
+        {
+          "en": "Perturbation controls",
+          "zh": "扰动对照"
+        }
+      ],
+      "check": {
+        "en": "Starting from 2 copies, ideal doubling for 4 PCR cycles gives how many copies?",
+        "zh": "初始两份，PCR 理想倍增四周期，得到几份？"
+      }
+    },
     "C10.01": {
       "concepts": [
         {
@@ -90268,13 +91313,13 @@
   "totals": {
     "courses": 90,
     "modules": 540,
-    "lessons": 499,
-    "exercises": 1011,
-    "outlinedModules": 462,
-    "moduleChapters": 444,
-    "coveredModules": 445,
-    "coursesWithAllChapters": 74,
-    "lessonEdges": 599,
-    "crossSubjectEdges": 78
+    "lessons": 505,
+    "exercises": 1023,
+    "outlinedModules": 468,
+    "moduleChapters": 450,
+    "coveredModules": 450,
+    "coursesWithAllChapters": 75,
+    "lessonEdges": 606,
+    "crossSubjectEdges": 79
   }
 }
