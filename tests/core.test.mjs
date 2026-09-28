@@ -127,6 +127,22 @@ test('epoch-zero timestamps are valid practice and due dates', () => {
   assert.equal(lessonStatus(lesson,state,3*86400000),'due');
 });
 
+test('new assessment versions require new evidence while preserving earlier work',()=>{
+  const state=initialState();
+  recordAttempt(state,lesson,numeric,grade(numeric,'.5'),false,'.5',at);
+  recordAttempt(state,lesson,choice,grade(choice,'b'),false,'b',at+1);
+  state.notes[lesson.id]='My earlier reasoning';
+  const revisedQuestion={...numeric,id:'ex-number-v2',answer:2};
+  const revisedLesson={...lesson,exercises:[revisedQuestion,choice]};
+  assert.equal(lessonStatus(revisedLesson,state,at+2),'learning');
+  assert.equal(progressEvidence(revisedLesson,state),1);
+  recordAttempt(state,revisedLesson,revisedQuestion,grade(revisedQuestion,'2'),false,'2',at+10);
+  assert.equal(lessonStatus(revisedLesson,state,at+11),'practiced');
+  assert.equal(state.progress[lesson.id].practicedAt,at+10);
+  assert.equal(state.progress[lesson.id].attempts.length,3);
+  assert.equal(state.notes[lesson.id],'My earlier reasoning');
+});
+
 test('backup validation rejects unsupported outer formats', () => {
   for(const bad of [null,[],{}, {version:2},{version:1,state:[]}, {version:1,state:'text'}])
     assert.throws(()=>validateImport(bad,[lesson],courses));

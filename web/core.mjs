@@ -25,6 +25,7 @@ export function grade(exercise,answer){
 export function initialState(){return{version:1,language:'en',theme:'light',view:'home',selectedLesson:'math.whole-numbers',selectedCourse:'F01',goal:'physics.velocity-calculus',graphMode:'subjects',atlasLevel:'all',designVersion:2,graphFocus:true,activeGroup:'all',search:'',progress:{},answers:{},notes:{},code:{},placement:{},routeGoal:null,lastLesson:null};}
 export function lessonStatus(lesson,state,now=Date.now()){
   const p=state.progress[lesson.id];if(!p)return'new';
+  if(!lesson.exercises.length||progressEvidence(lesson,state)!==lesson.exercises.length)return'learning';
   if(Number.isFinite(p.practicedAt)&&Number.isFinite(p.dueAt)&&now>=p.dueAt)return'due';
   if(Number.isFinite(p.practicedAt))return'practiced';return'learning';
 }
@@ -41,6 +42,7 @@ export function recordAttempt(state,lesson,exercise,result,assisted,answer,now=D
   const checked=grade(canonical,answer);
   if(result?.valid!==true||!checked.valid)return state.progress[lesson.id]??null;
   const p=state.progress[lesson.id]??={startedAt:now,attempts:[]};
+  if(progressEvidence(lesson,state)!==lesson.exercises.length){delete p.practicedAt;delete p.dueAt;delete p.reviewedAt;}
   const priorExposure=(p.assistedExercises??[]).includes(exercise.id)||p.attempts.some(a=>a.exerciseId===exercise.id);
   p.attempts.push({exerciseId:exercise.id,correct:checked.correct,assisted:!!assisted||priorExposure,answer:String(answer).slice(0,1000),at:now});
   p.assistedExercises??=[];

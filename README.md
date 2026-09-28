@@ -16,7 +16,7 @@ This is an actively developed learning application. Introductory chapter coverag
 
 ## Run on Windows
 
-Build the application below, then open `native/bin/publish/Lattice.exe`. Keep the entire publish folder together. The current distribution is an unpackaged **Windows x64 folder**, not an installer.
+Build the application below, then open `native/bin/publish-v0.2/Lattice.exe` or run `Start-Lattice.ps1`. Keep the entire publish folder together. The current distribution is an unpackaged **Windows x64 folder**, not an installer. Close older Lattice windows before using the updated app.
 
 The .NET and Windows App SDK runtimes are bundled. The Microsoft Edge WebView2 Runtime must be installed. Initial dependency restore requires internet access; study after building is offline. Clean-machine installation has not yet been validated.
 

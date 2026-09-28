@@ -1,7 +1,7 @@
 import {text,escape as esc,GROUPS,routeTo,lessonStatus} from './core.mjs';
 
 export const SUBJECT_META={
- F:{symbol:'01',en:'Build your foundation',zh:'建立共同基础',blurb:{en:'Numbers, proof, measurement, and the language of learning.',zh:'数、证明、测量，以及学习所需的共同语言。'},color:'#75847a'},
+ F:{symbol:'01',en:'Foundations',zh:'通用基础',blurb:{en:'Numbers, proof, measurement, and the language of learning.',zh:'数、证明、测量，以及学习所需的共同语言。'},color:'#75847a'},
  M:{symbol:'∑',en:'Mathematics',zh:'数学',blurb:{en:'Patterns become structures. Structures become ways to think.',zh:'从规律到结构，从结构到思考的方法。'},color:'#7481dc'},
  P:{symbol:'↗',en:'Physics',zh:'物理',blurb:{en:'Understand motion, energy, fields, and the rules of our universe.',zh:'理解运动、能量、场，以及世界运行的规律。'},color:'#499b9a'},
  C:{symbol:'⌬',en:'Chemistry',zh:'化学',blurb:{en:'From particles and bonds to reactions and living molecules.',zh:'从粒子和化学键，到反应与生命中的分子。'},color:'#c79554'},
@@ -26,8 +26,8 @@ function overview(data,state,T,L){
 function subject(data,state,T,L){
  const group=Object.hasOwn(SUBJECT_META,state.activeGroup)?state.activeGroup:'M',meta=SUBJECT_META[group],courses=data.courses.filter(c=>c.group===group),level=state.atlasLevel??'all';
  const visible=level==='all'?courses:courses.filter(c=>c.levels.includes(level));
- const stage=c=>c.levels.includes('H')?'H':c.levels.includes('U')?'U':'O';
- const stages=[['H',T('Build the foundations','打好基础'),T('School core & first principles','中学核心与基本原理')],['U',T('Go deeper','深入理解'),T('University structures & methods','大学阶段的结构与方法')],['O',T('Take on a challenge','挑战与综合'),T('Olympiad problem solving','竞赛问题求解')]];
+ const stage=c=>level!=='all'?level:c.levels.includes('H')?'H':c.levels.includes('U')?'U':c.levels.includes('O')?'O':'E';
+ const stages=[['H',T('Build the foundations','打好基础'),T('School core & first principles','中学核心与基本原理')],['U',T('Go deeper','深入理解'),T('University structures & methods','大学阶段的结构与方法')],['O',T('Take on a challenge','挑战与综合'),T('Olympiad problem solving','竞赛问题求解')],['E',T('Make connections','建立联系'),T('Methods across disciplines','跨学科方法')]];
  return `<div class="atlas-breadcrumb"><button data-graph-mode="subjects">${T('All subjects','全部学科')}</button><span>/</span><strong>${L(meta)}</strong></div><div class="subject-banner" style="--island:${meta.color}"><span class="island-symbol">${meta.symbol}</span><div><h2>${L(meta)}</h2><p>${L(meta.blurb)}</p></div><div class="subject-banner-count"><b>${courses.length}</b><span>${T('connected courses','门相互关联的课程')}</span></div></div><div class="route-filter"><span>${T('Show pathways','显示学习方向')}</span><div class="segmented">${[['all',T('All','全部')],['H',T('Foundations','基础')],['U',T('University','大学')],['O',T('Olympiad','竞赛')]].map(([v,n])=>`<button data-atlas-level="${v}" class="${level===v?'active':''}">${n}</button>`).join('')}</div></div><div class="subject-paths">${stages.map(([key,label,subtitle],si)=>{const list=visible.filter(c=>stage(c)===key);if(!list.length)return'';return `<section class="path-lane"><div class="path-lane-heading"><span>${String(si+1).padStart(2,'0')}</span><div><h3>${label}</h3><p>${subtitle}</p></div></div><div class="path-course-list">${list.map(c=>{const ls=countLessons(data,c.id);return `<button class="path-course" data-atlas-course="${c.id}" style="--island:${meta.color}"><span class="path-course-id">${c.id}</span><h3>${L(c.title)}</h3><span class="path-course-meta">${c.modules.length} ${T('modules','模块')} · ${ls.length} ${T('lessons','课时')}</span><span class="path-course-arrow">↗</span></button>`;}).join('')}</div></section>`;}).join('')}</div><p class="atlas-footnote">${T('These lanes organize course levels. Select a course to see its actual prerequisites and cross-subject connections.','分组用于组织课程层级；选择具体课程即可查看实际前置知识及跨学科联系。')}</p>`;
 }
 function focus(data,state,T,L,courseMode){

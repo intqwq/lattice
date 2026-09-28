@@ -137,7 +137,7 @@ internal sealed class MainWindow : Window
             requestId = root.GetProperty("requestId").GetString();
             if (string.IsNullOrWhiteSpace(requestId) || requestId.Length > 100) return;
             var type = root.GetProperty("type").GetString();
-            if (type == "lattice.host-info") { Reply(requestId, true, new { platform = "windows", shell = "winui3", version = "0.1.0", offline = true }); return; }
+            if (type == "lattice.host-info") { Reply(requestId, true, new { platform = "windows", shell = "winui3", version = typeof(MainWindow).Assembly.GetName().Version?.ToString(3), offline = true }); return; }
             if (type is not ("lattice.export" or "lattice.import" or "lattice.export-code")) { Reply(requestId, false, error: "Unsupported native request."); return; }
             if (_smokeTest) { Reply(requestId, false, error: "File pickers are disabled in smoke tests."); return; }
             if (_pickerOpen) { Reply(requestId, false, error: "Another file picker is already open."); return; }

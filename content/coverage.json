@@ -1,12 +1,12 @@
 {
   "courses": 90,
   "modules": 540,
-  "lessons": 289,
-  "exercises": 591,
-  "outlinedModules": 270,
-  "moduleChapters": 234,
-  "coveredModules": 241,
-  "coursesWithAllChapters": 39,
-  "lessonEdges": 357,
-  "crossSubjectEdges": 60
+  "lessons": 499,
+  "exercises": 1011,
+  "outlinedModules": 462,
+  "moduleChapters": 444,
+  "coveredModules": 445,
+  "coursesWithAllChapters": 74,
+  "lessonEdges": 599,
+  "crossSubjectEdges": 78
 }
