@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Lattice — a connected learning studio</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="design.css">
+  <script defer src="vendor/katex/katex.min.js"></script>
+  <script defer src="vendor/katex/contrib/auto-render.min.js"></script>
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <div id="app"><div class="boot"><div class="brand-mark">L</div><h1>Lattice</h1><p>Opening your local learning library…</p></div></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog"></dialog>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+</body>
+</html>

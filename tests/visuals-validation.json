@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-28",
+  "module": "web/visuals.mjs",
+  "result": "passed",
+  "method": "An ephemeral Node.js script imported mountVisual and all three content lesson arrays, supplied a minimal DOM shim, mounted every lesson with a visual in English and Chinese, and dispatched events on the mounted controls. The script was executed through stdin; this JSON is a result summary, not the executable harness.",
+  "nodeVersion": "24.19.0",
+  "visualLessonCount": 35,
+  "languages": ["en", "zh"],
+  "mounts": 70,
+  "interactionEventsDispatched": 602,
+  "checks": [
+    "Node syntax validation of web/visuals.mjs passed.",
+    "All visual lessons mounted without throwing in both languages.",
+    "Range controls were exercised at their minimum, maximum and zero (with range clamping).",
+    "Every available select option was exercised.",
+    "Trace buttons were repeatedly exercised, including completed and reset states.",
+    "SVG markup contained no NaN or Infinity coordinates, and no undefined-valued attributes.",
+    "Each mounted model retained a nonempty live result after events.",
+    "Returned cleanup functions removed registered event listeners.",
+    "An unknown visual key displayed an explanatory unavailable-model fallback."
+  ],
+  "limitations": [
+    "The DOM shim is not a browser. It does not verify rendered layout, fonts, SVG clipping, pixel appearance, browser accessibility-tree behavior or native WebView2 compatibility.",
+    "These are mount, event and finite-value checks, not a full independent scientific review or exhaustive numeric property test.",
+    "The script was not saved; reproduce or extend the harness before treating this summary as a repeatable automated test suite.",
+    "Browser and native visual review are separate validation layers."
+  ]
+}

@@ -1,0 +1,32 @@
+name: Validate learning studio
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: node scripts/build-content.mjs
+      - run: node --test tests/*.test.mjs
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+      - run: node scripts/build-content.mjs
+      - run: dotnet restore native/Lattice.csproj --locked-mode
+      - run: pwsh -File scripts/build-windows.ps1

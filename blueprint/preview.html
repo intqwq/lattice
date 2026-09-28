@@ -1,0 +1,2487 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Lattice Blueprint</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Lattice Blueprint" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Lattice Blueprint&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 10px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+.widget {
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  box-shadow: 0 0 0 0.5px var(--border-strong, var(--border));
+  color: var(--foreground);
+  background: var(--background);
+}
+
+#widget &gt; :not(.card, .widget, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover,
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+/* Shared preview chrome; product styles stay inside each variant. */
+.viz-dotted-background {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 14%, transparent) 0.8px,
+    transparent 0.8px
+  );
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.viz-carousel {
+  position: relative;
+  min-width: 0;
+}
+
+.viz-carousel:has(&gt; .viz-carousel-controls) {
+  min-height: calc(60px + var(--viz-carousel-picker-height, 0px));
+  padding-bottom: 60px;
+}
+
+.viz-carousel &gt; [data-variant][hidden] {
+  display: none !important;
+}
+
+.viz-carousel &gt; [data-variant] {
+  isolation: isolate;
+}
+
+.viz-carousel-controls {
+  --viz-carousel-hover: light-dark(
+    color-mix(in srgb, var(--foreground) 5.4%, transparent),
+    color-mix(in srgb, var(--foreground) 7.8%, transparent)
+  );
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 50%;
+  display: flex;
+  width: max-content;
+  /* Leave room for the host&#x27;s design-controls launcher at the trailing edge. */
+  max-width: calc(100% - 96px);
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  /* Match the settings dropdown chrome independently of the content font size. */
+  font-size: 13px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+.viz-carousel-controls button,
+.viz-carousel-picker &gt; summary {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 6px;
+  -webkit-app-region: no-drag;
+  border: 0;
+  border-radius: 14px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-picker &gt; summary {
+  position: relative;
+  isolation: isolate;
+}
+
+.viz-carousel-controls &gt; button {
+  --icon-size: 16px;
+  width: 30px;
+  padding: 0;
+}
+
+.viz-carousel-picker &gt; summary {
+  padding-inline: 12px;
+}
+
+.viz-carousel-controls .viz-carousel-caret {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin: 0;
+  color: inherit;
+  transform: rotate(180deg);
+}
+
+.viz-carousel-controls &gt; button &gt; svg,
+.viz-carousel-controls .viz-carousel-caret,
+.viz-carousel-count {
+  opacity: 0.5;
+}
+
+.viz-carousel-controls &gt; button::before,
+.viz-carousel-picker &gt; summary::before {
+  position: absolute;
+  z-index: -1;
+  inset: 3px;
+  border-radius: 12px;
+  content: &quot;&quot;;
+  pointer-events: none;
+}
+
+.viz-carousel-controls &gt; button:hover::before,
+.viz-carousel-picker &gt; summary:hover::before {
+  background: var(--viz-carousel-hover);
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-controls [data-lucide],
+.viz-carousel-controls .lucide {
+  flex-shrink: 0;
+}
+
+.viz-carousel-picker {
+  min-width: 0;
+}
+
+.viz-carousel-picker &gt; summary {
+  min-width: 0;
+  list-style: none;
+}
+
+.viz-carousel-picker &gt; summary::-webkit-details-marker {
+  display: none;
+}
+
+.viz-carousel-count {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.viz-carousel-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viz-carousel-options {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  max-height: 240px;
+  flex-direction: column;
+  gap: 2px;
+  overflow: auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background);
+  box-shadow: 0 4px 12px light-dark(rgb(0 0 0 / 6%), rgb(0 0 0 / 25%));
+}
+
+.viz-carousel-options &gt; button {
+  width: 100%;
+  min-height: 28px;
+  justify-content: flex-start;
+  padding: 4px 8px;
+  font-size: var(--font-size-small);
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.viz-carousel-options &gt; [aria-current=&quot;true&quot;],
+.viz-carousel-options &gt; button:hover {
+  background: var(--viz-carousel-hover);
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible,
+.viz-carousel-controls :is(button, summary):focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .viz-carousel:has(&gt; .viz-carousel-controls) {
+    min-height: calc(76px + var(--viz-carousel-picker-height, 0px));
+    padding-bottom: 76px;
+  }
+
+  .btn,
+  .nav-link,
+  .viz-carousel-controls button,
+  .viz-carousel-picker &gt; summary,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;div id=&quot;lattice-blueprint&quot; aria-label=&quot;Lattice learning platform design preview&quot;&gt;
+  &lt;style&gt;
+    #lattice-blueprint{color-scheme:light dark;--lt-bg:light-dark(#f5f5fa,#15161d);--lt-panel:light-dark(#ffffff,#20212b);--lt-rail:light-dark(#eeeff6,#191a23);--lt-text:light-dark(#202234,#edf0fa);--lt-muted:light-dark(#61677d,#acb2c8);--lt-line:light-dark(#dddfea,#353849);--lt-soft:light-dark(#e9e5fc,#302c49);--lt-accent:light-dark(#6448c6,#b9a6ff);--lt-on-accent:light-dark(#ffffff,#201738);--lt-success:light-dark(#266652,#8bd6b7);--lt-grid:light-dark(#e4e6f0,#363949);font:14px/1.55 &#x27;Segoe UI Variable&#x27;,&#x27;Segoe UI&#x27;,&#x27;Microsoft YaHei UI&#x27;,sans-serif;color:var(--lt-text);background:var(--lt-bg);border:1px solid var(--lt-line);border-radius:18px;overflow:clip;text-align:left;min-width:0;box-shadow:0 20px 55px light-dark(#27294b12,#00000030)}
+    #lattice-blueprint *{box-sizing:border-box}
+    #lattice-blueprint button,#lattice-blueprint select,#lattice-blueprint input{font:inherit;color:inherit;max-width:100%}
+    #lattice-blueprint button{border:0;background:transparent;border-radius:9px;padding:8px 11px;text-align:left;transition:background .14s ease,transform .18s ease;color:var(--lt-muted)}
+    #lattice-blueprint button:hover{background:var(--lt-soft);color:var(--lt-text)}
+    #lattice-blueprint button:active{transform:translateY(1px)}
+    #lattice-blueprint button:focus-visible,#lattice-blueprint select:focus-visible,#lattice-blueprint input:focus-visible{outline:2px solid var(--lt-accent);outline-offset:3px}
+    #lattice-blueprint .lt-titlebar{min-height:46px;padding:8px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--lt-line);background:var(--lt-panel)}
+    #lattice-blueprint .lt-mark{background:var(--lt-accent);color:var(--lt-on-accent);width:26px;height:26px;display:grid;place-items:center;border-radius:8px;font-weight:600}
+    #lattice-blueprint .lt-brand{font-weight:600;letter-spacing:.2px}
+    #lattice-blueprint .lt-caption{font-size:12px;color:var(--lt-muted)}
+    #lattice-blueprint .lt-grow{flex:1}
+    #lattice-blueprint .lt-window-controls{letter-spacing:15px;color:var(--lt-muted);font-size:13px;white-space:nowrap;padding-left:8px}
+    #lattice-blueprint .lt-shell{display:grid;grid-template-columns:168px minmax(0,1fr);min-height:650px}
+    #lattice-blueprint .lt-sidebar{background:var(--lt-rail);padding:24px 12px 18px;display:flex;flex-direction:column;gap:20px;min-width:0;border-right:1px solid var(--lt-line)}
+    #lattice-blueprint .lt-sidebar nav{display:grid;gap:4px}
+    #lattice-blueprint .lt-navitem{display:flex;gap:9px;align-items:center;width:100%;font-size:13px}
+    #lattice-blueprint .lt-navitem[aria-pressed=true]{background:var(--lt-panel);color:var(--lt-text);box-shadow:0 3px 8px light-dark(#20223408,#00000010)}
+    #lattice-blueprint .lt-navitem svg{width:16px;height:16px;flex:none}
+    #lattice-blueprint .lt-small-label{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--lt-muted);padding:0 10px;margin-bottom:9px}
+    #lattice-blueprint .lt-subject{padding:8px 10px;display:flex;align-items:center;gap:8px;width:100%;font-size:12px;line-height:1.45}
+    #lattice-blueprint .lt-subject[aria-pressed=true]{background:var(--lt-soft);color:var(--lt-accent)}
+    #lattice-blueprint .lt-subject-mark{width:6px;height:6px;border-radius:50%;background:var(--lt-muted);flex:none;opacity:.65}
+    #lattice-blueprint .lt-subject[aria-pressed=true] .lt-subject-mark{background:var(--lt-accent);opacity:1}
+    #lattice-blueprint .lt-offline{margin-top:auto;color:var(--lt-muted);font-size:12px;padding:10px;display:flex;align-items:center;gap:7px}
+    #lattice-blueprint .lt-offline-dot{width:6px;height:6px;border-radius:50%;background:var(--lt-success)}
+    #lattice-blueprint .lt-main{padding:27px 28px 24px;min-width:0}
+    #lattice-blueprint .lt-breadcrumb{color:var(--lt-muted);font-size:12px;display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:15px}
+    #lattice-blueprint .lt-eyebrow{font-size:11px;font-weight:600;color:var(--lt-accent);letter-spacing:1.6px;text-transform:uppercase}
+    #lattice-blueprint h1{font-size:30px;line-height:1.2;letter-spacing:-.7px;margin:7px 0 10px;font-weight:600;color:var(--lt-text)}
+    #lattice-blueprint h2{font-size:19px;line-height:1.3;margin:8px 0 10px;font-weight:600;color:var(--lt-text)}
+    #lattice-blueprint h3{font-size:15px;line-height:1.4;margin:0 0 8px;font-weight:600;color:var(--lt-text)}
+    #lattice-blueprint p{margin:0 0 12px}
+    #lattice-blueprint .lt-subtitle{font-size:13px;max-width:66ch;color:var(--lt-muted);margin-bottom:20px}
+    #lattice-blueprint .lt-toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:22px}
+    #lattice-blueprint .lt-course-select{border:1px solid var(--lt-line);background:var(--lt-panel);border-radius:9px;min-height:37px;padding:6px 30px 6px 10px;min-width:0;width:100%;font-size:12px}
+    #lattice-blueprint .lt-picker{display:grid;gap:5px;flex:1;min-width:180px;max-width:360px}
+    #lattice-blueprint .lt-picker label{font-size:11px;color:var(--lt-muted)}
+    #lattice-blueprint .lt-tag{font-size:11px;line-height:1.4;padding:5px 9px;border-radius:6px;background:var(--lt-rail);color:var(--lt-muted);display:inline-block}
+    #lattice-blueprint .lt-map-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(210px,.85fr);gap:24px;align-items:start}
+    #lattice-blueprint .lt-route{position:relative;display:grid;gap:8px}
+    #lattice-blueprint .lt-route:before{content:&#x27;&#x27;;position:absolute;left:25px;top:29px;bottom:28px;width:1px;background:var(--lt-line)}
+    #lattice-blueprint .lt-node{position:relative;display:flex;align-items:center;gap:13px;min-height:63px;padding:10px 12px;width:100%;background:var(--lt-panel);border:1px solid var(--lt-line);color:var(--lt-text);border-radius:12px}
+    #lattice-blueprint .lt-node:hover{background:var(--lt-panel);border-color:var(--lt-accent)}
+    #lattice-blueprint .lt-node[aria-pressed=true]{background:var(--lt-soft);border-color:var(--lt-accent);box-shadow:0 3px 12px light-dark(#6550c512,#00000015)}
+    #lattice-blueprint .lt-node-num{display:grid;place-items:center;flex:none;width:27px;height:27px;background:var(--lt-rail);border-radius:8px;font-size:11px;color:var(--lt-muted);font-variant-numeric:tabular-nums}
+    #lattice-blueprint .lt-node[aria-pressed=true] .lt-node-num{background:var(--lt-accent);color:var(--lt-on-accent)}
+    #lattice-blueprint .lt-node-title{font-size:13px;font-weight:500;line-height:1.45;display:block}
+    #lattice-blueprint .lt-node-hint{font-size:11px;color:var(--lt-muted);display:block;margin-top:2px}
+    #lattice-blueprint .lt-detail{background:var(--lt-panel);border-radius:14px;padding:20px;border:1px solid var(--lt-line)}
+    #lattice-blueprint .lt-detail p{font-size:12px;color:var(--lt-muted)}
+    #lattice-blueprint .lt-detail h2{font-size:19px;line-height:1.4}
+    #lattice-blueprint .lt-detail hr{border:0;border-top:1px solid var(--lt-line);margin:17px 0}
+    #lattice-blueprint .lt-primary{display:flex;justify-content:center;align-items:center;gap:8px;background:var(--lt-accent);color:var(--lt-on-accent);text-align:center;width:100%;font-size:12px;padding:10px 12px;margin-top:16px}
+    #lattice-blueprint .lt-primary:hover{background:var(--lt-accent);color:var(--lt-on-accent);filter:brightness(1.08)}
+    #lattice-blueprint .lt-primary svg{width:14px;height:14px}
+    #lattice-blueprint .lt-related{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    #lattice-blueprint .lt-related button{background:var(--lt-rail);padding:5px 8px;font-size:11px;color:var(--lt-text);line-height:1.45}
+    #lattice-blueprint .lt-connections{margin-top:23px;padding-top:18px;border-top:1px solid var(--lt-line)}
+    #lattice-blueprint .lt-connections h3{font-size:12px;font-weight:500}
+    #lattice-blueprint .lt-preview-note{font-size:11px;color:var(--lt-muted);margin-top:18px;display:flex;gap:6px;align-items:flex-start}
+    #lattice-blueprint .lt-preview-note svg{width:13px;height:13px;flex:none;margin-top:2px}
+    #lattice-blueprint .lt-lesson-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:space-between;margin-bottom:15px}
+    #lattice-blueprint .lt-lesson-tabs{display:flex;gap:3px;background:var(--lt-rail);padding:4px;border-radius:10px;flex-wrap:wrap}
+    #lattice-blueprint .lt-lesson-tabs button{font-size:12px;padding:6px 11px}
+    #lattice-blueprint .lt-lesson-tabs button[aria-pressed=true]{background:var(--lt-panel);color:var(--lt-text);box-shadow:0 2px 7px light-dark(#20223408,#00000012)}
+    #lattice-blueprint .lt-lesson-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(205px,.78fr);gap:22px;align-items:start}
+    #lattice-blueprint .lt-reading{font-size:14px;line-height:1.8}
+    #lattice-blueprint .lt-reading p{margin:12px 0}
+    #lattice-blueprint .lt-definition{border-left:3px solid var(--lt-accent);padding:5px 0 5px 15px;margin:18px 0}
+    #lattice-blueprint .lt-definition strong{font-weight:600}
+    #lattice-blueprint .lt-equation{font:19px/1.6 &#x27;Cambria Math&#x27;,Cambria,serif;color:var(--lt-text);text-align:center;background:var(--lt-rail);border-radius:10px;padding:15px 10px;margin:16px 0;overflow-wrap:anywhere}
+    #lattice-blueprint .lt-misconception{font-size:12px;color:var(--lt-muted);border-top:1px solid var(--lt-line);padding-top:14px;margin-top:18px}
+    #lattice-blueprint .lt-lab{padding:16px;background:var(--lt-panel);border:1px solid var(--lt-line);border-radius:13px;min-width:0}
+    #lattice-blueprint .lt-lab svg.lt-vector-plot{width:100%;height:auto;display:block;color:var(--lt-text)}
+    #lattice-blueprint .lt-vector-plot text{font-size:14px}
+    #lattice-blueprint .lt-lab .lt-control-label{display:flex;justify-content:space-between;gap:6px;font-size:12px;margin-top:10px;color:var(--lt-text)}
+    #lattice-blueprint .lt-lab input[type=range]{width:100%;accent-color:var(--lt-accent);margin:10px 0 5px;min-height:24px}
+    #lattice-blueprint .lt-lab .lt-plane-state{font-size:12px;color:var(--lt-accent);margin-top:9px;font-weight:500}
+    #lattice-blueprint .lt-lab .lt-lab-note{font-size:11px;color:var(--lt-muted);margin-top:12px}
+    #lattice-blueprint .lt-choices{display:grid;gap:9px;margin:17px 0}
+    #lattice-blueprint .lt-choice{display:flex;gap:9px;align-items:center;padding:10px 12px;background:var(--lt-panel);border:1px solid var(--lt-line);border-radius:9px;font-size:13px}
+    #lattice-blueprint .lt-choice input{accent-color:var(--lt-accent);flex:none}
+    #lattice-blueprint .lt-feedback{font-size:13px;line-height:1.65;background:var(--lt-soft);padding:13px;border-radius:9px;margin-top:12px}
+    #lattice-blueprint .lt-feedback:empty{display:none}
+    #lattice-blueprint .lt-footer-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:22px;border-top:1px solid var(--lt-line);padding-top:16px}
+    #lattice-blueprint .lt-footer-actions .lt-primary{width:auto;margin:0;min-width:125px}
+    #lattice-blueprint.lt-reading-focus .lt-sidebar{display:none}
+    #lattice-blueprint.lt-reading-focus .lt-shell{grid-template-columns:minmax(0,1fr)}
+    #lattice-blueprint.lt-reading-focus .lt-main{max-width:900px;margin:0 auto;width:100%}
+    #lattice-blueprint.lt-no-motion *,#lattice-blueprint.lt-no-motion *:before{transition:none!important;animation:none!important}
+    @media(max-width:840px){#lattice-blueprint .lt-shell{grid-template-columns:145px minmax(0,1fr)}#lattice-blueprint .lt-main{padding:23px 20px}#lattice-blueprint .lt-map-layout,#lattice-blueprint .lt-lesson-layout{gap:17px;grid-template-columns:minmax(0,1fr)}#lattice-blueprint .lt-detail{padding:18px}#lattice-blueprint .lt-lab{max-width:380px;width:100%}#lattice-blueprint .lt-shell{min-height:0}}
+    @media(max-width:560px){#lattice-blueprint .lt-shell{grid-template-columns:minmax(0,1fr)}#lattice-blueprint .lt-sidebar{padding:12px;border-right:0;border-bottom:1px solid var(--lt-line);gap:10px}#lattice-blueprint .lt-sidebar nav:first-child{display:flex;flex-wrap:wrap}#lattice-blueprint .lt-navitem{width:auto}#lattice-blueprint .lt-subjects{display:flex;flex-wrap:wrap;gap:4px}#lattice-blueprint .lt-subject{width:auto;padding:7px 9px;font-size:11px}#lattice-blueprint .lt-small-label,#lattice-blueprint .lt-offline,#lattice-blueprint .lt-window-controls{display:none}#lattice-blueprint .lt-main{padding:20px 16px}#lattice-blueprint h1{font-size:26px}#lattice-blueprint .lt-caption{font-size:11px}#lattice-blueprint .lt-titlebar{padding:8px 10px;gap:7px}#lattice-blueprint .lt-brand{font-size:13px}#lattice-blueprint .lt-picker{min-width:160px;max-width:none}#lattice-blueprint .lt-detail{padding:16px}}
+    @media(prefers-reduced-motion:reduce){#lattice-blueprint *,#lattice-blueprint *:before{transition:none!important;animation:none!important}}
+    @media(pointer:coarse){#lattice-blueprint button,#lattice-blueprint select,#lattice-blueprint .lt-choice{min-height:44px}#lattice-blueprint input{font-size:16px}}
+  &lt;/style&gt;
+  &lt;div class=&quot;lt-titlebar&quot;&gt;
+    &lt;span class=&quot;lt-mark&quot; aria-hidden=&quot;true&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;lt-brand&quot;&gt;Lattice&lt;/span&gt;
+    &lt;span class=&quot;lt-caption&quot; id=&quot;lt-preview-label&quot;&gt;Design preview&lt;/span&gt;&lt;span class=&quot;lt-grow&quot;&gt;&lt;/span&gt;
+    &lt;button type=&quot;button&quot; class=&quot;cursor-interaction&quot; id=&quot;lt-language&quot; aria-label=&quot;Switch interface and specimen language&quot;&gt;中文&lt;/button&gt;
+    &lt;span class=&quot;lt-window-controls&quot; aria-hidden=&quot;true&quot;&gt;─ □ ×&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;lt-shell&quot;&gt;
+    &lt;aside class=&quot;lt-sidebar&quot; aria-label=&quot;Learning navigation&quot;&gt;
+      &lt;nav aria-label=&quot;Workspace&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;lt-navitem cursor-interaction&quot; data-view=&quot;map&quot; aria-pressed=&quot;true&quot;&gt;&lt;i data-lucide=&quot;git-branch&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span data-label=&quot;map&quot;&gt;Learning map&lt;/span&gt;&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;lt-navitem cursor-interaction&quot; data-view=&quot;lesson&quot; aria-pressed=&quot;false&quot;&gt;&lt;i data-lucide=&quot;book-open&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span data-label=&quot;lesson&quot;&gt;Lesson studio&lt;/span&gt;&lt;/button&gt;
+      &lt;/nav&gt;
+      &lt;div&gt;&lt;div class=&quot;lt-small-label&quot; id=&quot;lt-subject-label&quot;&gt;Your curriculum&lt;/div&gt;&lt;nav class=&quot;lt-subjects&quot; id=&quot;lt-subjects&quot; aria-label=&quot;Subjects&quot;&gt;&lt;/nav&gt;&lt;/div&gt;
+      &lt;div class=&quot;lt-offline&quot;&gt;&lt;span class=&quot;lt-offline-dot&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span data-label=&quot;offline&quot;&gt;Designed for offline study&lt;/span&gt;&lt;/div&gt;
+    &lt;/aside&gt;
+    &lt;main class=&quot;lt-main&quot; id=&quot;lt-main&quot;&gt;&lt;/main&gt;
+  &lt;/div&gt;
+  &lt;script type=&quot;application/json&quot; id=&quot;lt-curriculum-data&quot;&gt;{&quot;groups&quot;:[{&quot;id&quot;:&quot;F&quot;,&quot;en&quot;:&quot;Foundations&quot;,&quot;zh&quot;:&quot;通用基础&quot;},{&quot;id&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Mathematics&quot;,&quot;zh&quot;:&quot;数学&quot;},{&quot;id&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Physics&quot;,&quot;zh&quot;:&quot;物理&quot;},{&quot;id&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Chemistry&quot;,&quot;zh&quot;:&quot;化学&quot;},{&quot;id&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Biology&quot;,&quot;zh&quot;:&quot;生物学&quot;},{&quot;id&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Computer science &amp; OI&quot;,&quot;zh&quot;:&quot;计算机科学与信息学竞赛&quot;},{&quot;id&quot;:&quot;X&quot;,&quot;en&quot;:&quot;Connections &amp; projects&quot;,&quot;zh&quot;:&quot;学科交叉与项目&quot;}],&quot;courses&quot;:[{&quot;id&quot;:&quot;F01&quot;,&quot;group&quot;:&quot;F&quot;,&quot;en&quot;:&quot;Mathematical language &amp; numerical fluency&quot;,&quot;zh&quot;:&quot;数学语言与数感&quot;,&quot;requires&quot;:[],&quot;modules&quot;:[&quot;Numbers, fractions and ratios&quot;,&quot;Algebraic notation and expressions&quot;,&quot;Sets, functions and mappings&quot;,&quot;Logic, quantifiers and negation&quot;,&quot;Graphs, scales and estimation&quot;,&quot;Mathematical communication&quot;],&quot;exit&quot;:&quot;Translate a verbal constraint into symbols, test examples, and explain the domain.&quot;},{&quot;id&quot;:&quot;F02&quot;,&quot;group&quot;:&quot;F&quot;,&quot;en&quot;:&quot;Proof &amp; problem-solving methods&quot;,&quot;zh&quot;:&quot;证明与解题方法&quot;,&quot;requires&quot;:[&quot;F01&quot;],&quot;modules&quot;:[&quot;Claims, definitions and counterexamples&quot;,&quot;Direct proof and equivalence&quot;,&quot;Contrapositive and contradiction&quot;,&quot;Mathematical induction&quot;,&quot;Invariants and extremal arguments&quot;,&quot;Writing and checking a proof&quot;],&quot;exit&quot;:&quot;Produce a complete proof and diagnose a plausible but invalid proof.&quot;},{&quot;id&quot;:&quot;F03&quot;,&quot;group&quot;:&quot;F&quot;,&quot;en&quot;:&quot;Measurement &amp; scientific inquiry&quot;,&quot;zh&quot;:&quot;测量与科学探究&quot;,&quot;requires&quot;:[&quot;F01&quot;],&quot;modules&quot;:[&quot;SI units and dimensional analysis&quot;,&quot;Measurement and uncertainty&quot;,&quot;Graphs and data interpretation&quot;,&quot;Hypotheses, controls and confounding&quot;,&quot;Models, fitting and residuals&quot;,&quot;Reproducible laboratory records&quot;],&quot;exit&quot;:&quot;Design a controlled investigation, propagate simple uncertainty, and state model limits.&quot;},{&quot;id&quot;:&quot;F04&quot;,&quot;group&quot;:&quot;F&quot;,&quot;en&quot;:&quot;Learning &amp; scientific communication&quot;,&quot;zh&quot;:&quot;学习方法与科学表达&quot;,&quot;requires&quot;:[],&quot;modules&quot;:[&quot;Retrieval and self-explanation&quot;,&quot;Worked examples and deliberate practice&quot;,&quot;Error logs and revision&quot;,&quot;Reading scientific text&quot;,&quot;Bilingual terminology and notation&quot;,&quot;Planning and presenting an investigation&quot;],&quot;exit&quot;:&quot;Explain a concept in both languages and construct a review plan from actual errors.&quot;},{&quot;id&quot;:&quot;M01&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Algebra &amp; functions&quot;,&quot;zh&quot;:&quot;代数与函数&quot;,&quot;requires&quot;:[&quot;F01&quot;],&quot;modules&quot;:[&quot;Expressions, equations and inequalities&quot;,&quot;Linear and quadratic functions&quot;,&quot;Polynomials and rational functions&quot;,&quot;Exponential and logarithmic functions&quot;,&quot;Composition and inverse functions&quot;,&quot;Parameters and functional modeling&quot;],&quot;exit&quot;:&quot;Solve a parameterized problem while tracking domain restrictions and extraneous roots.&quot;},{&quot;id&quot;:&quot;M02&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Trigonometry&quot;,&quot;zh&quot;:&quot;三角学&quot;,&quot;requires&quot;:[&quot;M01&quot;],&quot;modules&quot;:[&quot;Angles, radians and the unit circle&quot;,&quot;Sine, cosine and tangent&quot;,&quot;Identities and transformations&quot;,&quot;Trigonometric equations&quot;,&quot;Triangle laws and applications&quot;,&quot;Oscillations and inverse trigonometric functions&quot;],&quot;exit&quot;:&quot;Derive an identity and solve a geometry or oscillation problem with correct angle domains.&quot;},{&quot;id&quot;:&quot;M03&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Euclidean geometry&quot;,&quot;zh&quot;:&quot;欧几里得几何&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Axioms, congruence and similarity&quot;,&quot;Triangles and special centers&quot;,&quot;Circles and cyclic quadrilaterals&quot;,&quot;Area, ratios and geometric inequalities&quot;,&quot;Transformations and constructions&quot;,&quot;Solid geometry and spatial reasoning&quot;],&quot;exit&quot;:&quot;Write a synthetic proof with explicit incidence and nondegeneracy assumptions.&quot;},{&quot;id&quot;:&quot;M04&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Coordinate geometry &amp; vectors&quot;,&quot;zh&quot;:&quot;解析几何与向量&quot;,&quot;requires&quot;:[&quot;M01&quot;],&quot;modules&quot;:[&quot;Cartesian coordinates and distance&quot;,&quot;Lines, planes and intersections&quot;,&quot;Vector addition and scalar products&quot;,&quot;Conic sections&quot;,&quot;Parametric and polar representations&quot;,&quot;Three-dimensional vectors and cross products&quot;],&quot;exit&quot;:&quot;Translate a geometric constraint into equations and interpret every solution geometrically.&quot;},{&quot;id&quot;:&quot;M05&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Complex numbers &amp; polynomials&quot;,&quot;zh&quot;:&quot;复数与多项式&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;M02&quot;],&quot;modules&quot;:[&quot;Complex arithmetic and the plane&quot;,&quot;Polar form and roots of unity&quot;,&quot;Polynomial division and factorization&quot;,&quot;Vieta relations and root structure&quot;,&quot;Interpolation and polynomial identities&quot;,&quot;Complex-number geometry&quot;],&quot;exit&quot;:&quot;Solve a polynomial or geometry problem using roots of unity and justify multiplicities.&quot;},{&quot;id&quot;:&quot;M06&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Sequences &amp; recurrence relations&quot;,&quot;zh&quot;:&quot;数列与递推&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Arithmetic and geometric sequences&quot;,&quot;Summation and telescoping&quot;,&quot;First-order recurrences&quot;,&quot;Linear recurrences and characteristic roots&quot;,&quot;Generating-function introduction&quot;,&quot;Bounds and asymptotic growth&quot;],&quot;exit&quot;:&quot;Derive and verify a recurrence, initial conditions, and a closed form or asymptotic bound.&quot;},{&quot;id&quot;:&quot;M07&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Calculus I: limits &amp; derivatives&quot;,&quot;zh&quot;:&quot;微积分一：极限与导数&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;M02&quot;],&quot;modules&quot;:[&quot;Limits and continuity&quot;,&quot;Derivative as a local rate&quot;,&quot;Differentiation rules&quot;,&quot;Mean value theorem and shape&quot;,&quot;Optimization and related rates&quot;,&quot;Local approximation and error&quot;],&quot;exit&quot;:&quot;Derive a derivative from its definition and solve an optimization problem with boundary checks.&quot;},{&quot;id&quot;:&quot;M08&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Calculus II: integration &amp; series&quot;,&quot;zh&quot;:&quot;微积分二：积分与级数&quot;,&quot;requires&quot;:[&quot;M07&quot;,&quot;M06&quot;],&quot;modules&quot;:[&quot;Riemann sums and definite integrals&quot;,&quot;Fundamental theorem of calculus&quot;,&quot;Integration techniques&quot;,&quot;Improper integrals and applications&quot;,&quot;Infinite series and convergence&quot;,&quot;Power series and Taylor approximation&quot;],&quot;exit&quot;:&quot;Choose and justify an integration or convergence method and bound an approximation error.&quot;},{&quot;id&quot;:&quot;M09&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Linear algebra I&quot;,&quot;zh&quot;:&quot;线性代数一&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;M04&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Linear systems and elimination&quot;,&quot;Vectors, span and independence&quot;,&quot;Vector spaces, bases and dimension&quot;,&quot;Linear maps and matrices&quot;,&quot;Determinants and invertibility&quot;,&quot;Eigenvalues and diagonalization&quot;],&quot;exit&quot;:&quot;Explain a transformation geometrically, solve its system, and justify rank and dimension claims.&quot;},{&quot;id&quot;:&quot;M10&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Linear algebra II&quot;,&quot;zh&quot;:&quot;线性代数二&quot;,&quot;requires&quot;:[&quot;M09&quot;],&quot;modules&quot;:[&quot;Inner products and orthogonality&quot;,&quot;Least squares and projections&quot;,&quot;Spectral theorem&quot;,&quot;Singular value decomposition&quot;,&quot;Quadratic forms and definiteness&quot;,&quot;Canonical forms and applications&quot;],&quot;exit&quot;:&quot;Derive a least-squares solution and explain when a spectral decomposition is valid.&quot;},{&quot;id&quot;:&quot;M11&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Multivariable &amp; vector calculus&quot;,&quot;zh&quot;:&quot;多元微积分与向量分析&quot;,&quot;requires&quot;:[&quot;M08&quot;,&quot;M09&quot;],&quot;modules&quot;:[&quot;Multivariable limits and partial derivatives&quot;,&quot;Gradients, Jacobians and chain rules&quot;,&quot;Constrained extrema&quot;,&quot;Multiple integrals and coordinate changes&quot;,&quot;Line and surface integrals&quot;,&quot;Green, Stokes and divergence theorems&quot;],&quot;exit&quot;:&quot;Choose an appropriate integral theorem and verify orientation, regularity and domain assumptions.&quot;},{&quot;id&quot;:&quot;M12&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Differential equations&quot;,&quot;zh&quot;:&quot;微分方程&quot;,&quot;requires&quot;:[&quot;M08&quot;,&quot;M09&quot;],&quot;modules&quot;:[&quot;Modeling and initial-value problems&quot;,&quot;First-order equations&quot;,&quot;Higher-order linear equations&quot;,&quot;Systems and phase portraits&quot;,&quot;Laplace transforms and forcing&quot;,&quot;Numerical solutions and stability&quot;],&quot;exit&quot;:&quot;Build and solve a dynamical model, state initial data, and analyze stability.&quot;},{&quot;id&quot;:&quot;M13&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Real analysis&quot;,&quot;zh&quot;:&quot;实分析&quot;,&quot;requires&quot;:[&quot;M08&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Completeness of the real numbers&quot;,&quot;Sequences and topology of the line&quot;,&quot;Continuity and compactness&quot;,&quot;Rigorous differentiation and integration&quot;,&quot;Sequences and series of functions&quot;,&quot;Metric spaces and introduction to measure&quot;],&quot;exit&quot;:&quot;Prove a convergence theorem with the correct quantifiers and construct a counterexample when an assumption fails.&quot;},{&quot;id&quot;:&quot;M14&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Abstract algebra I: groups &amp; rings&quot;,&quot;zh&quot;:&quot;抽象代数一：群与环&quot;,&quot;requires&quot;:[&quot;F02&quot;,&quot;M16&quot;,&quot;M05&quot;],&quot;modules&quot;:[&quot;Groups and symmetry&quot;,&quot;Subgroups, cosets and Lagrange theorem&quot;,&quot;Homomorphisms and quotient groups&quot;,&quot;Group actions and counting&quot;,&quot;Rings, ideals and quotients&quot;,&quot;Polynomial rings and fields&quot;],&quot;exit&quot;:&quot;Prove a structural claim using homomorphisms or quotients and give examples and nonexamples.&quot;},{&quot;id&quot;:&quot;M15&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Abstract algebra II: fields &amp; structure&quot;,&quot;zh&quot;:&quot;抽象代数二：域与结构&quot;,&quot;requires&quot;:[&quot;M14&quot;,&quot;M10&quot;],&quot;modules&quot;:[&quot;Finite-group structure and Sylow theorems&quot;,&quot;Modules and linear operators&quot;,&quot;Field extensions&quot;,&quot;Finite fields&quot;,&quot;Galois correspondence&quot;,&quot;Solvability and applications&quot;],&quot;exit&quot;:&quot;Analyze a finite field or field extension and explain the relevant automorphism structure.&quot;},{&quot;id&quot;:&quot;M16&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Elementary number theory&quot;,&quot;zh&quot;:&quot;初等数论&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Divisibility and Euclidean algorithm&quot;,&quot;Congruences and modular inverses&quot;,&quot;Prime numbers and arithmetic functions&quot;,&quot;Fermat, Euler and Chinese remainder theorem&quot;,&quot;Diophantine equations&quot;,&quot;Orders and quadratic residues&quot;],&quot;exit&quot;:&quot;Derive a congruence solution and identify exactly when inverses and solution families exist.&quot;},{&quot;id&quot;:&quot;M17&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Combinatorics&quot;,&quot;zh&quot;:&quot;组合数学&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Sum and product rules&quot;,&quot;Bijections and double counting&quot;,&quot;Binomial coefficients and identities&quot;,&quot;Pigeonhole and inclusion-exclusion&quot;,&quot;Recurrences, Catalan and Stirling numbers&quot;,&quot;Generating functions and extremal counting&quot;],&quot;exit&quot;:&quot;Give two justified counts of the same set and solve a structured counting problem.&quot;},{&quot;id&quot;:&quot;M18&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Graph theory&quot;,&quot;zh&quot;:&quot;图论&quot;,&quot;requires&quot;:[&quot;M17&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Graphs, walks and connectivity&quot;,&quot;Trees and spanning structures&quot;,&quot;Euler and Hamilton problems&quot;,&quot;Matchings and Hall theorem&quot;,&quot;Coloring, planar graphs and extremal bounds&quot;,&quot;Graph counting and probabilistic constructions&quot;],&quot;exit&quot;:&quot;Prove a graph property and distinguish a constructive algorithm from an existence proof.&quot;},{&quot;id&quot;:&quot;M19&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Discrete probability&quot;,&quot;zh&quot;:&quot;离散概率&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;M17&quot;],&quot;modules&quot;:[&quot;Sample spaces and events&quot;,&quot;Conditional probability and Bayes rule&quot;,&quot;Independence and random variables&quot;,&quot;Expectation and variance&quot;,&quot;Standard discrete distributions&quot;,&quot;Concentration, random walks and applications&quot;],&quot;exit&quot;:&quot;Build a probability model and explain which independence assumptions are actually needed.&quot;},{&quot;id&quot;:&quot;M20&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Continuous probability &amp; statistics&quot;,&quot;zh&quot;:&quot;连续概率与统计&quot;,&quot;requires&quot;:[&quot;M19&quot;,&quot;M08&quot;],&quot;modules&quot;:[&quot;Densities and distribution functions&quot;,&quot;Joint distributions and transformations&quot;,&quot;Laws of large numbers and central limit theorem&quot;,&quot;Estimation and confidence intervals&quot;,&quot;Hypothesis tests and experimental design&quot;,&quot;Regression, model checking and resampling&quot;],&quot;exit&quot;:&quot;Analyze a dataset with uncertainty and distinguish statistical evidence from a causal conclusion.&quot;},{&quot;id&quot;:&quot;M21&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Inequalities&quot;,&quot;zh&quot;:&quot;不等式&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Order, equality cases and elementary bounds&quot;,&quot;AM-GM and weighted forms&quot;,&quot;Cauchy-Schwarz and Holder&quot;,&quot;Convexity and Jensen&quot;,&quot;Rearrangement, smoothing and substitutions&quot;,&quot;Symmetric and geometric inequalities&quot;],&quot;exit&quot;:&quot;Prove an inequality, state its domain, and characterize every equality case.&quot;},{&quot;id&quot;:&quot;M22&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Olympiad mathematics studio&quot;,&quot;zh&quot;:&quot;数学奥林匹克专题&quot;,&quot;requires&quot;:[&quot;M03&quot;,&quot;M05&quot;,&quot;M16&quot;,&quot;M17&quot;,&quot;M21&quot;],&quot;modules&quot;:[&quot;Algebra and functional equations&quot;,&quot;Number-theoretic constructions&quot;,&quot;Combinatorial invariants and extremal methods&quot;,&quot;Advanced geometry and inversion&quot;,&quot;Mixed problems and proof repair&quot;,&quot;Timed sets and reflective reconstruction&quot;],&quot;exit&quot;:&quot;Write complete solutions to an unseen mixed set and revise gaps using a proof rubric.&quot;},{&quot;id&quot;:&quot;M23&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Complex analysis&quot;,&quot;zh&quot;:&quot;复分析&quot;,&quot;requires&quot;:[&quot;M05&quot;,&quot;M08&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Complex differentiability&quot;,&quot;Cauchy-Riemann equations&quot;,&quot;Contour integrals and Cauchy theorem&quot;,&quot;Analytic expansions&quot;,&quot;Singularities and residues&quot;,&quot;Conformal maps and applications&quot;],&quot;exit&quot;:&quot;Evaluate a contour integral while checking analyticity, singularities and contour assumptions.&quot;},{&quot;id&quot;:&quot;M24&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Topology&quot;,&quot;zh&quot;:&quot;拓扑学&quot;,&quot;requires&quot;:[&quot;M13&quot;],&quot;modules&quot;:[&quot;Topological spaces and bases&quot;,&quot;Continuous maps and homeomorphisms&quot;,&quot;Products and quotient spaces&quot;,&quot;Compactness and connectedness&quot;,&quot;Separation and metric-space connections&quot;,&quot;Fundamental group introduction&quot;],&quot;exit&quot;:&quot;Use topological invariants to justify or disprove an asserted equivalence of spaces.&quot;},{&quot;id&quot;:&quot;M25&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Differential geometry&quot;,&quot;zh&quot;:&quot;微分几何&quot;,&quot;requires&quot;:[&quot;M11&quot;,&quot;M10&quot;],&quot;modules&quot;:[&quot;Parametric curves and curvature&quot;,&quot;Surfaces and tangent spaces&quot;,&quot;First and second fundamental forms&quot;,&quot;Curvature and geodesics&quot;,&quot;Intrinsic geometry&quot;,&quot;Manifold and differential-form introduction&quot;],&quot;exit&quot;:&quot;Compute a geometric quantity and explain whether it depends on the chosen coordinates.&quot;},{&quot;id&quot;:&quot;M26&quot;,&quot;group&quot;:&quot;M&quot;,&quot;en&quot;:&quot;Optimization &amp; numerical mathematics&quot;,&quot;zh&quot;:&quot;最优化与数值数学&quot;,&quot;requires&quot;:[&quot;M11&quot;,&quot;M09&quot;],&quot;modules&quot;:[&quot;Floating-point error and conditioning&quot;,&quot;Root finding and convergence&quot;,&quot;Numerical linear algebra&quot;,&quot;Interpolation and quadrature&quot;,&quot;Convex optimization and gradients&quot;,&quot;Constrained optimization and numerical validation&quot;],&quot;exit&quot;:&quot;Choose a numerical method, estimate error, and distinguish convergence from correctness.&quot;},{&quot;id&quot;:&quot;P01&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Newtonian mechanics I&quot;,&quot;zh&quot;:&quot;牛顿力学一&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;M02&quot;,&quot;M04&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Kinematics in one dimension&quot;,&quot;Motion in two and three dimensions&quot;,&quot;Newton laws and force diagrams&quot;,&quot;Contact forces and friction&quot;,&quot;Circular motion and constraints&quot;,&quot;Reference frames and model checks&quot;],&quot;exit&quot;:&quot;Draw a valid force diagram, choose a frame, and solve motion with explicit assumptions.&quot;},{&quot;id&quot;:&quot;P02&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Newtonian mechanics II&quot;,&quot;zh&quot;:&quot;牛顿力学二&quot;,&quot;requires&quot;:[&quot;P01&quot;],&quot;modules&quot;:[&quot;Work and kinetic energy&quot;,&quot;Potential energy and conservation&quot;,&quot;Impulse, momentum and collisions&quot;,&quot;Center of mass and many-particle systems&quot;,&quot;Torque, rotation and angular momentum&quot;,&quot;Rolling and rigid-body equilibrium&quot;],&quot;exit&quot;:&quot;Choose a conservation law and justify the system boundary and external interactions.&quot;},{&quot;id&quot;:&quot;P03&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Gravitation, fluids &amp; oscillations&quot;,&quot;zh&quot;:&quot;引力、流体与振动&quot;,&quot;requires&quot;:[&quot;P02&quot;,&quot;M02&quot;],&quot;modules&quot;:[&quot;Newtonian gravitation and orbits&quot;,&quot;Static fluids and buoyancy&quot;,&quot;Flow, continuity and Bernoulli models&quot;,&quot;Simple harmonic motion&quot;,&quot;Damping and resonance&quot;,&quot;Coupled oscillations introduction&quot;],&quot;exit&quot;:&quot;Analyze an orbit, flow or oscillator while testing the model&#x27;s range of validity.&quot;},{&quot;id&quot;:&quot;P04&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Thermal physics &amp; thermodynamics&quot;,&quot;zh&quot;:&quot;热学与热力学&quot;,&quot;requires&quot;:[&quot;P02&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Temperature and thermal equilibrium&quot;,&quot;Ideal gases and microscopic models&quot;,&quot;Heat, work and the first law&quot;,&quot;Thermodynamic processes&quot;,&quot;Entropy and the second law&quot;,&quot;Engines, refrigerators and phase changes&quot;],&quot;exit&quot;:&quot;Calculate a thermodynamic cycle with a consistent sign convention and entropy accounting.&quot;},{&quot;id&quot;:&quot;P05&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Electric fields &amp; circuits&quot;,&quot;zh&quot;:&quot;电场与电路&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;M04&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Charge and Coulomb force&quot;,&quot;Electric field and potential&quot;,&quot;Conductors, capacitors and dielectrics&quot;,&quot;Current, resistance and power&quot;,&quot;Kirchhoff laws and circuit models&quot;,&quot;RC transients and measurement&quot;],&quot;exit&quot;:&quot;Solve a circuit or field problem and distinguish voltage, energy, current and charge.&quot;},{&quot;id&quot;:&quot;P06&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Magnetism &amp; induction&quot;,&quot;zh&quot;:&quot;磁场与电磁感应&quot;,&quot;requires&quot;:[&quot;P05&quot;,&quot;M02&quot;],&quot;modules&quot;:[&quot;Magnetic forces and particle motion&quot;,&quot;Magnetic fields from currents&quot;,&quot;Magnetic flux and induction&quot;,&quot;Lenz law and energy conservation&quot;,&quot;Inductance and AC circuits&quot;,&quot;Electromagnetic waves and Maxwell overview&quot;],&quot;exit&quot;:&quot;Determine induced current and energy flow with consistent directions and signs.&quot;},{&quot;id&quot;:&quot;P07&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Waves &amp; optics&quot;,&quot;zh&quot;:&quot;波动与光学&quot;,&quot;requires&quot;:[&quot;P03&quot;,&quot;M02&quot;],&quot;modules&quot;:[&quot;Wave propagation and superposition&quot;,&quot;Standing waves and sound&quot;,&quot;Reflection and refraction&quot;,&quot;Lenses and optical instruments&quot;,&quot;Interference and diffraction&quot;,&quot;Polarization and wave-model limits&quot;],&quot;exit&quot;:&quot;Predict an optical pattern and explain when a ray model or wave model is appropriate.&quot;},{&quot;id&quot;:&quot;P08&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Analytical mechanics&quot;,&quot;zh&quot;:&quot;分析力学&quot;,&quot;requires&quot;:[&quot;P02&quot;,&quot;M11&quot;,&quot;M12&quot;],&quot;modules&quot;:[&quot;Generalized coordinates and constraints&quot;,&quot;Variational principles&quot;,&quot;Lagrange equations&quot;,&quot;Central-force motion&quot;,&quot;Hamiltonian mechanics&quot;,&quot;Small oscillations and nonlinear dynamics&quot;],&quot;exit&quot;:&quot;Derive equations of motion from a Lagrangian and identify conserved quantities.&quot;},{&quot;id&quot;:&quot;P09&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Electromagnetism II&quot;,&quot;zh&quot;:&quot;电磁学二&quot;,&quot;requires&quot;:[&quot;P06&quot;,&quot;M11&quot;,&quot;M12&quot;],&quot;modules&quot;:[&quot;Electrostatic boundary-value problems&quot;,&quot;Multipoles and fields in matter&quot;,&quot;Magnetostatics and vector potentials&quot;,&quot;Maxwell equations&quot;,&quot;Electromagnetic energy and momentum&quot;,&quot;Radiation and waveguides introduction&quot;],&quot;exit&quot;:&quot;Solve a field model using boundary conditions and verify the relevant conservation law.&quot;},{&quot;id&quot;:&quot;P10&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Quantum physics&quot;,&quot;zh&quot;:&quot;量子物理&quot;,&quot;requires&quot;:[&quot;P07&quot;,&quot;M10&quot;,&quot;M12&quot;],&quot;modules&quot;:[&quot;Experimental origins and wave-particle models&quot;,&quot;States, operators and measurement&quot;,&quot;Schrodinger equation in one dimension&quot;,&quot;Harmonic oscillator and tunneling&quot;,&quot;Angular momentum and the hydrogen atom&quot;,&quot;Spin, approximation and many-particle overview&quot;],&quot;exit&quot;:&quot;Normalize a state, compute observable probabilities, and interpret the limits of a model.&quot;},{&quot;id&quot;:&quot;P11&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Relativity &amp; astrophysics&quot;,&quot;zh&quot;:&quot;相对论与天体物理&quot;,&quot;requires&quot;:[&quot;P02&quot;,&quot;M08&quot;],&quot;modules&quot;:[&quot;Special-relativity postulates&quot;,&quot;Lorentz transformations&quot;,&quot;Relativistic energy and momentum&quot;,&quot;Gravity and general-relativity overview&quot;,&quot;Stellar structure and evolution&quot;,&quot;Cosmology and observational evidence&quot;],&quot;exit&quot;:&quot;Solve a special-relativity problem and separate observational evidence from a cosmological model assumption.&quot;},{&quot;id&quot;:&quot;P12&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Experimental physics&quot;,&quot;zh&quot;:&quot;实验物理&quot;,&quot;requires&quot;:[&quot;F03&quot;,&quot;P01&quot;,&quot;P05&quot;],&quot;modules&quot;:[&quot;Instrument resolution and calibration&quot;,&quot;Uncertainty and repeated measurement&quot;,&quot;Mechanics experiments&quot;,&quot;Electrical and optical experiments&quot;,&quot;Fitting, residuals and systematic error&quot;,&quot;Experimental design and report defense&quot;],&quot;exit&quot;:&quot;Design, analyze and critique an experiment; simulated data does not certify hands-on skill.&quot;},{&quot;id&quot;:&quot;P13&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Physics Olympiad studio&quot;,&quot;zh&quot;:&quot;物理奥林匹克专题&quot;,&quot;requires&quot;:[&quot;P02&quot;,&quot;P03&quot;,&quot;P04&quot;,&quot;P06&quot;,&quot;P07&quot;,&quot;P12&quot;],&quot;modules&quot;:[&quot;Scaling, estimates and limiting cases&quot;,&quot;Coupled mechanics problems&quot;,&quot;Field, circuit and thermal synthesis&quot;,&quot;Optics and introductory modern-physics bridges&quot;,&quot;Experimental data challenges&quot;,&quot;Timed theory and experiment analysis&quot;],&quot;exit&quot;:&quot;Solve an unfamiliar multi-stage model and defend assumptions, dimensions and limiting cases.&quot;},{&quot;id&quot;:&quot;P14&quot;,&quot;group&quot;:&quot;P&quot;,&quot;en&quot;:&quot;Statistical mechanics &amp; condensed matter&quot;,&quot;zh&quot;:&quot;统计物理与凝聚态导论&quot;,&quot;requires&quot;:[&quot;P04&quot;,&quot;M08&quot;,&quot;M19&quot;],&quot;modules&quot;:[&quot;Microstates, multiplicity and entropy&quot;,&quot;Ensembles and partition functions&quot;,&quot;Classical gases and distributions&quot;,&quot;Quantum statistics&quot;,&quot;Solids, phonons and electronic structure&quot;,&quot;Phase transitions and collective behavior&quot;],&quot;exit&quot;:&quot;Connect a microscopic model to a macroscopic prediction and identify approximation limits.&quot;},{&quot;id&quot;:&quot;C01&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Matter &amp; stoichiometry&quot;,&quot;zh&quot;:&quot;物质与化学计量&quot;,&quot;requires&quot;:[&quot;M01&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Particles, substances and mixtures&quot;,&quot;Atomic mass, moles and composition&quot;,&quot;Reaction equations and conservation&quot;,&quot;Limiting reagents and yields&quot;,&quot;Solutions and concentration&quot;,&quot;Gases and quantitative chemical models&quot;],&quot;exit&quot;:&quot;Balance and solve a reaction problem with units, limiting reagents and realistic yield assumptions.&quot;},{&quot;id&quot;:&quot;C02&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Atomic structure &amp; chemical bonding&quot;,&quot;zh&quot;:&quot;原子结构与化学键&quot;,&quot;requires&quot;:[&quot;C01&quot;],&quot;modules&quot;:[&quot;Atomic evidence and electronic structure&quot;,&quot;Periodicity and trends&quot;,&quot;Ionic, covalent and metallic bonding&quot;,&quot;Molecular geometry and polarity&quot;,&quot;Intermolecular forces and materials&quot;,&quot;Orbital and molecular-orbital introduction&quot;],&quot;exit&quot;:&quot;Predict and explain a structure-property relationship while distinguishing models from measurements.&quot;},{&quot;id&quot;:&quot;C03&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Chemical energetics &amp; equilibrium&quot;,&quot;zh&quot;:&quot;化学能量与平衡&quot;,&quot;requires&quot;:[&quot;C01&quot;,&quot;C02&quot;,&quot;M01&quot;],&quot;modules&quot;:[&quot;Enthalpy and Hess law&quot;,&quot;Entropy and Gibbs energy&quot;,&quot;Equilibrium constants and reaction quotients&quot;,&quot;Acids, bases and buffers&quot;,&quot;Solubility and complexation&quot;,&quot;Coupled equilibria and approximation checks&quot;],&quot;exit&quot;:&quot;Set up a mass-balanced equilibrium calculation and verify every approximation.&quot;},{&quot;id&quot;:&quot;C04&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Kinetics &amp; electrochemistry&quot;,&quot;zh&quot;:&quot;化学动力学与电化学&quot;,&quot;requires&quot;:[&quot;C03&quot;],&quot;modules&quot;:[&quot;Rates, rate laws and experimental determination&quot;,&quot;Integrated rate laws and half-life&quot;,&quot;Mechanisms and catalysis&quot;,&quot;Redox balancing&quot;,&quot;Galvanic and electrolytic cells&quot;,&quot;Nernst equation and kinetic-thermodynamic distinctions&quot;],&quot;exit&quot;:&quot;Infer a rate law from data and analyze an electrochemical cell with consistent conventions.&quot;},{&quot;id&quot;:&quot;C05&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Inorganic chemistry&quot;,&quot;zh&quot;:&quot;无机化学&quot;,&quot;requires&quot;:[&quot;C02&quot;,&quot;C03&quot;],&quot;modules&quot;:[&quot;Periodic patterns and main-group chemistry&quot;,&quot;Coordination compounds and isomerism&quot;,&quot;Crystal-field and ligand-field models&quot;,&quot;Transition-metal chemistry&quot;,&quot;Solid-state structure and materials&quot;,&quot;Inorganic reaction pathways&quot;],&quot;exit&quot;:&quot;Explain observed reactivity and magnetic or optical behavior using an appropriate structural model.&quot;},{&quot;id&quot;:&quot;C06&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Organic chemistry&quot;,&quot;zh&quot;:&quot;有机化学&quot;,&quot;requires&quot;:[&quot;C02&quot;,&quot;C03&quot;],&quot;modules&quot;:[&quot;Structure, nomenclature and functional groups&quot;,&quot;Stereochemistry and conformations&quot;,&quot;Acid-base behavior and electron flow&quot;,&quot;Substitution and elimination&quot;,&quot;Addition, aromatic and carbonyl chemistry&quot;,&quot;Synthesis and spectroscopic identification&quot;],&quot;exit&quot;:&quot;Propose a mechanism and synthesis route consistent with stereochemistry and spectral evidence.&quot;},{&quot;id&quot;:&quot;C07&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Analytical chemistry &amp; laboratory reasoning&quot;,&quot;zh&quot;:&quot;分析化学与实验推理&quot;,&quot;requires&quot;:[&quot;C03&quot;,&quot;C04&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Sampling, precision and calibration&quot;,&quot;Titration and gravimetry&quot;,&quot;Separation and chromatography&quot;,&quot;Spectroscopy and quantitative analysis&quot;,&quot;Experimental planning and quality control&quot;,&quot;Integrated unknown identification&quot;],&quot;exit&quot;:&quot;Identify an unknown from evidence and report uncertainty, controls and limitations.&quot;},{&quot;id&quot;:&quot;C08&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Physical chemistry&quot;,&quot;zh&quot;:&quot;物理化学&quot;,&quot;requires&quot;:[&quot;C04&quot;,&quot;M08&quot;,&quot;M09&quot;,&quot;P04&quot;],&quot;modules&quot;:[&quot;Thermodynamic potentials and chemical potential&quot;,&quot;Phase and reaction equilibria&quot;,&quot;Kinetic theory and transport&quot;,&quot;Quantum-chemical models&quot;,&quot;Molecular spectroscopy&quot;,&quot;Statistical thermodynamics and reaction dynamics&quot;],&quot;exit&quot;:&quot;Derive a quantitative chemical prediction and compare competing physical approximations.&quot;},{&quot;id&quot;:&quot;C09&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Biochemistry&quot;,&quot;zh&quot;:&quot;生物化学&quot;,&quot;requires&quot;:[&quot;C06&quot;,&quot;B01&quot;,&quot;C03&quot;],&quot;modules&quot;:[&quot;Proteins, carbohydrates, lipids and nucleic acids&quot;,&quot;Enzymes and kinetic models&quot;,&quot;Bioenergetics and coupling&quot;,&quot;Central metabolism&quot;,&quot;Biosynthesis and regulation&quot;,&quot;Biochemical methods and integrated pathways&quot;],&quot;exit&quot;:&quot;Trace atoms and energy through a pathway and interpret an enzyme experiment.&quot;},{&quot;id&quot;:&quot;C10&quot;,&quot;group&quot;:&quot;C&quot;,&quot;en&quot;:&quot;Chemistry Olympiad studio&quot;,&quot;zh&quot;:&quot;化学奥林匹克专题&quot;,&quot;requires&quot;:[&quot;C03&quot;,&quot;C04&quot;,&quot;C05&quot;,&quot;C06&quot;,&quot;C07&quot;],&quot;modules&quot;:[&quot;Quantitative multi-equilibrium problems&quot;,&quot;Structure and spectroscopy puzzles&quot;,&quot;Reaction mechanisms and synthesis&quot;,&quot;Thermodynamic and kinetic synthesis&quot;,&quot;Practical data and procedure analysis&quot;,&quot;Timed integrated problems&quot;],&quot;exit&quot;:&quot;Solve an unfamiliar chemical system with conservation laws, mechanistic reasoning and defensible approximations.&quot;},{&quot;id&quot;:&quot;B01&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Cell biology&quot;,&quot;zh&quot;:&quot;细胞生物学&quot;,&quot;requires&quot;:[&quot;C02&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Cell theory and biological organization&quot;,&quot;Membranes and transport&quot;,&quot;Organelles and cellular compartments&quot;,&quot;Enzymes and cellular energy&quot;,&quot;Cell cycle and division&quot;,&quot;Signaling, microscopy and evidence&quot;],&quot;exit&quot;:&quot;Explain a cellular mechanism and predict the result of a controlled perturbation.&quot;},{&quot;id&quot;:&quot;B02&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Genetics&quot;,&quot;zh&quot;:&quot;遗传学&quot;,&quot;requires&quot;:[&quot;B01&quot;,&quot;M01&quot;],&quot;modules&quot;:[&quot;Mendelian inheritance&quot;,&quot;Probability bridge and pedigree reasoning&quot;,&quot;Linkage, recombination and mapping&quot;,&quot;Chromosomal variation&quot;,&quot;Quantitative and population genetics&quot;,&quot;Genetic experiments and inference&quot;],&quot;exit&quot;:&quot;Infer an inheritance model from data and distinguish genotype, phenotype and environment.&quot;},{&quot;id&quot;:&quot;B03&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Molecular biology&quot;,&quot;zh&quot;:&quot;分子生物学&quot;,&quot;requires&quot;:[&quot;B02&quot;,&quot;C02&quot;],&quot;modules&quot;:[&quot;DNA structure and replication&quot;,&quot;Transcription and RNA processing&quot;,&quot;Translation and genetic code&quot;,&quot;Gene regulation&quot;,&quot;Mutation, repair and recombination&quot;,&quot;Molecular methods and experimental interpretation&quot;],&quot;exit&quot;:&quot;Predict how a molecular change affects expression and design a discriminating experiment.&quot;},{&quot;id&quot;:&quot;B04&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Evolution, ecology &amp; behavior&quot;,&quot;zh&quot;:&quot;进化、生态与行为&quot;,&quot;requires&quot;:[&quot;B02&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Evolutionary mechanisms&quot;,&quot;Phylogeny and comparative evidence&quot;,&quot;Population dynamics&quot;,&quot;Communities and ecosystems&quot;,&quot;Behavioral ecology&quot;,&quot;Biodiversity and conservation reasoning&quot;],&quot;exit&quot;:&quot;Evaluate an evolutionary or ecological explanation using evidence and alternative hypotheses.&quot;},{&quot;id&quot;:&quot;B05&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Plant biology &amp; physiology&quot;,&quot;zh&quot;:&quot;植物学与植物生理学&quot;,&quot;requires&quot;:[&quot;B01&quot;,&quot;C03&quot;],&quot;modules&quot;:[&quot;Plant diversity and life cycles&quot;,&quot;Tissues, growth and development&quot;,&quot;Water and mineral transport&quot;,&quot;Photosynthesis and carbon allocation&quot;,&quot;Hormones and environmental responses&quot;,&quot;Plant experiments and adaptations&quot;],&quot;exit&quot;:&quot;Relate plant structure to function and interpret a physiological experiment.&quot;},{&quot;id&quot;:&quot;B06&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Animal biology &amp; physiology&quot;,&quot;zh&quot;:&quot;动物学与动物生理学&quot;,&quot;requires&quot;:[&quot;B01&quot;,&quot;C03&quot;],&quot;modules&quot;:[&quot;Animal diversity and body plans&quot;,&quot;Homeostasis and feedback&quot;,&quot;Transport, respiration and nutrition&quot;,&quot;Excretion and osmoregulation&quot;,&quot;Neural and endocrine systems&quot;,&quot;Reproduction and integrated physiology&quot;],&quot;exit&quot;:&quot;Explain a feedback mechanism and predict a coupled physiological response.&quot;},{&quot;id&quot;:&quot;B07&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Microbiology &amp; immunology&quot;,&quot;zh&quot;:&quot;微生物学与免疫学&quot;,&quot;requires&quot;:[&quot;B03&quot;,&quot;B06&quot;],&quot;modules&quot;:[&quot;Microbial diversity and growth&quot;,&quot;Viruses and host interactions&quot;,&quot;Microbial ecology and evolution&quot;,&quot;Innate immunity&quot;,&quot;Adaptive immunity&quot;,&quot;Experimental and population-level immune evidence&quot;],&quot;exit&quot;:&quot;Interpret host-pathogen or immune-response data without confusing correlation with mechanism.&quot;},{&quot;id&quot;:&quot;B08&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Developmental biology &amp; neuroscience&quot;,&quot;zh&quot;:&quot;发育生物学与神经科学&quot;,&quot;requires&quot;:[&quot;B03&quot;,&quot;B06&quot;],&quot;modules&quot;:[&quot;Pattern formation and cell fate&quot;,&quot;Gene regulation in development&quot;,&quot;Neural cells and electrical signaling&quot;,&quot;Synapses and circuits&quot;,&quot;Sensory systems and behavior&quot;,&quot;Experimental models and ethical interpretation&quot;],&quot;exit&quot;:&quot;Connect a molecular or cellular perturbation to a developmental or neural phenotype.&quot;},{&quot;id&quot;:&quot;B09&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Biological methods &amp; bioinformatics&quot;,&quot;zh&quot;:&quot;生物实验方法与生物信息学&quot;,&quot;requires&quot;:[&quot;B02&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Microscopy, observation and sampling&quot;,&quot;Experimental controls and reproducibility&quot;,&quot;Biostatistics bridge and data visualization&quot;,&quot;Sequence alignment and databases&quot;,&quot;Phylogenetic and omics interpretation&quot;,&quot;Integrated experimental report&quot;],&quot;exit&quot;:&quot;Analyze biological data with controls and uncertainty while separating a simulation from laboratory proficiency.&quot;},{&quot;id&quot;:&quot;B10&quot;,&quot;group&quot;:&quot;B&quot;,&quot;en&quot;:&quot;Biology Olympiad studio&quot;,&quot;zh&quot;:&quot;生物奥林匹克专题&quot;,&quot;requires&quot;:[&quot;B04&quot;,&quot;B05&quot;,&quot;B06&quot;,&quot;B07&quot;,&quot;B09&quot;],&quot;modules&quot;:[&quot;Cellular and molecular evidence problems&quot;,&quot;Genetics and evolution synthesis&quot;,&quot;Plant and animal physiology problems&quot;,&quot;Ecology, ethology and classification&quot;,&quot;Practical images, data and experimental design&quot;,&quot;Timed integrated sets&quot;],&quot;exit&quot;:&quot;Explain an unfamiliar biological dataset and choose an experiment that distinguishes hypotheses.&quot;},{&quot;id&quot;:&quot;S01&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Programming with C++&quot;,&quot;zh&quot;:&quot;C++ 程序设计&quot;,&quot;requires&quot;:[&quot;F01&quot;],&quot;modules&quot;:[&quot;Programs, input and output&quot;,&quot;Types, expressions and control flow&quot;,&quot;Functions, scope and recursion&quot;,&quot;Arrays, strings and standard containers&quot;,&quot;References, memory and value semantics&quot;,&quot;Debugging, testing and robust input&quot;],&quot;exit&quot;:&quot;Implement and debug a specified program, including boundary cases and safe numeric types.&quot;},{&quot;id&quot;:&quot;S02&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Algorithmic reasoning &amp; complexity&quot;,&quot;zh&quot;:&quot;算法思维与复杂度&quot;,&quot;requires&quot;:[&quot;S01&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Specifications and invariants&quot;,&quot;Correctness proofs&quot;,&quot;Time and space complexity&quot;,&quot;Recursion and recurrence analysis&quot;,&quot;Brute force, pruning and lower-bound intuition&quot;,&quot;Counterexamples and differential testing&quot;],&quot;exit&quot;:&quot;Prove an algorithm correct and derive a complexity bound from its actual operations.&quot;},{&quot;id&quot;:&quot;S03&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Data structures&quot;,&quot;zh&quot;:&quot;数据结构&quot;,&quot;requires&quot;:[&quot;S02&quot;],&quot;modules&quot;:[&quot;Arrays, linked structures, stacks and queues&quot;,&quot;Binary search and ordered containers&quot;,&quot;Heaps and disjoint-set union&quot;,&quot;Trees and search trees&quot;,&quot;Fenwick and segment trees&quot;,&quot;Amortization and data-structure design&quot;],&quot;exit&quot;:&quot;Choose and implement a structure with a proved invariant and justified operation costs.&quot;},{&quot;id&quot;:&quot;S04&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Search, greedy &amp; divide-and-conquer&quot;,&quot;zh&quot;:&quot;搜索、贪心与分治&quot;,&quot;requires&quot;:[&quot;S02&quot;],&quot;modules&quot;:[&quot;Enumeration and state-space search&quot;,&quot;Backtracking and branch pruning&quot;,&quot;Binary search on answers&quot;,&quot;Greedy choice and exchange arguments&quot;,&quot;Divide-and-conquer algorithms&quot;,&quot;Meet-in-the-middle and mixed methods&quot;],&quot;exit&quot;:&quot;Explain why a greedy step is safe or construct the smallest useful counterexample.&quot;},{&quot;id&quot;:&quot;S05&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Dynamic programming&quot;,&quot;zh&quot;:&quot;动态规划&quot;,&quot;requires&quot;:[&quot;S04&quot;],&quot;modules&quot;:[&quot;States, transitions and base cases&quot;,&quot;Sequence and grid DP&quot;,&quot;Knapsack and resource allocation&quot;,&quot;Interval, tree and DAG DP&quot;,&quot;Bitmask, digit and counting DP&quot;,&quot;Optimization and reconstruction&quot;],&quot;exit&quot;:&quot;Derive a state definition and prove transition completeness without double counting.&quot;},{&quot;id&quot;:&quot;S06&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Graph algorithms&quot;,&quot;zh&quot;:&quot;图算法&quot;,&quot;requires&quot;:[&quot;S03&quot;,&quot;S04&quot;],&quot;modules&quot;:[&quot;Graph representations and traversal&quot;,&quot;Topological order and DAG reasoning&quot;,&quot;Shortest paths&quot;,&quot;Minimum spanning trees&quot;,&quot;Connectivity, bridges and components&quot;,&quot;Matching and network-flow introduction&quot;],&quot;exit&quot;:&quot;Select a graph algorithm based on input constraints and prove the conditions it needs.&quot;},{&quot;id&quot;:&quot;S07&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;String algorithms&quot;,&quot;zh&quot;:&quot;字符串算法&quot;,&quot;requires&quot;:[&quot;S03&quot;],&quot;modules&quot;:[&quot;String representation and matching&quot;,&quot;Prefix function and KMP&quot;,&quot;Z algorithm and rolling hashes&quot;,&quot;Tries and Aho-Corasick&quot;,&quot;Suffix arrays and LCP&quot;,&quot;Suffix automata and string problem synthesis&quot;],&quot;exit&quot;:&quot;Implement a matcher and explain deterministic guarantees versus hash-collision risk.&quot;},{&quot;id&quot;:&quot;S08&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Mathematics for OI&quot;,&quot;zh&quot;:&quot;信息学竞赛数学&quot;,&quot;requires&quot;:[&quot;S02&quot;,&quot;M16&quot;,&quot;M17&quot;],&quot;modules&quot;:[&quot;Modular arithmetic and safe implementation&quot;,&quot;Sieves, arithmetic functions and inversion&quot;,&quot;Combinatorial counting and generating functions&quot;,&quot;Matrices, recurrences and linear bases&quot;,&quot;Polynomial convolution, FFT and NTT&quot;,&quot;Probability, games and mathematical synthesis&quot;],&quot;exit&quot;:&quot;Derive a formula before implementation and verify modulus, overflow and complexity conditions.&quot;},{&quot;id&quot;:&quot;S09&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Advanced OI algorithms&quot;,&quot;zh&quot;:&quot;信息学竞赛进阶算法&quot;,&quot;requires&quot;:[&quot;S05&quot;,&quot;S06&quot;,&quot;S07&quot;,&quot;S08&quot;],&quot;modules&quot;:[&quot;Advanced DP optimization&quot;,&quot;Flow, cuts and matching&quot;,&quot;Tree decompositions and dynamic trees&quot;,&quot;Persistent and offline data structures&quot;,&quot;Computational geometry and randomized methods&quot;,&quot;Advanced strings, polynomials and synthesis&quot;],&quot;exit&quot;:&quot;Solve a novel high-constraint task and explain every required invariant and numeric assumption.&quot;},{&quot;id&quot;:&quot;S10&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;OI contest practice &amp; reflection&quot;,&quot;zh&quot;:&quot;信息学竞赛训练与复盘&quot;,&quot;requires&quot;:[&quot;S04&quot;,&quot;S05&quot;,&quot;S06&quot;],&quot;modules&quot;:[&quot;Reading constraints and designing subtasks&quot;,&quot;Partial scores and time allocation&quot;,&quot;Adversarial examples and stress testing&quot;,&quot;Local timed contests&quot;,&quot;Editorial reconstruction and independent re-solving&quot;,&quot;Personal error patterns and targeted sets&quot;],&quot;exit&quot;:&quot;Complete an unseen set, report honest partial results, and independently repair a failed solution.&quot;},{&quot;id&quot;:&quot;S11&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Digital logic &amp; computer architecture&quot;,&quot;zh&quot;:&quot;数字逻辑与计算机组成&quot;,&quot;requires&quot;:[&quot;S01&quot;,&quot;F01&quot;],&quot;modules&quot;:[&quot;Boolean logic and combinational circuits&quot;,&quot;Sequential logic and state&quot;,&quot;Instruction sets and assembly&quot;,&quot;CPU datapaths and pipelines&quot;,&quot;Memory hierarchy and caches&quot;,&quot;Performance measurement and parallel hardware&quot;],&quot;exit&quot;:&quot;Trace a program through an abstract machine and explain a measured performance effect.&quot;},{&quot;id&quot;:&quot;S12&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Operating systems&quot;,&quot;zh&quot;:&quot;操作系统&quot;,&quot;requires&quot;:[&quot;S11&quot;,&quot;S03&quot;],&quot;modules&quot;:[&quot;Processes, threads and system calls&quot;,&quot;Scheduling and synchronization&quot;,&quot;Virtual memory&quot;,&quot;Filesystems and storage&quot;,&quot;Isolation and resource management&quot;,&quot;OS design experiments&quot;],&quot;exit&quot;:&quot;Analyze a race, deadlock or memory problem and justify a correct synchronization strategy.&quot;},{&quot;id&quot;:&quot;S13&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Computer networks&quot;,&quot;zh&quot;:&quot;计算机网络&quot;,&quot;requires&quot;:[&quot;S11&quot;,&quot;S02&quot;],&quot;modules&quot;:[&quot;Layers, links and packet switching&quot;,&quot;Addressing and routing&quot;,&quot;Transport and congestion control&quot;,&quot;Application protocols&quot;,&quot;Reliability, latency and measurement&quot;,&quot;Network design and failure analysis&quot;],&quot;exit&quot;:&quot;Trace a request across layers and diagnose a failure from evidence.&quot;},{&quot;id&quot;:&quot;S14&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Databases &amp; information management&quot;,&quot;zh&quot;:&quot;数据库与信息管理&quot;,&quot;requires&quot;:[&quot;S03&quot;],&quot;modules&quot;:[&quot;Relational model and SQL&quot;,&quot;Keys, dependencies and normalization&quot;,&quot;Indexing and query planning&quot;,&quot;Transactions and concurrency&quot;,&quot;Recovery and durability&quot;,&quot;Data modeling and nonrelational systems&quot;],&quot;exit&quot;:&quot;Design a schema and explain a transaction anomaly and its remedy.&quot;},{&quot;id&quot;:&quot;S15&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Software engineering&quot;,&quot;zh&quot;:&quot;软件工程&quot;,&quot;requires&quot;:[&quot;S01&quot;,&quot;S03&quot;],&quot;modules&quot;:[&quot;Requirements and decomposition&quot;,&quot;Interfaces, modularity and design&quot;,&quot;Version control and collaboration&quot;,&quot;Testing and verification strategy&quot;,&quot;Reliability, delivery and maintenance&quot;,&quot;Professional responsibility and project review&quot;],&quot;exit&quot;:&quot;Deliver a documented program with meaningful tests, clear interfaces and reproducible behavior.&quot;},{&quot;id&quot;:&quot;S16&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Automata &amp; computability&quot;,&quot;zh&quot;:&quot;自动机与可计算性&quot;,&quot;requires&quot;:[&quot;S02&quot;,&quot;F02&quot;],&quot;modules&quot;:[&quot;Formal languages and finite automata&quot;,&quot;Regular expressions and closure&quot;,&quot;Context-free grammars and pushdown automata&quot;,&quot;Turing machines and computability&quot;,&quot;Reductions and undecidability&quot;,&quot;Complexity classes and NP-completeness&quot;],&quot;exit&quot;:&quot;Construct a formal model or reduction and state precisely what it proves.&quot;},{&quot;id&quot;:&quot;S17&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Programming languages &amp; compilers&quot;,&quot;zh&quot;:&quot;程序设计语言与编译原理&quot;,&quot;requires&quot;:[&quot;S16&quot;,&quot;S11&quot;],&quot;modules&quot;:[&quot;Syntax and parsing&quot;,&quot;Semantics and type systems&quot;,&quot;Scope, binding and evaluation&quot;,&quot;Intermediate representations&quot;,&quot;Optimization and code generation&quot;,&quot;Building a small compiler or interpreter&quot;],&quot;exit&quot;:&quot;Implement a language fragment and justify its parsing and execution semantics.&quot;},{&quot;id&quot;:&quot;S18&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Artificial intelligence &amp; machine learning&quot;,&quot;zh&quot;:&quot;人工智能与机器学习&quot;,&quot;requires&quot;:[&quot;M10&quot;,&quot;M20&quot;,&quot;M26&quot;,&quot;S03&quot;],&quot;modules&quot;:[&quot;Search and symbolic reasoning&quot;,&quot;Supervised learning and evaluation&quot;,&quot;Linear models and optimization&quot;,&quot;Trees, kernels and ensembles&quot;,&quot;Neural networks and representation&quot;,&quot;Uncertainty, bias and responsible evaluation&quot;],&quot;exit&quot;:&quot;Compare models with leakage-free evaluation and explain what the evidence does and does not show.&quot;},{&quot;id&quot;:&quot;S19&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Security &amp; cryptography&quot;,&quot;zh&quot;:&quot;安全与密码学&quot;,&quot;requires&quot;:[&quot;S12&quot;,&quot;S13&quot;,&quot;M16&quot;],&quot;modules&quot;:[&quot;Threat models and trust boundaries&quot;,&quot;Cryptographic primitives and protocols&quot;,&quot;Authentication and authorization&quot;,&quot;Memory and application security&quot;,&quot;Network and systems defense&quot;,&quot;Controlled security analysis&quot;],&quot;exit&quot;:&quot;Analyze a provided local toy system and explain a mitigation against a specific threat model.&quot;},{&quot;id&quot;:&quot;S20&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Computer graphics &amp; visualization&quot;,&quot;zh&quot;:&quot;计算机图形学与可视化&quot;,&quot;requires&quot;:[&quot;M09&quot;,&quot;M02&quot;,&quot;S01&quot;],&quot;modules&quot;:[&quot;Geometric transformations&quot;,&quot;Cameras and projection&quot;,&quot;Rasterization and shading&quot;,&quot;Curves, surfaces and animation&quot;,&quot;Ray tracing and numerical issues&quot;,&quot;Scientific visualization and perception&quot;],&quot;exit&quot;:&quot;Build a geometric visualization and distinguish numerical artifacts from modeled behavior.&quot;},{&quot;id&quot;:&quot;S21&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Human-computer interaction&quot;,&quot;zh&quot;:&quot;人机交互&quot;,&quot;requires&quot;:[&quot;S15&quot;],&quot;modules&quot;:[&quot;Human perception and interaction models&quot;,&quot;User research and task analysis&quot;,&quot;Information architecture and prototyping&quot;,&quot;Accessibility and inclusive design&quot;,&quot;Usability evaluation&quot;,&quot;Iterative design with evidence&quot;],&quot;exit&quot;:&quot;Evaluate an interface using actual tasks and revise it based on observed failures.&quot;},{&quot;id&quot;:&quot;S22&quot;,&quot;group&quot;:&quot;S&quot;,&quot;en&quot;:&quot;Parallel &amp; distributed computing&quot;,&quot;zh&quot;:&quot;并行与分布式计算&quot;,&quot;requires&quot;:[&quot;S12&quot;,&quot;S13&quot;,&quot;S02&quot;],&quot;modules&quot;:[&quot;Parallel models and decomposition&quot;,&quot;Synchronization and memory models&quot;,&quot;Distributed communication and failure&quot;,&quot;Replication and consistency&quot;,&quot;Consensus and coordination&quot;,&quot;Performance, reliability and trade-offs&quot;],&quot;exit&quot;:&quot;Reason about a concurrent or distributed execution and identify its failure assumptions.&quot;},{&quot;id&quot;:&quot;X01&quot;,&quot;group&quot;:&quot;X&quot;,&quot;en&quot;:&quot;Scientific computing &amp; simulation&quot;,&quot;zh&quot;:&quot;科学计算与仿真&quot;,&quot;requires&quot;:[&quot;S01&quot;,&quot;M08&quot;,&quot;M09&quot;],&quot;modules&quot;:[&quot;Reproducible computational notebooks&quot;,&quot;Numerical-model validation&quot;,&quot;ODE and physical simulation&quot;,&quot;Monte Carlo and uncertainty bridges&quot;,&quot;Data-driven biological or chemical models&quot;,&quot;Reproducible simulation project&quot;],&quot;exit&quot;:&quot;Build a simulation with validation cases, uncertainty and explicitly stated approximation limits.&quot;},{&quot;id&quot;:&quot;X02&quot;,&quot;group&quot;:&quot;X&quot;,&quot;en&quot;:&quot;Data science &amp; causal reasoning&quot;,&quot;zh&quot;:&quot;数据科学与因果推理&quot;,&quot;requires&quot;:[&quot;M20&quot;,&quot;S01&quot;],&quot;modules&quot;:[&quot;Data provenance and cleaning&quot;,&quot;Exploratory visualization&quot;,&quot;Statistical models and diagnostics&quot;,&quot;Confounding and causal diagrams&quot;,&quot;Experiments and observational limitations&quot;,&quot;Reproducible evidence report&quot;],&quot;exit&quot;:&quot;Answer a data question without overstating causality or hiding missing data and uncertainty.&quot;},{&quot;id&quot;:&quot;X03&quot;,&quot;group&quot;:&quot;X&quot;,&quot;en&quot;:&quot;Signals, systems &amp; control&quot;,&quot;zh&quot;:&quot;信号、系统与控制&quot;,&quot;requires&quot;:[&quot;P03&quot;,&quot;M12&quot;,&quot;M09&quot;],&quot;modules&quot;:[&quot;Signals and linear systems&quot;,&quot;Convolution and impulse response&quot;,&quot;Fourier analysis&quot;,&quot;Laplace and frequency response&quot;,&quot;Feedback and stability&quot;,&quot;Control design and simulation&quot;],&quot;exit&quot;:&quot;Design and evaluate a feedback model, including stability and model mismatch.&quot;},{&quot;id&quot;:&quot;X04&quot;,&quot;group&quot;:&quot;X&quot;,&quot;en&quot;:&quot;Interdisciplinary research studio&quot;,&quot;zh&quot;:&quot;跨学科研究工作室&quot;,&quot;requires&quot;:[&quot;F02&quot;,&quot;F03&quot;],&quot;modules&quot;:[&quot;Question selection and literature reading&quot;,&quot;Prerequisite bridge plan&quot;,&quot;Model or experiment design&quot;,&quot;Implementation and evidence collection&quot;,&quot;Critique, replication and revision&quot;,&quot;Bilingual presentation and open questions&quot;],&quot;exit&quot;:&quot;Defend a small investigation with traceable sources and a clear boundary between result and conjecture.&quot;}],&quot;connections&quot;:[[&quot;M04&quot;,&quot;P01&quot;],[&quot;M07&quot;,&quot;P01&quot;],[&quot;M11&quot;,&quot;P09&quot;],[&quot;M09&quot;,&quot;P10&quot;],[&quot;M12&quot;,&quot;P03&quot;],[&quot;M19&quot;,&quot;B02&quot;],[&quot;M20&quot;,&quot;B09&quot;],[&quot;C03&quot;,&quot;B01&quot;],[&quot;C09&quot;,&quot;B03&quot;],[&quot;M16&quot;,&quot;S08&quot;],[&quot;M17&quot;,&quot;S05&quot;],[&quot;M18&quot;,&quot;S06&quot;],[&quot;M14&quot;,&quot;M03&quot;],[&quot;M10&quot;,&quot;S18&quot;],[&quot;P14&quot;,&quot;C08&quot;],[&quot;P06&quot;,&quot;B08&quot;],[&quot;S07&quot;,&quot;B09&quot;],[&quot;M26&quot;,&quot;X01&quot;],[&quot;S20&quot;,&quot;M25&quot;],[&quot;M12&quot;,&quot;X03&quot;]]}&lt;/script&gt;
+  &lt;script&gt;
+  (()=&gt;{
+    const root=document.getElementById(&#x27;lattice-blueprint&#x27;);
+    const data=JSON.parse(document.getElementById(&#x27;lt-curriculum-data&#x27;).textContent);
+    const main=root.querySelector(&#x27;#lt-main&#x27;);
+    const courses=data.courses;
+    const getCourse=id=&gt;courses.find(c=&gt;c.id===id)||courses.find(c=&gt;c.id===&#x27;M09&#x27;);
+    const defaults={F:&#x27;F01&#x27;,M:&#x27;M09&#x27;,P:&#x27;P01&#x27;,C:&#x27;C03&#x27;,B:&#x27;B02&#x27;,S:&#x27;S05&#x27;,X:&#x27;X01&#x27;};
+    const groupShort={en:{F:&#x27;Foundations&#x27;,M:&#x27;Mathematics&#x27;,P:&#x27;Physics&#x27;,C:&#x27;Chemistry&#x27;,B:&#x27;Biology&#x27;,S:&#x27;Computer science &amp; OI&#x27;,X:&#x27;Connections&#x27;},zh:{F:&#x27;通用基础&#x27;,M:&#x27;数学&#x27;,P:&#x27;物理&#x27;,C:&#x27;化学&#x27;,B:&#x27;生物学&#x27;,S:&#x27;计算机与 OI&#x27;,X:&#x27;学科交叉&#x27;}};
+    const moduleZh={
+      F01:[&#x27;数、分数与比例&#x27;,&#x27;代数记号与表达式&#x27;,&#x27;集合、函数与映射&#x27;,&#x27;逻辑、量词与否定&#x27;,&#x27;图像、尺度与估算&#x27;,&#x27;数学表达&#x27;],
+      M09:[&#x27;线性方程组与消元&#x27;,&#x27;向量、张成与线性无关&#x27;,&#x27;向量空间、基与维数&#x27;,&#x27;线性映射与矩阵&#x27;,&#x27;行列式与可逆性&#x27;,&#x27;特征值与对角化&#x27;],
+      P01:[&#x27;一维运动学&#x27;,&#x27;二维与三维运动&#x27;,&#x27;牛顿定律与受力分析&#x27;,&#x27;接触力与摩擦力&#x27;,&#x27;圆周运动与约束&#x27;,&#x27;参考系与模型检验&#x27;],
+      C03:[&#x27;焓与盖斯定律&#x27;,&#x27;熵与吉布斯能&#x27;,&#x27;平衡常数与反应商&#x27;,&#x27;酸、碱与缓冲溶液&#x27;,&#x27;溶解与配位平衡&#x27;,&#x27;耦合平衡与近似检验&#x27;],
+      B02:[&#x27;孟德尔遗传&#x27;,&#x27;概率基础与家系推理&#x27;,&#x27;连锁、重组与遗传图谱&#x27;,&#x27;染色体变异&#x27;,&#x27;数量与群体遗传学&#x27;,&#x27;遗传实验与推断&#x27;],
+      S05:[&#x27;状态、转移与边界&#x27;,&#x27;序列与网格动态规划&#x27;,&#x27;背包与资源分配&#x27;,&#x27;区间、树与 DAG 动态规划&#x27;,&#x27;状压、数位与计数 DP&#x27;,&#x27;优化与方案还原&#x27;],
+      X01:[&#x27;可复现的计算记录&#x27;,&#x27;数值模型验证&#x27;,&#x27;微分方程与物理仿真&#x27;,&#x27;蒙特卡洛与不确定性&#x27;,&#x27;生物与化学数据模型&#x27;,&#x27;可复现的仿真项目&#x27;]
+    };
+    const words={
+      en:{map:&#x27;Learning map&#x27;,lesson:&#x27;Lesson studio&#x27;,offline:&#x27;Designed for offline study&#x27;,preview:&#x27;Design preview&#x27;,subjects:&#x27;Your curriculum&#x27;,eyebrow:&#x27;A route through the ideas&#x27;,course:&#x27;Choose a course&#x27;,planned:&#x27;6 planned modules&#x27;,module:&#x27;MODULE&#x27;,selected:&#x27;Selected module&#x27;,previewTag:&#x27;Curriculum proposal&#x27;,entry:&#x27;Readiness connections&#x27;,entryNote:&#x27;Placement checks let you skip knowledge you can already demonstrate.&#x27;,outcome:&#x27;Course exit task&#x27;,sample:&#x27;Preview a lesson&#x27;,links:&#x27;Where these ideas connect&#x27;,note:&#x27;Planned curriculum · no personal progress is shown.&#x27;,fallback:&#x27;Module translation pending · English preview&#x27;,lessonPath:&#x27;Mathematics / Linear algebra I&#x27;,lessonEyebrow:&#x27;LESSON SPECIMEN · 02&#x27;,lessonTitle:&#x27;When does a vector add a new direction?&#x27;,lessonSub:&#x27;Linear independence, explained through a definition, a picture, and a proof.&#x27;,concept:&#x27;Concept&#x27;,example:&#x27;Worked example&#x27;,practice:&#x27;Try it&#x27;,lab:&#x27;Explore the span&#x27;,parameter:&#x27;Vector height t&#x27;,independent:&#x27;Independent · spans the plane&#x27;,dependent:&#x27;Dependent · spans one line&#x27;,labNote:&#x27;The picture illustrates the claim. The algebra establishes it.&#x27;,next:&#x27;Worked example&#x27;,try:&#x27;Try a question&#x27;,back:&#x27;Back to route&#x27;,check:&#x27;Check answer&#x27;,practiceTitle:&#x27;Which values of t make this pair independent?&#x27;,choose:&#x27;Choose an answer before checking.&#x27;,correct:&#x27;Correct. If t ≠ 0, bt = 0 forces b = 0, then a + b = 0 forces a = 0. Only the trivial solution remains.&#x27;,incorrect:&#x27;Start with the second coordinate: bt = 0. When t = 0, the nonzero coefficients a = 1 and b = −1 already give the zero vector. Try the other case.&#x27;,all:&#x27;Every real value of t&#x27;,specimenNote:&#x27;Authored sample interaction · answers do not update a learner profile.&#x27;,definition:&#x27;A list of vectors is linearly independent when the only way to combine it into the zero vector is to use all-zero coefficients.&#x27;,definitionLead:&#x27;The word “only” matters.&#x27;,intro:&#x27;Two different arrows can still describe the same direction. Independence asks whether any vector is redundant in the combinations you can make.&#x27;,explain:&#x27;Let u = (1, 0) and v = (1, t). When t ≠ 0, setting both coordinates to zero forces b = 0 and then a = 0.&#x27;,misconception:&#x27;Different vectors can be dependent. At t = 0, u and v coincide, and 1u − 1v = 0 is a nontrivial relation.&#x27;,exampleLead:&#x27;Use coordinates to prove what the picture suggests.&#x27;,exampleText:&#x27;For u = (1, 2) and w = (3, 1), suppose au + bw = 0. Comparing coordinates gives two equations.&#x27;,exampleFinish:&#x27;Twice the first equation minus the second gives 5b = 0. Therefore b = 0 and a = 0: the pair is independent over the real numbers.&#x27;,exampleNote:&#x27;Testing several coefficient pairs is not a proof. Solving the equations accounts for every pair.&#x27;,practiceLead:&#x27;Use u = (1, 0) and v = (1, t). You can change t in the diagram before answering.&#x27;,objectiveSpecial:&#x27;Tell whether a vector adds a new direction, and justify the answer with a zero-combination equation.&#x27;,specialTitle:&#x27;A new direction, or more of the same?&#x27;,emptyEntry:&#x27;Start with a short placement check.&#x27;},
+      zh:{map:&#x27;学习地图&#x27;,lesson:&#x27;课程工作台&#x27;,offline:&#x27;面向离线学习设计&#x27;,preview:&#x27;设计预览&#x27;,subjects:&#x27;你的课程体系&#x27;,eyebrow:&#x27;沿着知识的联系前进&#x27;,course:&#x27;选择课程&#x27;,planned:&#x27;6 个规划模块&#x27;,module:&#x27;模块&#x27;,selected:&#x27;当前选择&#x27;,previewTag:&#x27;课程蓝图&#x27;,entry:&#x27;先修知识关联&#x27;,entryNote:&#x27;通过诊断测验展示已有能力，即可跳过相应知识。&#x27;,outcome:&#x27;课程验收目标&#x27;,sample:&#x27;预览示范课程&#x27;,links:&#x27;这些知识通向哪里&#x27;,note:&#x27;课程规划预览 · 不代表你的个人进度。&#x27;,fallback:&#x27;模块中文翻译待编写 · 当前显示英文&#x27;,lessonPath:&#x27;数学 / 线性代数一&#x27;,lessonEyebrow:&#x27;课程示范 · 02&#x27;,lessonTitle:&#x27;一个向量何时带来新的方向？&#x27;,lessonSub:&#x27;从定义、图像到证明，理解线性无关。&#x27;,concept:&#x27;概念&#x27;,example:&#x27;例题推导&#x27;,practice:&#x27;动手练习&#x27;,lab:&#x27;探索张成空间&#x27;,parameter:&#x27;向量的纵坐标 t&#x27;,independent:&#x27;线性无关 · 张成整个平面&#x27;,dependent:&#x27;线性相关 · 仅张成一条直线&#x27;,labNote:&#x27;图像帮助观察，代数推导负责证明。&#x27;,next:&#x27;查看例题&#x27;,try:&#x27;试做一道题&#x27;,back:&#x27;返回路线&#x27;,check:&#x27;检查答案&#x27;,practiceTitle:&#x27;t 取哪些值时，这个向量组线性无关？&#x27;,choose:&#x27;请先选择一个答案。&#x27;,correct:&#x27;正确。当 t ≠ 0 时，bt = 0 推出 b = 0，再由 a + b = 0 得到 a = 0。因此只有零解。&#x27;,incorrect:&#x27;先看第二个坐标 bt = 0。当 t = 0 时，取 a = 1、b = −1 就得到一组非零系数组合。再考虑另一种情况。&#x27;,all:&#x27;任意实数 t&#x27;,specimenNote:&#x27;预编写的示范交互 · 答案不会写入学习档案。&#x27;,definition:&#x27;一个向量组线性无关，是指它的线性组合等于零向量时，所有系数只能全为零。&#x27;,definitionLead:&#x27;“只有零解”中的“只有”不能省略。&#x27;,intro:&#x27;两个不同的箭头也可能表示同一个方向。线性无关研究的是：在所有能形成的线性组合中，是否存在冗余的向量。&#x27;,explain:&#x27;取 u = (1, 0)、v = (1, t)。当 t ≠ 0 时，令两个坐标都等于零，先得到 b = 0，再得到 a = 0。&#x27;,misconception:&#x27;不同的向量也可能线性相关。t = 0 时，u 与 v 重合，1u − 1v = 0 就是一个非平凡关系。&#x27;,exampleLead:&#x27;用坐标推导，证明图像所提示的结论。&#x27;,exampleText:&#x27;取 u = (1, 2)、w = (3, 1)，设 au + bw = 0。分别比较两个坐标，得到两个方程。&#x27;,exampleFinish:&#x27;第一个方程的两倍减去第二个方程，得到 5b = 0，所以 b = 0，进而 a = 0。这个向量组在实数域上线性无关。&#x27;,exampleNote:&#x27;只尝试几组系数不能构成证明。解出方程的全部解，才能覆盖所有情况。&#x27;,practiceLead:&#x27;取 u = (1, 0)、v = (1, t)。可以先在图中改变 t，再作答。&#x27;,objectiveSpecial:&#x27;判断一个向量是否增加了新的方向，并用零向量的线性组合方程解释原因。&#x27;,specialTitle:&#x27;新的方向，还是原方向的延伸？&#x27;,emptyEntry:&#x27;从一次简短的诊断测验开始。&#x27;}
+    };
+    let state={lang:&#x27;en&#x27;,course:&#x27;M09&#x27;,module:1,view:&#x27;map&#x27;,stage:&#x27;concept&#x27;,t:1,answer:&#x27;&#x27;,feedback:&#x27;&#x27;};
+    const design={layout:&#x27;Study studio&#x27;,motion:true,radius:18};
+    const esc=s=&gt;String(s).replace(/[&amp;&lt;&gt;&quot;&#x27;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;,&#x27;&quot;&#x27;:&#x27;&amp;quot;&#x27;,&quot;&#x27;&quot;:&#x27;&amp;#39;&#x27;}[c]));
+    const tr=k=&gt;words[state.lang][k]||k;
+    const title=c=&gt;state.lang===&#x27;zh&#x27;?c.zh:c.en;
+    const modTitle=(c,i)=&gt;state.lang===&#x27;zh&#x27;&amp;&amp;moduleZh[c.id]?moduleZh[c.id][i]:c.modules[i];
+    function restore(value){
+      const m=value?.modelContent||{},p=value?.privateContent||{};
+      if([&#x27;en&#x27;,&#x27;zh&#x27;].includes(m.language))state.lang=m.language;
+      if(courses.some(c=&gt;c.id===m.course))state.course=m.course;
+      if(Number.isInteger(m.module)&amp;&amp;m.module&gt;=0&amp;&amp;m.module&lt;6)state.module=m.module;
+      if([&#x27;map&#x27;,&#x27;lesson&#x27;].includes(m.view))state.view=m.view;
+      if([&#x27;concept&#x27;,&#x27;example&#x27;,&#x27;practice&#x27;].includes(m.stage))state.stage=m.stage;
+      if(Number.isFinite(m.t)&amp;&amp;m.t&gt;=-2&amp;&amp;m.t&lt;=2)state.t=m.t;
+      if([&#x27;zero&#x27;,&#x27;nonzero&#x27;,&#x27;all&#x27;,&#x27;&#x27;].includes(p.answer))state.answer=p.answer;
+      if([&#x27;correct&#x27;,&#x27;incorrect&#x27;,&#x27;choose&#x27;,&#x27;&#x27;].includes(p.feedback))state.feedback=p.feedback;
+    }
+    function save(){
+      if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{language:state.lang,course:state.course,module:state.module,view:state.view,stage:state.stage,t:state.t},privateContent:{answer:state.answer,feedback:state.feedback}}).catch(()=&gt;{});
+    }
+    restore(window.openai?.widgetState);
+    function animate(){if(design.motion&amp;&amp;!matchMedia(&#x27;(prefers-reduced-motion: reduce)&#x27;).matches)main.animate([{opacity:.55,transform:&#x27;translateY(5px)&#x27;},{opacity:1,transform:&#x27;translateY(0)&#x27;}],{duration:200,easing:&#x27;cubic-bezier(.2,.8,.2,1)&#x27;});}
+    function icon(){if(globalThis.lucide)lucide.createIcons({attrs:{width:16,height:16}});}
+    function renderChrome(){
+      root.lang=state.lang===&#x27;zh&#x27;?&#x27;zh-CN&#x27;:&#x27;en&#x27;;
+      root.setAttribute(&#x27;aria-label&#x27;,state.lang===&#x27;zh&#x27;?&#x27;知序学习平台设计预览&#x27;:&#x27;Lattice learning platform design preview&#x27;);
+      root.querySelector(&#x27;#lt-preview-label&#x27;).textContent=tr(&#x27;preview&#x27;);
+      root.querySelector(&#x27;#lt-language&#x27;).textContent=state.lang===&#x27;en&#x27;?&#x27;中文&#x27;:&#x27;English&#x27;;
+      root.querySelector(&#x27;#lt-language&#x27;).setAttribute(&#x27;aria-label&#x27;,state.lang===&#x27;zh&#x27;?&#x27;切换界面与示范课程语言&#x27;:&#x27;Switch interface and specimen language&#x27;);
+      root.querySelector(&#x27;.lt-sidebar&#x27;).setAttribute(&#x27;aria-label&#x27;,state.lang===&#x27;zh&#x27;?&#x27;学习导航&#x27;:&#x27;Learning navigation&#x27;);
+      root.querySelector(&#x27;.lt-sidebar nav&#x27;).setAttribute(&#x27;aria-label&#x27;,state.lang===&#x27;zh&#x27;?&#x27;工作区&#x27;:&#x27;Workspace&#x27;);
+      root.querySelector(&#x27;#lt-subjects&#x27;).setAttribute(&#x27;aria-label&#x27;,state.lang===&#x27;zh&#x27;?&#x27;学科&#x27;:&#x27;Subjects&#x27;);
+      root.querySelector(&#x27;#lt-subject-label&#x27;).textContent=tr(&#x27;subjects&#x27;);
+      root.querySelectorAll(&#x27;[data-label]&#x27;).forEach(e=&gt;e.textContent=tr(e.dataset.label));
+      root.querySelectorAll(&#x27;[data-view]&#x27;).forEach(e=&gt;e.setAttribute(&#x27;aria-pressed&#x27;,e.dataset.view===state.view));
+      root.querySelector(&#x27;#lt-subjects&#x27;).innerHTML=data.groups.map(g=&gt;`&lt;button type=&quot;button&quot; class=&quot;lt-subject cursor-interaction&quot; data-subject=&quot;${g.id}&quot; aria-pressed=&quot;${getCourse(state.course).group===g.id}&quot;&gt;&lt;span class=&quot;lt-subject-mark&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span&gt;${esc(groupShort[state.lang][g.id])}&lt;/span&gt;&lt;/button&gt;`).join(&#x27;&#x27;);
+    }
+    function links(ids){return ids.map(id=&gt;{const c=getCourse(id);return `&lt;button type=&quot;button&quot; class=&quot;cursor-interaction&quot; data-course=&quot;${id}&quot;&gt;${esc(title(c))}&lt;/button&gt;`;}).join(&#x27;&#x27;);}
+    function renderMap(){
+      const c=getCourse(state.course),special=c.id===&#x27;M09&#x27;&amp;&amp;state.module===1;
+      const related=data.connections.filter(x=&gt;x[0]===c.id||x[1]===c.id).map(x=&gt;x[0]===c.id?x[1]:x[0]);
+      main.innerHTML=`&lt;div class=&quot;lt-breadcrumb&quot;&gt;&lt;span&gt;${esc(groupShort[state.lang][c.group])}&lt;/span&gt;&lt;span&gt;/&lt;/span&gt;&lt;span&gt;${esc(c.id)}&lt;/span&gt;&lt;span class=&quot;lt-grow&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lt-tag&quot;&gt;${tr(&#x27;previewTag&#x27;)}&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;lt-eyebrow&quot;&gt;${tr(&#x27;eyebrow&#x27;)}&lt;/div&gt;&lt;h1&gt;${esc(title(c))}&lt;/h1&gt;
+      &lt;p class=&quot;lt-subtitle&quot;&gt;${state.lang===&#x27;en&#x27;?&#x27;Build the ideas in order. Follow the connections when you are ready.&#x27;:&#x27;循序理解每个概念，在准备好时走向相邻学科。&#x27;}&lt;/p&gt;
+      &lt;div class=&quot;lt-toolbar&quot;&gt;&lt;div class=&quot;lt-picker&quot;&gt;&lt;label for=&quot;lt-course-select&quot;&gt;${tr(&#x27;course&#x27;)}&lt;/label&gt;&lt;select id=&quot;lt-course-select&quot; class=&quot;lt-course-select&quot; aria-label=&quot;${tr(&#x27;course&#x27;)}&quot;&gt;${courses.filter(x=&gt;x.group===c.group).map(x=&gt;`&lt;option value=&quot;${x.id}&quot; ${x.id===c.id?&#x27;selected&#x27;:&#x27;&#x27;}&gt;${esc(x.id+&#x27; · &#x27;+title(x))}&lt;/option&gt;`).join(&#x27;&#x27;)}&lt;/select&gt;&lt;/div&gt;&lt;span class=&quot;lt-tag&quot;&gt;${tr(&#x27;planned&#x27;)}&lt;/span&gt;&lt;/div&gt;
+      &lt;div class=&quot;lt-map-layout&quot;&gt;&lt;div class=&quot;lt-route&quot; aria-label=&quot;${tr(&#x27;map&#x27;)}&quot;&gt;${c.modules.map((m,i)=&gt;`&lt;button type=&quot;button&quot; class=&quot;lt-node cursor-interaction&quot; data-module=&quot;${i}&quot; aria-pressed=&quot;${i===state.module}&quot;&gt;&lt;span class=&quot;lt-node-num&quot;&gt;${String(i+1).padStart(2,&#x27;0&#x27;)}&lt;/span&gt;&lt;span&gt;&lt;span class=&quot;lt-node-title&quot;&gt;${esc(modTitle(c,i))}&lt;/span&gt;&lt;span class=&quot;lt-node-hint&quot;&gt;${i===state.module?tr(&#x27;selected&#x27;):c.id+&#x27;.&#x27;+String(i+1).padStart(2,&#x27;0&#x27;)}&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;
+      &lt;section class=&quot;lt-detail&quot; aria-label=&quot;${tr(&#x27;selected&#x27;)}&quot;&gt;&lt;div class=&quot;lt-eyebrow&quot;&gt;${tr(&#x27;module&#x27;)} ${String(state.module+1).padStart(2,&#x27;0&#x27;)}&lt;/div&gt;&lt;h2&gt;${esc(special?tr(&#x27;specialTitle&#x27;):modTitle(c,state.module))}&lt;/h2&gt;&lt;p&gt;${esc(special?tr(&#x27;objectiveSpecial&#x27;):(state.lang===&#x27;en&#x27;?c.exit:&#x27;此模块的概念、例题与练习将在课程编写阶段完成。&#x27;))}&lt;/p&gt;&lt;hr&gt;&lt;h3&gt;${tr(&#x27;entry&#x27;)}&lt;/h3&gt;&lt;p&gt;${tr(&#x27;entryNote&#x27;)}&lt;/p&gt;&lt;div class=&quot;lt-related&quot;&gt;${c.requires.length?links(c.requires):`&lt;span class=&quot;lt-caption&quot;&gt;${tr(&#x27;emptyEntry&#x27;)}&lt;/span&gt;`}&lt;/div&gt;&lt;button type=&quot;button&quot; class=&quot;lt-primary cursor-interaction&quot; data-open-lesson&gt;${tr(&#x27;sample&#x27;)}&lt;i data-lucide=&quot;arrow-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/section&gt;&lt;/div&gt;
+      ${related.length?`&lt;section class=&quot;lt-connections&quot;&gt;&lt;h3&gt;${tr(&#x27;links&#x27;)}&lt;/h3&gt;&lt;div class=&quot;lt-related&quot;&gt;${links(related)}&lt;/div&gt;&lt;/section&gt;`:&#x27;&#x27;}
+      &lt;div class=&quot;lt-preview-note&quot;&gt;&lt;i data-lucide=&quot;info&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span&gt;${state.lang===&#x27;zh&#x27;&amp;&amp;!moduleZh[c.id]?tr(&#x27;fallback&#x27;)+&#x27; · &#x27;:&#x27;&#x27;}${tr(&#x27;note&#x27;)}&lt;/span&gt;&lt;/div&gt;`;
+    }
+    function lab(){return `&lt;aside class=&quot;lt-lab&quot; aria-label=&quot;${tr(&#x27;lab&#x27;)}&quot;&gt;&lt;h3&gt;${tr(&#x27;lab&#x27;)}&lt;/h3&gt;&lt;div class=&quot;lt-caption&quot;&gt;u = (1, 0) · v = (1, t)&lt;/div&gt;&lt;div id=&quot;lt-plot&quot;&gt;&lt;/div&gt;&lt;label class=&quot;lt-control-label&quot; for=&quot;lt-t&quot;&gt;&lt;span&gt;${tr(&#x27;parameter&#x27;)}&lt;/span&gt;&lt;output id=&quot;lt-t-value&quot; for=&quot;lt-t&quot;&gt;&lt;/output&gt;&lt;/label&gt;&lt;input class=&quot;cursor-interaction&quot; id=&quot;lt-t&quot; type=&quot;range&quot; min=&quot;-2&quot; max=&quot;2&quot; step=&quot;0.25&quot; value=&quot;${state.t}&quot; aria-label=&quot;${tr(&#x27;parameter&#x27;)}&quot;&gt;&lt;div id=&quot;lt-plane-state&quot; class=&quot;lt-plane-state&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;&lt;p class=&quot;lt-lab-note&quot;&gt;${tr(&#x27;labNote&#x27;)}&lt;/p&gt;&lt;/aside&gt;`;}
+    function renderLesson(){
+      const stages=[&#x27;concept&#x27;,&#x27;example&#x27;,&#x27;practice&#x27;];
+      let content=&#x27;&#x27;;
+      if(state.stage===&#x27;concept&#x27;)content=`&lt;h2&gt;${tr(&#x27;definitionLead&#x27;)}&lt;/h2&gt;&lt;p&gt;${tr(&#x27;intro&#x27;)}&lt;/p&gt;&lt;div class=&quot;lt-definition&quot;&gt;&lt;strong&gt;${tr(&#x27;definition&#x27;)}&lt;/strong&gt;&lt;/div&gt;&lt;div class=&quot;lt-equation&quot;&gt;a₁v₁ + ··· + aₖvₖ = 0&lt;/div&gt;&lt;p&gt;${tr(&#x27;explain&#x27;)}&lt;/p&gt;&lt;div class=&quot;lt-equation&quot;&gt;a(1, 0) + b(1, t) = (a + b, bt)&lt;/div&gt;&lt;p class=&quot;lt-misconception&quot;&gt;${tr(&#x27;misconception&#x27;)}&lt;/p&gt;`;
+      if(state.stage===&#x27;example&#x27;)content=`&lt;h2&gt;${tr(&#x27;exampleLead&#x27;)}&lt;/h2&gt;&lt;p&gt;${tr(&#x27;exampleText&#x27;)}&lt;/p&gt;&lt;div class=&quot;lt-equation&quot;&gt;a + 3b = 0&lt;br&gt;2a + b = 0&lt;/div&gt;&lt;p&gt;${tr(&#x27;exampleFinish&#x27;)}&lt;/p&gt;&lt;p class=&quot;lt-misconception&quot;&gt;${tr(&#x27;exampleNote&#x27;)}&lt;/p&gt;`;
+      if(state.stage===&#x27;practice&#x27;)content=`&lt;h2&gt;${tr(&#x27;practiceTitle&#x27;)}&lt;/h2&gt;&lt;p&gt;${tr(&#x27;practiceLead&#x27;)}&lt;/p&gt;&lt;div class=&quot;lt-choices&quot; role=&quot;group&quot; aria-label=&quot;${tr(&#x27;practiceTitle&#x27;)}&quot;&gt;${[[&#x27;zero&#x27;,&#x27;t = 0&#x27;],[&#x27;nonzero&#x27;,&#x27;t ≠ 0&#x27;],[&#x27;all&#x27;,tr(&#x27;all&#x27;)]].map(([id,label])=&gt;`&lt;label class=&quot;lt-choice cursor-interaction&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;lt-answer&quot; value=&quot;${id}&quot; ${state.answer===id?&#x27;checked&#x27;:&#x27;&#x27;}&gt;&lt;span&gt;${label}&lt;/span&gt;&lt;/label&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;&lt;button type=&quot;button&quot; class=&quot;lt-primary cursor-interaction&quot; id=&quot;lt-check&quot;&gt;${tr(&#x27;check&#x27;)}&lt;/button&gt;&lt;div class=&quot;lt-feedback&quot; id=&quot;lt-feedback&quot; aria-live=&quot;polite&quot;&gt;${state.feedback?tr(state.feedback):&#x27;&#x27;}&lt;/div&gt;`;
+      main.innerHTML=`&lt;div class=&quot;lt-breadcrumb&quot;&gt;&lt;span&gt;${tr(&#x27;lessonPath&#x27;)}&lt;/span&gt;&lt;span class=&quot;lt-grow&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lt-tag&quot;&gt;${tr(&#x27;previewTag&#x27;)}&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;lt-eyebrow&quot;&gt;${tr(&#x27;lessonEyebrow&#x27;)}&lt;/div&gt;&lt;h1&gt;${tr(&#x27;lessonTitle&#x27;)}&lt;/h1&gt;&lt;p class=&quot;lt-subtitle&quot;&gt;${tr(&#x27;lessonSub&#x27;)}&lt;/p&gt;&lt;div class=&quot;lt-lesson-top&quot;&gt;&lt;div class=&quot;lt-lesson-tabs&quot; aria-label=&quot;${tr(&#x27;lesson&#x27;)}&quot;&gt;${stages.map(s=&gt;`&lt;button type=&quot;button&quot; class=&quot;cursor-interaction&quot; data-stage=&quot;${s}&quot; aria-pressed=&quot;${state.stage===s}&quot;&gt;${tr(s)}&lt;/button&gt;`).join(&#x27;&#x27;)}&lt;/div&gt;&lt;span class=&quot;lt-caption&quot;&gt;u = (1, 0) · v = (1, t)&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;lt-lesson-layout&quot;&gt;&lt;article class=&quot;lt-reading&quot;&gt;${content}&lt;/article&gt;${lab()}&lt;/div&gt;&lt;div class=&quot;lt-footer-actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;cursor-interaction&quot; data-view=&quot;map&quot;&gt;← ${tr(&#x27;back&#x27;)}&lt;/button&gt;&lt;span class=&quot;lt-grow&quot;&gt;&lt;/span&gt;${state.stage!==&#x27;practice&#x27;?`&lt;button type=&quot;button&quot; class=&quot;lt-primary cursor-interaction&quot; data-stage=&quot;${state.stage===&#x27;concept&#x27;?&#x27;example&#x27;:&#x27;practice&#x27;}&quot;&gt;${state.stage===&#x27;concept&#x27;?tr(&#x27;next&#x27;):tr(&#x27;try&#x27;)} →&lt;/button&gt;`:&#x27;&#x27;}&lt;/div&gt;&lt;div class=&quot;lt-preview-note&quot;&gt;&lt;i data-lucide=&quot;info&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span&gt;${tr(&#x27;specimenNote&#x27;)}&lt;/span&gt;&lt;/div&gt;`;
+      drawPlot();
+    }
+    function drawPlot(){
+      const box=root.querySelector(&#x27;#lt-plot&#x27;);if(!box)return;
+      const t=state.t,ox=56,oy=116,scale=42,x=ox+scale,y=oy-t*scale;
+      const independent=t!==0;
+      const desc=state.lang===&#x27;en&#x27;?`Vectors (1,0) and (1,${t}). ${independent?&#x27;They span the plane.&#x27;:&#x27;They span a line.&#x27;}`:`向量 (1,0) 与 (1,${t})，${independent?&#x27;张成整个平面&#x27;:&#x27;仅张成一条直线&#x27;}。`;
+      box.innerHTML=`&lt;svg class=&quot;lt-vector-plot&quot; viewBox=&quot;0 0 238 230&quot; role=&quot;img&quot; aria-label=&quot;${esc(desc)}&quot;&gt;&lt;title&gt;${esc(desc)}&lt;/title&gt;&lt;defs&gt;&lt;marker id=&quot;lt-arrow-u&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; refX=&quot;5&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0 0 L6 3 L0 6 Z&quot; fill=&quot;var(--lt-text)&quot;/&gt;&lt;/marker&gt;&lt;marker id=&quot;lt-arrow-v&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; refX=&quot;5&quot; refY=&quot;3&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M0 0 L6 3 L0 6 Z&quot; fill=&quot;var(--lt-accent)&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;&lt;rect x=&quot;14&quot; y=&quot;13&quot; width=&quot;211&quot; height=&quot;207&quot; rx=&quot;7&quot; fill=&quot;${independent?&#x27;var(--lt-soft)&#x27;:&#x27;var(--lt-panel)&#x27;}&quot;/&gt;${[14,56,98,140,182,224].map(v=&gt;`&lt;line x1=&quot;${v}&quot; y1=&quot;13&quot; x2=&quot;${v}&quot; y2=&quot;220&quot; stroke=&quot;var(--lt-grid)&quot;/&gt;`).join(&#x27;&#x27;)}${[32,74,116,158,200].map(v=&gt;`&lt;line x1=&quot;14&quot; y1=&quot;${v}&quot; x2=&quot;225&quot; y2=&quot;${v}&quot; stroke=&quot;var(--lt-grid)&quot;/&gt;`).join(&#x27;&#x27;)}&lt;line x1=&quot;14&quot; y1=&quot;116&quot; x2=&quot;225&quot; y2=&quot;116&quot; stroke=&quot;var(--lt-muted)&quot; stroke-width=&quot;1&quot;/&gt;&lt;line x1=&quot;56&quot; y1=&quot;220&quot; x2=&quot;56&quot; y2=&quot;13&quot; stroke=&quot;var(--lt-muted)&quot; stroke-width=&quot;1&quot;/&gt;${!independent?&#x27;&lt;line x1=&quot;14&quot; y1=&quot;116&quot; x2=&quot;225&quot; y2=&quot;116&quot; stroke=&quot;var(--lt-accent)&quot; stroke-width=&quot;5&quot; opacity=&quot;.2&quot;/&gt;&#x27;:&#x27;&#x27;}&lt;line x1=&quot;${ox}&quot; y1=&quot;${oy}&quot; x2=&quot;${x}&quot; y2=&quot;${oy}&quot; stroke=&quot;var(--lt-text)&quot; stroke-width=&quot;2.5&quot; marker-end=&quot;url(#lt-arrow-u)&quot;/&gt;&lt;line x1=&quot;${ox}&quot; y1=&quot;${oy}&quot; x2=&quot;${x}&quot; y2=&quot;${y}&quot; stroke=&quot;var(--lt-accent)&quot; stroke-width=&quot;2.5&quot; marker-end=&quot;url(#lt-arrow-v)&quot;/&gt;&lt;circle cx=&quot;56&quot; cy=&quot;116&quot; r=&quot;3&quot; fill=&quot;var(--lt-text)&quot;/&gt;&lt;text x=&quot;${x+9}&quot; y=&quot;${oy+19}&quot; fill=&quot;var(--lt-text)&quot; font-size=&quot;13&quot;&gt;u&lt;/text&gt;&lt;text x=&quot;${x+9}&quot; y=&quot;${y-9}&quot; fill=&quot;var(--lt-accent)&quot; font-size=&quot;13&quot;&gt;v&lt;/text&gt;&lt;text x=&quot;214&quot; y=&quot;109&quot; fill=&quot;var(--lt-muted)&quot; font-size=&quot;12&quot;&gt;x&lt;/text&gt;&lt;text x=&quot;63&quot; y=&quot;25&quot; fill=&quot;var(--lt-muted)&quot; font-size=&quot;12&quot;&gt;y&lt;/text&gt;&lt;text x=&quot;43&quot; y=&quot;132&quot; fill=&quot;var(--lt-muted)&quot; font-size=&quot;12&quot;&gt;0&lt;/text&gt;&lt;/svg&gt;`;
+      root.querySelector(&#x27;#lt-t-value&#x27;).textContent=`${t.toFixed(2).replace(/\.00$/,&#x27;&#x27;)}`;
+      root.querySelector(&#x27;#lt-plane-state&#x27;).textContent=tr(independent?&#x27;independent&#x27;:&#x27;dependent&#x27;);
+    }
+    function render(change=false){renderChrome();state.view===&#x27;lesson&#x27;?renderLesson():renderMap();icon();if(change)animate();}
+    function chooseCourse(id){state.course=id;state.module=id===&#x27;M09&#x27;?1:0;state.view=&#x27;map&#x27;;render(true);save();}
+    root.addEventListener(&#x27;click&#x27;,e=&gt;{
+      const b=e.target.closest(&#x27;button&#x27;);if(!b)return;
+      if(b.id===&#x27;lt-language&#x27;){state.lang=state.lang===&#x27;en&#x27;?&#x27;zh&#x27;:&#x27;en&#x27;;render(true);save();return;}
+      if(b.dataset.subject){chooseCourse(defaults[b.dataset.subject]);return;}
+      if(b.dataset.course){chooseCourse(b.dataset.course);return;}
+      if(b.hasAttribute(&#x27;data-module&#x27;)){state.module=Number(b.dataset.module);render(true);root.querySelector(`[data-module=&quot;${state.module}&quot;]`)?.focus({preventScroll:true});save();return;}
+      if(b.dataset.view){state.view=b.dataset.view;if(state.view===&#x27;lesson&#x27;){state.course=&#x27;M09&#x27;;state.module=1;}render(true);save();return;}
+      if(b.hasAttribute(&#x27;data-open-lesson&#x27;)){state.course=&#x27;M09&#x27;;state.module=1;state.view=&#x27;lesson&#x27;;state.stage=&#x27;concept&#x27;;render(true);save();return;}
+      if(b.dataset.stage){state.stage=b.dataset.stage;render(true);root.querySelector(`[data-stage=&quot;${state.stage}&quot;]`)?.focus({preventScroll:true});save();return;}
+      if(b.id===&#x27;lt-check&#x27;){state.feedback=!state.answer?&#x27;choose&#x27;:state.answer===&#x27;nonzero&#x27;?&#x27;correct&#x27;:&#x27;incorrect&#x27;;root.querySelector(&#x27;#lt-feedback&#x27;).textContent=tr(state.feedback);save();}
+    });
+    root.addEventListener(&#x27;change&#x27;,e=&gt;{
+      if(e.target.id===&#x27;lt-course-select&#x27;)chooseCourse(e.target.value);
+      if(e.target.name===&#x27;lt-answer&#x27;){state.answer=e.target.value;state.feedback=&#x27;&#x27;;root.querySelector(&#x27;#lt-feedback&#x27;).textContent=&#x27;&#x27;;save();}
+      if(e.target.id===&#x27;lt-t&#x27;)save();
+    });
+    root.addEventListener(&#x27;input&#x27;,e=&gt;{if(e.target.id===&#x27;lt-t&#x27;){state.t=Number(e.target.value);drawPlot();}});
+    window.addEventListener(&#x27;openai:set_globals&#x27;,event=&gt;{if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);render();}});
+    function applyDesign(){root.classList.toggle(&#x27;lt-reading-focus&#x27;,design.layout===&#x27;Reading focus&#x27;);root.classList.toggle(&#x27;lt-no-motion&#x27;,!design.motion);root.style.borderRadius=design.radius+&#x27;px&#x27;;}
+    render();applyDesign();
+    if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:applyDesign});tweak.addSelect(design,&#x27;layout&#x27;,{label:&#x27;Workspace layout&#x27;,options:[&#x27;Study studio&#x27;,&#x27;Reading focus&#x27;]});tweak.addToggle(design,&#x27;motion&#x27;,{label:&#x27;Interface motion&#x27;});tweak.addSlider(design,&#x27;radius&#x27;,{label:&#x27;Window corner radius&#x27;,min:8,max:24,unit:&#x27;px&#x27;});}
+  })();
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-carousel&quot;&gt;
+  (() =&gt; {
+    for (const root of document.querySelectorAll(&quot;.viz-carousel&quot;)) {
+      const panels = Array.from(
+        root.querySelectorAll(&quot;:scope &gt; [data-variant]&quot;),
+      );
+      if (panels.length === 0) {
+        continue;
+      }
+      root.setAttribute(&quot;role&quot;, &quot;group&quot;);
+      panels.forEach((panel, index) =&gt; {
+        panel.hidden = index !== 0;
+        panel.setAttribute(&quot;role&quot;, &quot;group&quot;);
+        if (!panel.hasAttribute(&quot;aria-label&quot;)) {
+          panel.setAttribute(&quot;aria-label&quot;, panel.dataset.variant);
+        }
+      });
+      root.dataset.activeVariant = panels[0].dataset.variant;
+      if (panels.length === 1) {
+        continue;
+      }
+
+      const controls = document.createElement(&quot;div&quot;);
+      controls.className = &quot;viz-carousel-controls&quot;;
+      // Portable copy of the settings dropdown&#x27;s legacy glyph; no 14px icon-package preset matches it.
+      // https://github.com/openai/openai/blob/master/codex/codex-apps/webview/src/icons/chevron.svg
+      controls.innerHTML = `
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-previous cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;details class=&quot;viz-carousel-picker&quot;&gt;
+        &lt;summary class=&quot;cursor-interaction&quot;&gt;
+          &lt;span class=&quot;viz-carousel-count tabular-nums&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;viz-carousel-name&quot;&gt;&lt;/span&gt;
+          &lt;svg class=&quot;viz-carousel-caret&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 21&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+            &lt;path d=&quot;M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;0.6&quot; /&gt;
+          &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;div class=&quot;viz-carousel-options&quot;&gt;&lt;/div&gt;
+      &lt;/details&gt;
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-next cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;`;
+      const previous = controls.querySelector(&quot;.viz-carousel-previous&quot;);
+      const next = controls.querySelector(&quot;.viz-carousel-next&quot;);
+      const picker = controls.querySelector(&quot;.viz-carousel-picker&quot;);
+      const summary = picker.querySelector(&quot;summary&quot;);
+      const count = controls.querySelector(&quot;.viz-carousel-count&quot;);
+      const name = controls.querySelector(&quot;.viz-carousel-name&quot;);
+      const options = controls.querySelector(&quot;.viz-carousel-options&quot;);
+      const status = document.createElement(&quot;span&quot;);
+      status.className = &quot;sr-only&quot;;
+      status.setAttribute(&quot;role&quot;, &quot;status&quot;);
+      status.setAttribute(&quot;aria-live&quot;, &quot;polite&quot;);
+      status.setAttribute(&quot;aria-atomic&quot;, &quot;true&quot;);
+      previous.setAttribute(
+        &quot;aria-label&quot;,
+        root.dataset.previousLabel ?? &quot;Previous variant&quot;,
+      );
+      next.setAttribute(&quot;aria-label&quot;, root.dataset.nextLabel ?? &quot;Next variant&quot;);
+
+      let active = 0;
+      const choices = panels.map((panel, index) =&gt; {
+        const choice = document.createElement(&quot;button&quot;);
+        choice.type = &quot;button&quot;;
+        choice.className = &quot;cursor-interaction&quot;;
+        choice.textContent = panel.dataset.variant;
+        choice.addEventListener(&quot;click&quot;, () =&gt; {
+          select(index);
+          summary.focus();
+        });
+        options.appendChild(choice);
+        return choice;
+      });
+      const select = (index) =&gt; {
+        const changed = active !== index;
+        active = index;
+        panels.forEach((panel, position) =&gt; {
+          panel.hidden = position !== active;
+          choices[position].setAttribute(
+            &quot;aria-current&quot;,
+            String(position === active),
+          );
+        });
+        root.dataset.activeVariant = panels[active].dataset.variant;
+        count.textContent = `${active + 1} / ${panels.length}`;
+        name.textContent = panels[active].dataset.variant;
+        picker.open = false;
+        if (changed) {
+          status.textContent = `${count.textContent}: ${name.textContent}`;
+        }
+      };
+      previous.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + panels.length - 1) % panels.length),
+      );
+      next.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + 1) % panels.length),
+      );
+      picker.addEventListener(&quot;keydown&quot;, (event) =&gt; {
+        if (event.key === &quot;Escape&quot; &amp;&amp; picker.open) {
+          event.preventDefault();
+          picker.open = false;
+          summary.focus();
+        }
+      });
+      const dismiss = (event) =&gt; {
+        if (!picker.contains(event.target)) {
+          picker.open = false;
+        }
+      };
+      const sizePicker = () =&gt; {
+        root.style.setProperty(
+          &quot;--viz-carousel-picker-height&quot;,
+          `${picker.open ? options.offsetHeight : 0}px`,
+        );
+      };
+      picker.addEventListener(&quot;toggle&quot;, sizePicker);
+      window.addEventListener(&quot;resize&quot;, sizePicker);
+      document.addEventListener(&quot;pointerdown&quot;, dismiss);
+      window.addEventListener(
+        &quot;pagehide&quot;,
+        () =&gt; {
+          document.removeEventListener(&quot;pointerdown&quot;, dismiss);
+          window.removeEventListener(&quot;resize&quot;, sizePicker);
+        },
+        { once: true },
+      );
+      root.append(controls, status);
+      select(0);
+    }
+  })();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  let viewportHeight = globalThis.innerHeight;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height === "number" &&
+        Number.isFinite(height) &&
+        height >= 0 &&
+        height <= 10_000
+      ) {
+        frame.style.height = Math.ceil(height) + "px";
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!Number.isFinite(height) || height <= viewportHeight) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  frame.srcdoc = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.build-tools/
+native/bin/
+native/obj/
+native/.packages/
+native/test-results/
+native/smoke/
+__pycache__/
+*.user
+AGENTS.md
+.agents/
+.codex/
+dist/
+*.zip
+*.log
+.publish-check/

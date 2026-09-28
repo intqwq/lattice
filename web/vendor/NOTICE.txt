@@ -1,0 +1,6 @@
+KaTeX 0.18.9
+Copyright (c) 2013-2020 Khan Academy and other contributors.
+MIT license: katex/LICENSE
+Source: https://github.com/KaTeX/KaTeX
+Downloaded from the npm registry; SHA-512 verified.
+All scripts, CSS, and mathematical fonts are bundled locally.
