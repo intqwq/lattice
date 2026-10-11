@@ -7,7 +7,10 @@ from pathlib import Path
 import argparse, collections, hashlib, json, os, re, subprocess, zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-SIGNATURES = re.compile(rb'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|sk-(?:proj-)?[A-Za-z0-9_-]{40,}|AKIA[0-9A-Z]{16}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----[ \t\r\n]+[A-Za-z0-9+/=]{32,})')
+# Bound service tokens and require delimiters: .NET's packed locale table contains
+# a 746-byte language-code string with "sk-" inside it. This is a heuristic scan,
+# not a guarantee that arbitrary secrets cannot be present.
+SIGNATURES = re.compile(rb'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|(?<![A-Za-z0-9_-])sk-(?:proj-)?[A-Za-z0-9_-]{40,256}(?![A-Za-z0-9_-])|AKIA[0-9A-Z]{16}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----[ \t\r\n]+[A-Za-z0-9+/=]{32,})')
 
 def git(*args, binary=False):
     return subprocess.check_output(['git', '-c', 'safe.directory='+ROOT.as_posix(), *args], cwd=ROOT, text=not binary)
@@ -59,7 +62,7 @@ def main():
             for block in iter(lambda:stream.read(2**20),b''):
                 chunk=tail+block
                 if SIGNATURES.search(chunk): raise RuntimeError('Potential credential requires review in '+rel)
-                tail=chunk[-256:]
+                tail=chunk[-1024:]
     print(json.dumps({'selectedFiles':len(selected),'selectedBytes':sum(x[2] for x in selected),'excluded':dict(excluded)}),flush=True)
     bundle=output/'Lattice-git-history.bundle'
     git('bundle','create',str(bundle),'--all')
